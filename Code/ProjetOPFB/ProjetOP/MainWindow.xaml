@@ -80,7 +80,14 @@
                     </StackPanel>
                 </ScrollViewer>
             </Border>
-            <StackPanel Grid.Row="1" Grid.Column="2" Background="#FFEEAF8B">
+                <StackPanel Grid.Row="1" Grid.Column="1">
+                    <Border BorderBrush="Black" BorderThickness="1">
+                        <Viewbox Stretch="Uniform">
+                            <Image Source="mondeOnePiece.jpg" Height="1174"/>
+                        </Viewbox>
+                    </Border>
+                </StackPanel>
+                <StackPanel Grid.Row="1" Grid.Column="2" Background="#FFEEAF8B">
                 <TextBlock Text="Personnage" HorizontalAlignment="Center"/>
             </StackPanel>
         </Grid>
