@@ -8,7 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
     <DockPanel>
         <WrapPanel Background="DeepSkyBlue" DockPanel.Dock="Top">
-            <Image Source="icone_one_piece.png" Width="30"></Image>
+            <Image Source="Images/icone_one_piece.png" Width="30"></Image>
             <Separator/>
             <Menu Background="DeepSkyBlue"  VerticalAlignment="Center">
                 <MenuItem Header="Accueil"/>
@@ -16,8 +16,12 @@
                 <MenuItem Header="Ajouter Personnage"/>
             </Menu>
         </WrapPanel>
-        <Grid>
-            <UserControl/>
-        </Grid>
+        <DockPanel Background="Red">
+            <Viewbox DockPanel.Dock="Bottom" Stretch="Uniform">
+                <Canvas Height="1200" Width="780">
+                    <Image Source="Images/carte_one_piece3.png" Height="1200" Width="2369" Canvas.Left="-796"/>
+                </Canvas>
+            </Viewbox>
+        </DockPanel>
     </DockPanel>
 </Window>
