@@ -6,49 +6,18 @@
         xmlns:local="clr-namespace:Projet1"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <DockPanel RenderTransformOrigin="0.5,0.51">
-        <ListBox DockPanel.Dock="Left" Background="Bisque">
-            <TextBlock Text="ggg"></TextBlock>
-            <TextBlock Text="ddd"></TextBlock>
-        </ListBox>
-        <WrapPanel DockPanel.Dock="Top">
-            <Image Source="Personnas 1.PNG" MaxWidth="100" Margin="20"></Image>
-            <TextBlock Text="Personna 1" FontSize="30" VerticalAlignment="Center"></TextBlock>
+    <DockPanel>
+        <WrapPanel Background="DeepSkyBlue" DockPanel.Dock="Top">
+            <Image Source="icone_one_piece.png" Width="30"></Image>
+            <Separator/>
+            <Menu Background="DeepSkyBlue"  VerticalAlignment="Center">
+                <MenuItem Header="Accueil"/>
+                <Separator/>
+                <MenuItem Header="Ajouter Personnage"/>
+            </Menu>
         </WrapPanel>
-        <Grid DockPanel.Dock="Top" Background="IndianRed" HorizontalAlignment="Center">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-            </Grid.ColumnDefinitions>
-            <StackPanel Grid.Column="0">
-                <Border  Width="120" CornerRadius="20" BorderBrush="Black" BorderThickness="1">
-                    <Image Source="Personnas 1.PNG" Width="50" ></Image>
-                </Border>
-                <TextBlock Text="et de 1" HorizontalAlignment="Center"></TextBlock>
-            </StackPanel>
-            <StackPanel Grid.Column="1">
-                <Border  Width="120" CornerRadius="20" BorderBrush="Black" BorderThickness="1">
-                    <Image Source="Personnas 1.PNG" Width="50" ></Image>
-                </Border>
-                <TextBlock Text="et de 2" HorizontalAlignment="Center"></TextBlock>
-            </StackPanel>
-            <StackPanel Grid.Column="2">
-                <Border  Width="120" CornerRadius="20" BorderBrush="Black" BorderThickness="1">
-                    <Image Source="Personnas 1.PNG" Width="50" ></Image>
-                </Border>
-                <TextBlock Text="et de 3" HorizontalAlignment="Center"></TextBlock>
-            </StackPanel>
-            <StackPanel Grid.Column="3">
-                <Border  Width="120" CornerRadius="20" BorderBrush="Black" BorderThickness="1">
-                    <Image Source="Personnas 1.PNG" Width="50" ></Image>
-                </Border>
-                <TextBlock Text="et de 4" HorizontalAlignment="Center"></TextBlock>
-            </StackPanel>
-        </Grid>
-        <Grid DockPanel.Dock="Bottom" Background="Chartreuse">
-            
+        <Grid>
+            <UserControl/>
         </Grid>
     </DockPanel>
 </Window>
