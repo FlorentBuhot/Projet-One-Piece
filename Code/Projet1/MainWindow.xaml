@@ -20,6 +20,7 @@
             <Viewbox DockPanel.Dock="Bottom" Stretch="Uniform">
                 <Canvas Height="1200" Width="780">
                     <Image Source="Images/carte_one_piece3.png" Height="1200" Width="2369" Canvas.Left="-796"/>
+                    <Polygon Points="1 0, 2 -6, 13 -7, 16 -10, 22 -11 ,27 -8, 31 -15, 36 -17, 43 -12, 45 -8, 42 -6, 42 0, 32 6, 27 6, 25 16, 3 23, -2 20, -2 15, -4 13, -4 8" Stroke="OrangeRed" Canvas.Left="447" Canvas.Top="476"></Polygon>
                     <Polygon Points="0 -1, 6 10, 3 19, 0 23, -7 23, -13 19, -13 12, -11 10, -14 7, -14 3, -9 -2" Stroke="OrangeRed" Canvas.Left="563" Canvas.Top="640"></Polygon>
                     <Polygon Points="-1 -4, 3 -2, 1 2, 1 5, 2 9, 0 12, -6 12, -9 9, -9 0, -5 -4" Stroke="OrangeRed" Canvas.Left="517" Canvas.Top="692"></Polygon>
                     <Polygon Points="-2 -2, 0 1, 0 3, -6 9, -18 9, -23 2, -23 -3, -17 -7, -7 -7, -1 -4" Stroke="OrangeRed" Canvas.Left="618" Canvas.Top="631"></Polygon>
