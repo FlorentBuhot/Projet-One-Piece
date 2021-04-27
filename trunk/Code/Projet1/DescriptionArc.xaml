@@ -7,7 +7,10 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <DockPanel Background="white" >
-        <DockPanel DockPanel.Dock="Top" Height="430">
+        <DockPanel DockPanel.Dock="Top">
+            <StackPanel DockPanel.Dock="Top" Grid.ColumnSpan="5">
+                <TextBlock Text="Titre" HorizontalAlignment="Center"></TextBlock>
+            </StackPanel>
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
@@ -16,15 +19,12 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
-                <TextBlock Grid.ColumnSpan="5" Text="Arc" HorizontalAlignment="Center"></TextBlock>
-                <Image Grid.Row="1" Source="Images/carte_one_piece.jpg"></Image>
+                <StackPanel>
+                    <Image Grid.Row="1" Source="Images/carte_one_piece.jpg"></Image>
+                </StackPanel>
             </Grid>
         </DockPanel>
-        <WrapPanel DockPanel.Dock="Bottom">
+        <WrapPanel>
             <Menu Width="800">
                 <MenuItem Header="Arc précédent"/>
                 <Separator/>
