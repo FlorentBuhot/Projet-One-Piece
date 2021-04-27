@@ -19,6 +19,9 @@
     <Compile Update="ajoutImageArc.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="AjoutPerso.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="DescriptionArc.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -34,6 +37,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="ajoutImageArc.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AjoutPerso.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="DescriptionArc.xaml">
