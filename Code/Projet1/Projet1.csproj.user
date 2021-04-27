@@ -10,12 +10,18 @@
     <Compile Update="Accueil.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="ajoutImageArc.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="DescriptionArc.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Accueil.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ajoutImageArc.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="DescriptionArc.xaml">
