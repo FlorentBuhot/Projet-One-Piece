@@ -24,6 +24,19 @@ namespace Projet1
         {
             InitializeComponent();
         }
+<<<<<<< .mine
+
+        private void Clique_accueil(object sender, RoutedEventArgs e)
+        {
+            content.Content = new Accueil();
+        }
+
+        private void Clique_ajt_perso(object sender, RoutedEventArgs e)
+        {
+            content.Content = new AjoutPerso();
+        }
+||||||| .r63
+=======
 
         private void ClickAccueil(object sender, RoutedEventArgs e)
         {
@@ -39,5 +52,6 @@ namespace Projet1
         {
             return content;
         }
+>>>>>>> .r67
     }
 }
