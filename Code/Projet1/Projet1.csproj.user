@@ -10,6 +10,9 @@
     <Compile Update="Accueil.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="ajouterImagePerso.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="ajoutImageArc.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -19,6 +22,9 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="Accueil.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ajouterImagePerso.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="ajoutImageArc.xaml">
