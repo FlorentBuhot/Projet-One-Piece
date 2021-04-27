@@ -22,5 +22,14 @@ namespace Projet1
         {
             InitializeComponent();
         }
+
+        private void ClickImageArc(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void ClickAjouterInfo(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

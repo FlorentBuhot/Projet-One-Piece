@@ -24,5 +24,20 @@ namespace Projet1
         {
             InitializeComponent();
         }
+
+        private void ClickAccueil(object sender, RoutedEventArgs e)
+        {
+            content.Content = new Accueil();
+        }
+
+        private void ClickAjoutPerso(object sender, RoutedEventArgs e)
+        {
+            content.Content = new ajoutImageArc();
+        }
+
+        public ContentControl GetContent()
+        {
+            return content;
+        }
     }
 }

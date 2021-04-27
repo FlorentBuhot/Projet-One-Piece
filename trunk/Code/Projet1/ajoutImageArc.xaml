@@ -17,17 +17,18 @@
                 <RowDefinition Height="100*"/>
             </Grid.RowDefinitions>
             <DockPanel Grid.Column="0">
-                <Button Content="Parcourir" Height="30" Width="180" HorizontalAlignment="Center"/>
+                <Button DockPanel.Dock="Bottom" Content="Parcourir" Height="30" Width="180" HorizontalAlignment="Center"/>
             </DockPanel>
-            <StackPanel Grid.Column="1">
-                <TextBox TextWrapping="Wrap" Text="Description de l'image et explication"/>
-            </StackPanel>
+            <DockPanel Grid.Column="1">
+                <TextBlock DockPanel.Dock="Top" Text="Description de l'image et explication" HorizontalAlignment="Center"/>
+                <TextBox TextWrapping="Wrap" Height="150"/>
+            </DockPanel>
             <DockPanel Grid.Row="1" Grid.ColumnSpan="2">
                 <Menu VerticalAlignment="Bottom" HorizontalAlignment="right" Margin="30">
-                    <MenuItem Header="Annuler"/>
+                    <MenuItem Header="Annuler" Click="ClickAnnuler"/>
                     <Separator/>
                     <Separator/>
-                    <MenuItem Header="Ajouter"/>
+                    <MenuItem Header="Ajouter" Click="ClickAjouter"/>
                 </Menu>
             </DockPanel>
         </Grid>

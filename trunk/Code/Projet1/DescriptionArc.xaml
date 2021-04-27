@@ -9,7 +9,8 @@
     <DockPanel Background="white" >
         <DockPanel DockPanel.Dock="Top">
             <StackPanel DockPanel.Dock="Top" Grid.ColumnSpan="5">
-                <TextBlock Text="Titre" HorizontalAlignment="Center"></TextBlock>
+                <TextBlock Text="Arc Romance Dawn" HorizontalAlignment="Center" Margin="10"></TextBlock>
+                <TextBlock Text="1er Arc de One Piece. On découvre Luffy le personnage principal à Est Blue" HorizontalAlignment="Center"></TextBlock>
             </StackPanel>
             <Grid>
                 <Grid.ColumnDefinitions>
@@ -33,9 +34,9 @@
                 <Separator/>
                 <Separator/>
                 <Separator/>
-                <MenuItem Header="Ajouter infomations"/>
+                <MenuItem Header="Ajouter infomations" Click="ClickAjouterInfo"/>
                 <Separator/>
-                <MenuItem Header="Ajouter image"/>
+                <MenuItem Header="Ajouter image" Click="ClickImageArc"/>
                 <Separator/>
                 <Separator/>
                 <Separator/>
