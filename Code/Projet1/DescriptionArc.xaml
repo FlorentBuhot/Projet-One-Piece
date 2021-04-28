@@ -72,21 +72,21 @@
             </Grid>
         </ScrollViewer>
         <DockPanel Grid.Row="1">
-        <Menu VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="30">
-                <MenuItem Header="Arc précédent"/>
+            <Menu VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="10" Background="#FFFFD4A1">
+                <MenuItem Header="Arc précédent" Background="White" BorderBrush="Black" BorderThickness="2"/>
                 <Separator/>
                 <Separator/>
                 <Separator/>
                 <Separator/>
-                <MenuItem Header="Ajouter infomations" Click="ClickAjouterInfo"/>
+                <MenuItem Header="Ajouter infomations" Click="ClickAjouterInfo" Background="White" BorderBrush="Black" BorderThickness="2"/>
                 <Separator/>
-                <MenuItem Header="Ajouter image" Click="ClickImageArc"/>
-                <Separator/>
-                <Separator/>
+                <MenuItem Header="Ajouter image" Click="ClickImageArc" Background="White" BorderBrush="Black" BorderThickness="2"/>
                 <Separator/>
                 <Separator/>
                 <Separator/>
-                <MenuItem Header="Arc suivant"/>
+                <Separator/>
+                <Separator/>
+                <MenuItem Header="Arc suivant" Background="White" BorderBrush="Black" BorderThickness="2"/>
             </Menu>
         </DockPanel>
     </Grid>
