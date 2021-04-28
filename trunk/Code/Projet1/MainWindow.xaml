@@ -7,11 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <DockPanel>
-        <WrapPanel Background="DeepSkyBlue" DockPanel.Dock="Top">
+        <WrapPanel Background="#FF304A53" DockPanel.Dock="Top">
             <Image Source="Images/icone_one_piece.png" Width="30"></Image>
             <Separator/>
-            <Menu Background="DeepSkyBlue"  VerticalAlignment="Center">
-                <MenuItem Header="Accueil" Click="Clique_accueil"/>
+            <Menu  VerticalAlignment="Center" Foreground="#FFF1E8E8">
+                <Menu.Background>
+                    <SolidColorBrush Color="#FF304A53" Opacity="0.1"/>
+                </Menu.Background>
+                <MenuItem Header="Accueil" Click="Clique_accueil" Background="#FF304A53"/>
                 <Separator/>
                 <MenuItem Header="Ajouter Personnage" Click="Clique_ajt_perso"/>
             </Menu>

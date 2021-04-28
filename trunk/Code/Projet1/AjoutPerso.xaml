@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:Projet1"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Background="White">
+    <Grid Background="#FFF7CD9B">
         <Grid DockPanel.Dock="Top">
             <Grid.RowDefinitions>
                 <RowDefinition Height="2*"></RowDefinition>
@@ -30,7 +30,7 @@
                         <Image Source="Images/icone_one_piece.png"></Image>
                     </Border>
                     <Button Grid.Row="1" Content="Parcourir" Margin="10" MinWidth="55"></Button>
-                    <TextBox Grid.Row="2" Text="Nom Personnage" Margin="5" MaxWidth="100"></TextBox>
+                    <TextBox Grid.Row="2" TextAlignment="Center" Text="Nom Personnage" Margin="5" MaxWidth="150"></TextBox>
                 </Grid>
                 <Grid Grid.Column="1">
                     <Grid.RowDefinitions>
@@ -102,14 +102,12 @@
                 </Grid>
             </Grid>
             <TextBox Grid.Row="1" BorderBrush="Black" BorderThickness="1" Text="Histoire du personnage" Margin="10"></TextBox>
-            <DockPanel Grid.Row="2">
-                <Menu VerticalAlignment="Bottom" HorizontalAlignment="right" Margin="20">
-                    <MenuItem Header="Annuler"/>
-                    <Separator/>
-                    <Separator/>
-                    <MenuItem Header="Ajouter"/>
-                </Menu>
-            </DockPanel>
+            <Menu Grid.Row="2" VerticalAlignment="Bottom" HorizontalAlignment="right" Margin="15" Background="#FFF7CD9B">
+                <MenuItem BorderThickness="2" BorderBrush="Black" Header="Annuler" Height="25" Background="White" Click="MenuItem_Click"/>
+                <Separator/>
+                <Separator/>
+                <MenuItem BorderThickness="2" BorderBrush="Black" Header="Ajouter" Background="White"/>
+            </Menu>
         </Grid>
     </Grid>
 </UserControl>

@@ -22,5 +22,10 @@ namespace Projet1
         {
             InitializeComponent();
         }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }

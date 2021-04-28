@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:Projet1"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <DockPanel Background="Red">
+    <DockPanel Background="#FFF7CD9B">
         <Viewbox DockPanel.Dock="Bottom" Stretch="Uniform">
             <Canvas Height="1200" Width="780">
                 <Image Source="Images/carte_one_piece3.png" Height="1200" Width="2369" Canvas.Left="-796"/>
