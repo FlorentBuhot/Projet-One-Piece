@@ -16,13 +16,16 @@
                 <RowDefinition Height="350*"/>
                 <RowDefinition Height="100*"/>
             </Grid.RowDefinitions>
-            <DockPanel Grid.Column="0">
-                <Button DockPanel.Dock="Bottom" Content="Parcourir" Height="30" Width="180" HorizontalAlignment="Center"/>
-            </DockPanel>
-            <DockPanel Grid.Column="1">
-                <TextBlock DockPanel.Dock="Top" Text="Description de l'image et explication" HorizontalAlignment="Center"/>
-                <TextBox TextWrapping="Wrap" Height="150"/>
-            </DockPanel>
+            <StackPanel Grid.Column="0">
+                <Border BorderBrush="black" BorderThickness="1" Margin="50" MinHeight="150" MinWidth="200">
+                    <Image></Image>
+                </Border>
+                <Button Content="Parcourir" MinHeight="30" MinWidth="180" HorizontalAlignment="Center" Margin="30"/>
+            </StackPanel>
+            <StackPanel Grid.Column="1">
+                <TextBlock DockPanel.Dock="top" TextWrapping="Wrap" Text="Description de l'image et explication" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="30"/>
+                <TextBox DockPanel.Dock="Bottom" MinHeight="200" Margin="30"/>
+            </StackPanel>
             <DockPanel Grid.Row="1" Grid.ColumnSpan="2">
                 <Menu VerticalAlignment="Bottom" HorizontalAlignment="right" Margin="30">
                     <MenuItem Header="Annuler" Click="ClickAnnuler"/>
