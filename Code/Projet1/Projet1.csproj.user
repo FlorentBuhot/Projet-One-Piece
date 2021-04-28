@@ -22,6 +22,9 @@
     <Compile Update="AjoutPerso.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="AjoutPerso2.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="DescriptionArc.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -40,6 +43,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="AjoutPerso.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AjoutPerso2.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="DescriptionArc.xaml">
