@@ -6,21 +6,20 @@
              xmlns:local="clr-namespace:Projet1"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <DockPanel Background="white">
-        <Grid>
+    <Grid Background="white">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
+                <ColumnDefinition Width="50*"/>
+                <ColumnDefinition Width="50*"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="350*"/>
-                <RowDefinition Height="100*"/>
+                <RowDefinition Height="80*"/>
+                <RowDefinition Height="20*"/>
             </Grid.RowDefinitions>
             <StackPanel Grid.Column="0">
-                <Border BorderBrush="black" BorderThickness="1" Margin="50" MinHeight="150" MinWidth="200">
+                <Border BorderBrush="black" BorderThickness="1" Margin="50" Height="150" Width="200">
                     <Image></Image>
                 </Border>
-                <Button Content="Parcourir" MinHeight="30" MinWidth="180" HorizontalAlignment="Center" Margin="30"/>
+                <Button Content="Parcourir" Height="30" Width="180" HorizontalAlignment="Center" Margin="25"/>
             </StackPanel>
             <StackPanel Grid.Column="1">
                 <TextBlock DockPanel.Dock="top" TextWrapping="Wrap" Text="Description de l'image et explication" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="30"/>
@@ -35,5 +34,4 @@
                 </Menu>
             </DockPanel>
         </Grid>
-    </DockPanel>
 </UserControl>
