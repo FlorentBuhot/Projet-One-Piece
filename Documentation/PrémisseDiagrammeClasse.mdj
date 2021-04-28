@@ -506,6 +506,8 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
+											"left": 80,
+											"top": -192,
 											"height": 13
 										},
 										{
@@ -515,8 +517,8 @@
 												"$ref": "AAAAAAF5FzL0qvlh5as="
 											},
 											"font": "Arial;13;1",
-											"left": 365,
-											"top": 391,
+											"left": 405,
+											"top": 295,
 											"width": 175.95068359375,
 											"height": 13,
 											"text": "Manger"
@@ -529,6 +531,8 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
+											"left": 80,
+											"top": -192,
 											"width": 73.67724609375,
 											"height": 13,
 											"text": "(from Model)"
@@ -541,13 +545,15 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
+											"left": 80,
+											"top": -192,
 											"height": 13,
 											"horizontalAlignment": 1
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 360,
-									"top": 384,
+									"left": 400,
+									"top": 288,
 									"width": 185.95068359375,
 									"height": 25,
 									"stereotypeLabel": {
@@ -573,8 +579,8 @@
 										"$ref": "AAAAAAF5FzL0qfleNzM="
 									},
 									"font": "Arial;13;0",
-									"left": 360,
-									"top": 409,
+									"left": 400,
+									"top": 313,
 									"width": 185.95068359375,
 									"height": 10
 								},
@@ -588,8 +594,8 @@
 										"$ref": "AAAAAAF5FzL0qfleNzM="
 									},
 									"font": "Arial;13;0",
-									"left": 360,
-									"top": 419,
+									"left": 400,
+									"top": 323,
 									"width": 185.95068359375,
 									"height": 10
 								},
@@ -604,6 +610,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
+									"left": 40,
+									"top": -96,
 									"width": 10,
 									"height": 10
 								},
@@ -618,14 +626,16 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
+									"left": 40,
+									"top": -96,
 									"width": 10,
 									"height": 10
 								}
 							],
 							"font": "Arial;13;0",
 							"containerChangeable": true,
-							"left": 360,
-							"top": 384,
+							"left": 400,
+							"top": 288,
 							"width": 185.95068359375,
 							"height": 89,
 							"nameCompartment": {
