@@ -6,30 +6,74 @@
              xmlns:local="clr-namespace:Projet1"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <DockPanel Background="white" >
-        <DockPanel DockPanel.Dock="Top">
+    <Grid Background="#FFFFD4A1">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80*"/>
+            <RowDefinition Height="20*"/>
+        </Grid.RowDefinitions>
+        <ScrollViewer>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60*"/>
+                <RowDefinition Height="60*"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
             <StackPanel DockPanel.Dock="Top" Grid.ColumnSpan="5">
                 <TextBlock Text="Arc Romance Dawn" HorizontalAlignment="Center" Margin="10"></TextBlock>
                 <TextBlock Text="1er Arc de One Piece. On découvre Luffy le personnage principal à Est Blue" HorizontalAlignment="Center"></TextBlock>
             </StackPanel>
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-                <StackPanel>
-                    <Image Grid.Row="1" Source="Images/carte_one_piece.jpg"></Image>
-                </StackPanel>
+            <DockPanel Grid.Row="1" Grid.Column="0" Margin="10">
+                <Border BorderBrush="Black" BorderThickness="1">
+                    <Image Source="Images\icone_one_piece.png"></Image>
+                </Border>
+                </DockPanel>
+                <DockPanel Grid.Row="2" Grid.Column="0">
+                    <TextBlock Text="Chapeau de paille" VerticalAlignment="Bottom" HorizontalAlignment="Center"></TextBlock>
+                </DockPanel>
+            <DockPanel Grid.Row="1" Grid.Column="1" Margin="10">
+                <Border BorderBrush="Black" BorderThickness="1">
+                    <Image Source="Images\icone_one_piece.png"></Image>
+                </Border>
+                </DockPanel>
+                <DockPanel Grid.Row="2" Grid.Column="1">
+                    <TextBlock Text="Chapeau de paille" VerticalAlignment="Bottom" HorizontalAlignment="Center"></TextBlock>
+                </DockPanel>
+                <DockPanel Grid.Row="1" Grid.Column="2" Margin="10">
+                    <Border BorderBrush="Black" BorderThickness="1">
+                        <Image Source="Images\icone_one_piece.png" ></Image>
+                    </Border>
+                </DockPanel>
+                <DockPanel Grid.Row="2" Grid.Column="2">
+                    <TextBlock Text="Chapeau de paille" VerticalAlignment="Bottom" HorizontalAlignment="Center"></TextBlock>
+                </DockPanel>
+                <DockPanel Grid.Row="1" Grid.Column="3" Margin="10">
+                    <Border BorderBrush="Black" BorderThickness="1">
+                        <Image Source="Images\icone_one_piece.png"></Image>
+                    </Border>
+                </DockPanel>
+                <DockPanel Grid.Row="2" Grid.Column="3">
+                    <TextBlock Text="Chapeau de paille" VerticalAlignment="Bottom" HorizontalAlignment="Center"></TextBlock>
+                </DockPanel>
+                <DockPanel Grid.Row="1" Grid.Column="4" Margin="10">
+                    <Border BorderBrush="Black" BorderThickness="1">
+                        <Image Source="Images\icone_one_piece.png"></Image>
+                    </Border>
+                </DockPanel>
+                <DockPanel Grid.Row="2" Grid.Column="4">
+                    <TextBlock Text="Chapeau de paille" VerticalAlignment="Bottom" HorizontalAlignment="Center"></TextBlock>
+                </DockPanel>
             </Grid>
-        </DockPanel>
-        <WrapPanel>
-            <Menu Width="800">
+        </ScrollViewer>
+        <DockPanel Grid.Row="1">
+        <Menu VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="30">
                 <MenuItem Header="Arc précédent"/>
-                <Separator/>
-                <Separator/>
                 <Separator/>
                 <Separator/>
                 <Separator/>
@@ -42,10 +86,8 @@
                 <Separator/>
                 <Separator/>
                 <Separator/>
-                <Separator/>
-                <Separator/>
                 <MenuItem Header="Arc suivant"/>
             </Menu>
-        </WrapPanel>
-    </DockPanel>
+        </DockPanel>
+    </Grid>
 </UserControl>
