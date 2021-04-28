@@ -21,7 +21,7 @@
         </WrapPanel>
 
         <ContentControl x:Name="content">
-            <local:ajouterImagePerso/>
+            <local:DescriptionArc/>
         </ContentControl>
     </DockPanel>
 </Window>
