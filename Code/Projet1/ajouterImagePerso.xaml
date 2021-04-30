@@ -26,16 +26,9 @@
                 <TextBox DockPanel.Dock="Bottom" MinHeight="200" Margin="30"/>
             </StackPanel>
         <DockPanel Grid.Row="1" Grid.ColumnSpan="2" Background="#FF304A53">
-            <Menu VerticalAlignment="Center" HorizontalAlignment="Center" Background="#FF304A53">
-                <MenuItem Header="Annuler" Click="ClickAnnuler" Style="{StaticResource menuBas}"/>
-                <Separator/>
-                <Separator/>
-                <Separator/>
-                <Separator/>
-                <Separator/>
-                <Separator/>
-                <MenuItem Header="Ajouter" Click="ClickAjouter" Style="{StaticResource menuBas}"/>
-            </Menu>
+            <ContentControl>
+                <local:menuBas/>
+            </ContentControl>
         </DockPanel>
     </Grid>
 </UserControl>
