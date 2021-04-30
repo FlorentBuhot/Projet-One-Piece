@@ -23,9 +23,14 @@ namespace Projet1
             InitializeComponent();
         }
 
-        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        private void ClickAnnuler(object sender, RoutedEventArgs e)
         {
             
+        }
+
+        private void ClickAjouter(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

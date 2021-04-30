@@ -55,7 +55,7 @@
         </Grid>
 
         <ContentControl x:Name="content">
-            <local:DescriptionArc/>
+            <local:Accueil/>
         </ContentControl>
     </DockPanel>
 </Window>
