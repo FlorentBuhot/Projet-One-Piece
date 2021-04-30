@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Accueil.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ajouterImagePerso.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AjouterInfoArc.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ajoutImageArc.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AjoutPerso.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DescriptionArc.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Accueil.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ajouterImagePerso.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AjouterInfoArc.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ajoutImageArc.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AjoutPerso.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DescriptionArc.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

@@ -14,30 +14,21 @@ using System.Windows.Shapes;
 namespace Projet1
 {
     /// <summary>
-    /// Logique d'interaction pour DescriptionArc.xaml
+    /// Logique d'interaction pour ajoutImageArc.xaml
     /// </summary>
-    public partial class DescriptionArc : UserControl
+    public partial class ajoutImageArc : UserControl
     {
-        public DescriptionArc()
+        public ajoutImageArc()
         {
             InitializeComponent();
         }
 
-        private void ClickImageArc(object sender, RoutedEventArgs e)
-        {
-
-        }
-        private void ClickAjouterInfo(object sender, RoutedEventArgs e)
+        private void ClickAnnuler(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void arcPre(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void arcSuiv(object sender, RoutedEventArgs e)
+        private void ClickAjouter(object sender, RoutedEventArgs e)
         {
 
         }

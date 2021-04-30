@@ -1,0 +1,113 @@
+﻿<UserControl x:Class="Projet1.AjoutPerso"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Projet1"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="#FFF7CD9B">
+        <Grid DockPanel.Dock="Top">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition Height="0.5*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.8*"></ColumnDefinition>
+                    <ColumnDefinition Width="0.8*"></ColumnDefinition>
+                    <ColumnDefinition Width="1.6*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="4*"></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition Height="0.8*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Border BorderBrush="Black" BorderThickness="1" Margin="20">
+                        <Image Source="Images/icone_one_piece.png"></Image>
+                    </Border>
+                    <Button Grid.Row="1" Content="Parcourir" Margin="10" MinWidth="55"></Button>
+                    <TextBox Grid.Row="2" TextAlignment="Center" Text="Nom Personnage" Margin="5" MaxWidth="150"></TextBox>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Nom de l'équipage" HorizontalAlignment="Center" Margin="10"></TextBlock>
+                    <TextBox Grid.Row="1" MaxWidth="150" MaxHeight="50"></TextBox>
+                    <TextBlock Grid.Row="2" Text="Age" HorizontalAlignment="Center" Margin="10"></TextBlock>
+                    <TextBox Grid.Row="3" MaxWidth="150" MaxHeight="50"></TextBox>
+                    <TextBlock Grid.Row="4" Text="Type de haki" HorizontalAlignment="Center" Margin="10"></TextBlock>
+                    <TextBox Grid.Row="5" MaxWidth="150" MaxHeight="50"></TextBox>
+                </Grid>
+                <Grid Grid.Column="2" Margin="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <CheckBox Content="Colonel Morgan" ></CheckBox>
+                    <CheckBox Content="Baggy le clown" Grid.Row="1"></CheckBox>
+                    <CheckBox Content="Capitaine Kuro" Grid.Row="2"></CheckBox>
+                    <CheckBox Content="Baratie" Grid.Row="3"></CheckBox>
+                    <CheckBox Content="Arlong" Grid.Row="4"></CheckBox>
+                    <CheckBox Content="LogueTown" Grid.Row="5"></CheckBox>
+                    <CheckBox Content="Laboon" Grid.Row="6"></CheckBox>
+                    <CheckBox Content="Whiskey Peak" Grid.Row="7"></CheckBox>
+                    <CheckBox Content="Little Garden" Grid.Row="8"></CheckBox>
+                    <CheckBox Content="Royaume de Drum" Grid.Row="9"></CheckBox>
+                    <CheckBox Content="Alabasta" Grid.Row="10"></CheckBox>
+                    <CheckBox Content="Jaya" Grid.Column="1"></CheckBox>
+                    <CheckBox Content="Skypiea" Grid.Column="1" Grid.Row="1"></CheckBox>
+                    <CheckBox Content="Davy Back Fight" Grid.Column="1" Grid.Row="2"></CheckBox>
+                    <CheckBox Content="Water Seven" Grid.Column="1" Grid.Row="3"></CheckBox>
+                    <CheckBox Content="Enies Lobby" Grid.Column="1" Grid.Row="4"></CheckBox>
+                    <CheckBox Content="Post Enies Lobby" Grid.Column="1" Grid.Row="5"></CheckBox>
+                    <CheckBox Content="Thriller Bark" Grid.Column="1" Grid.Row="6"></CheckBox>
+                    <CheckBox Content="Archipel Sabaody" Grid.Column="1" Grid.Row="7"></CheckBox>
+                    <CheckBox Content="Amazon Lily" Grid.Column="1" Grid.Row="8"></CheckBox>
+                    <CheckBox Content="Impel Down" Grid.Column="1" Grid.Row="9"></CheckBox>
+                    <CheckBox Content="Marine Ford" Grid.Column="1" Grid.Row="10"></CheckBox>
+                    <CheckBox Content="Post Marine Ford" Grid.Column="2"></CheckBox>
+                    <CheckBox Content="Retour a Sabaody" Grid.Column="2" Grid.Row="1"></CheckBox>
+                    <CheckBox Content="Hommes-poissons" Grid.Column="2" Grid.Row="2"></CheckBox>
+                    <CheckBox Content="Punk Hazard" Grid.Column="2" Grid.Row="3"></CheckBox>
+                    <CheckBox Content="Dressrosa" Grid.Column="2" Grid.Row="4"></CheckBox>
+                    <CheckBox Content="Mine Argentée" Grid.Column="2" Grid.Row="5"></CheckBox>
+                    <CheckBox Content="Zou" Grid.Column="2" Grid.Row="6"></CheckBox>
+                    <CheckBox Content="Whole Cake" Grid.Column="2" Grid.Row="7"></CheckBox>
+                    <CheckBox Content="Reverie" Grid.Column="2" Grid.Row="8"></CheckBox>
+                    <CheckBox Content="Wano Kuni" Grid.Column="2" Grid.Row="9"></CheckBox>
+                </Grid>
+            </Grid>
+            <TextBox Grid.Row="1" BorderBrush="Black" BorderThickness="1" Text="Histoire du personnage" Margin="10"></TextBox>
+            <Menu Grid.Row="2" VerticalAlignment="Bottom" HorizontalAlignment="right" Margin="15" Background="#FFF7CD9B">
+                <MenuItem BorderThickness="2" BorderBrush="Black" Header="Annuler" Height="25" Background="White" Click="MenuItem_Click"/>
+                <Separator/>
+                <Separator/>
+                <MenuItem BorderThickness="2" BorderBrush="Black" Header="Ajouter" Background="White"/>
+            </Menu>
+        </Grid>
+    </Grid>
+</UserControl>
