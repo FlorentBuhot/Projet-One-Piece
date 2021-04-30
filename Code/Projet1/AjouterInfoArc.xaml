@@ -6,7 +6,11 @@
              xmlns:local="clr-namespace:Projet1"
              mc:Ignorable="d" 
              d:DesignHeight="420" d:DesignWidth="800">
-    <Grid Background="White">
+
+    <UserControl.Resources>
+    </UserControl.Resources>
+    
+    <Grid Background="#FFFFD4A1">
         <Grid.RowDefinitions>
             <RowDefinition Height="25*"></RowDefinition>
             <RowDefinition Height="50*"></RowDefinition>
@@ -14,11 +18,16 @@
         </Grid.RowDefinitions>
         <TextBlock Grid.Row="0" HorizontalAlignment="Center" Text="Information sur l'arc" Margin="20"/>
         <TextBox Grid.Row="1" Margin="50,10"/>
-        <Menu Grid.Row="2" VerticalAlignment="Bottom" HorizontalAlignment="right" Margin="30">
-            <MenuItem Header="Annuler" Click="ClickAnnuler"/>
-            <Separator/>
-            <Separator/>
-            <MenuItem Header="Ajouter" Click="ClickAjouter"/>
-        </Menu>
+
+            <Menu Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" Background="#FF304A53">
+                <MenuItem Header="Annuler" Click="ClickAnnuler" Style="{StaticResource menuBas}"/>
+                <Separator/>
+                <Separator/>
+                <Separator/>
+                <Separator/>
+                <Separator/>
+                <Separator/>
+                <MenuItem Header="Ajouter" Click="ClickAjouter" Style="{StaticResource menuBas}"/>
+            </Menu>
     </Grid>
 </UserControl>

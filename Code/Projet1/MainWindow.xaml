@@ -6,6 +6,19 @@
         xmlns:local="clr-namespace:Projet1"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    
+    <Window.Resources>
+        <Style TargetType="TextBox" x:Key="barreRecherche">
+            <Setter Property="VerticalAlignment" Value="center"/>
+            <Setter Property="Padding" Value="2"/>
+            <Style.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="0,10,10,0"></Setter>
+                </Style>
+            </Style.Resources>
+        </Style>
+    </Window.Resources>
+    
     <DockPanel>
         <Grid Background="#FF304A53" DockPanel.Dock="Top">
             <Grid.ColumnDefinitions>
@@ -15,7 +28,6 @@
                 <ColumnDefinition Width="20*"/>
             </Grid.ColumnDefinitions>
             <Image Grid.Column="0" Source="Images/icone_one_piece.png" Width="30"></Image>
-            <Separator/>
             <Menu Grid.Column="1" VerticalAlignment="Center" Foreground="#FFF1E8E8">
                 <Menu.Background>
                     <SolidColorBrush Color="#FF304A53" Opacity="0.1"/>
@@ -25,36 +37,20 @@
                 <MenuItem Header="Ajouter Personnage" Click="Clique_ajt_perso"></MenuItem>
             </Menu>
             <DockPanel Grid.Column="2" MinWidth="80" Margin="10">
-                <Button MinWidth="25">
-                    <Button.Resources>
-                        <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="10,0,0,10"></Setter>
-                        </Style>
-                    </Button.Resources>
+                <Button MinWidth="25" Style="{StaticResource boutonRecherche}" Click="rechercheArc">
+                    <Button.Content>
+                        <Image Source="Icones/rechBouttun.png" Width="25"/>
+                    </Button.Content>
                 </Button>
-                <TextBox>
-                    <TextBox.Resources>
-                        <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="0,10,10,0"></Setter>
-                        </Style>
-                    </TextBox.Resources>
-                </TextBox>
+                <TextBox Style="{StaticResource barreRecherche}"/>
             </DockPanel>
             <DockPanel Grid.Column="3" MinWidth="80" Margin="10">
-            <Button MinWidth="25">
-                    <Button.Resources>
-                        <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="10,0,0,10"></Setter>
-                        </Style>
-                    </Button.Resources>
-            </Button>
-            <TextBox>
-                <TextBox.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="0,10,10,0"></Setter>
-                    </Style>
-                </TextBox.Resources>
-            </TextBox>
+                <Button MinWidth="25" Style="{StaticResource boutonRecherche}" Click="recherchePerso">
+                    <Button.Content>
+                        <Image Source="Icones/rechBouttun.png" Width="25"/>
+                    </Button.Content>
+                </Button>
+                <TextBox Style="{StaticResource barreRecherche}"/>
             </DockPanel>
         </Grid>
 

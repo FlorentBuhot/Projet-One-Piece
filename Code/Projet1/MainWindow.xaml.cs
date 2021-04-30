@@ -39,5 +39,15 @@ namespace Projet1
         {
             return content;
         }
+
+        private void rechercheArc(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void recherchePerso(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

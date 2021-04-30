@@ -6,13 +6,28 @@
              xmlns:local="clr-namespace:Projet1"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <Style TargetType="TextBlock" x:Key="descImage">
+            <Setter Property="VerticalAlignment" Value="Bottom"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="Border" x:Key="contImage">
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="BorderThickness" Value="1"/>
+        </Style>
+        <Style TargetType="MenuItem" x:Key="menuBas">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="BorderThickness" Value="2"/>
+        </Style>
+    </UserControl.Resources>
     <Grid Background="#FFFFD4A1">
         <Grid.RowDefinitions>
-            <RowDefinition Height="80*"/>
-            <RowDefinition Height="20*"/>
+            <RowDefinition Height="85*"/>
+            <RowDefinition Height="8*"/>
         </Grid.RowDefinitions>
         <ScrollViewer>
-        <Grid Grid.Row="0">
+        <Grid Grid.Row="0" Margin="10">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
@@ -30,63 +45,63 @@
                 <TextBlock Text="1er Arc de One Piece. On découvre Luffy le personnage principal à Est Blue" HorizontalAlignment="Center"></TextBlock>
             </StackPanel>
             <DockPanel Grid.Row="1" Grid.Column="0" Margin="10">
-                <Border BorderBrush="Black" BorderThickness="1">
+                <Border Style="{StaticResource contImage}">
                     <Image Source="Images\icone_one_piece.png"></Image>
                 </Border>
                 </DockPanel>
                 <DockPanel Grid.Row="2" Grid.Column="0">
-                    <TextBlock Text="Chapeau de paille" VerticalAlignment="Bottom" HorizontalAlignment="Center"></TextBlock>
+                    <TextBlock Text="Chapeau de paille" Style="{StaticResource descImage}"/>
                 </DockPanel>
             <DockPanel Grid.Row="1" Grid.Column="1" Margin="10">
-                <Border BorderBrush="Black" BorderThickness="1">
+                    <Border Style="{StaticResource contImage}">
                     <Image Source="Images\icone_one_piece.png"></Image>
                 </Border>
                 </DockPanel>
                 <DockPanel Grid.Row="2" Grid.Column="1">
-                    <TextBlock Text="Chapeau de paille" VerticalAlignment="Bottom" HorizontalAlignment="Center"></TextBlock>
+                    <TextBlock Text="Chapeau de paille" Style="{StaticResource descImage}"/>
                 </DockPanel>
                 <DockPanel Grid.Row="1" Grid.Column="2" Margin="10">
-                    <Border BorderBrush="Black" BorderThickness="1">
+                    <Border Style="{StaticResource contImage}">
                         <Image Source="Images\icone_one_piece.png" ></Image>
                     </Border>
                 </DockPanel>
                 <DockPanel Grid.Row="2" Grid.Column="2">
-                    <TextBlock Text="Chapeau de paille" VerticalAlignment="Bottom" HorizontalAlignment="Center"></TextBlock>
+                    <TextBlock Text="Chapeau de paille" Style="{StaticResource descImage}"/>
                 </DockPanel>
                 <DockPanel Grid.Row="1" Grid.Column="3" Margin="10">
-                    <Border BorderBrush="Black" BorderThickness="1">
+                    <Border Style="{StaticResource contImage}">
                         <Image Source="Images\icone_one_piece.png"></Image>
                     </Border>
                 </DockPanel>
                 <DockPanel Grid.Row="2" Grid.Column="3">
-                    <TextBlock Text="Chapeau de paille" VerticalAlignment="Bottom" HorizontalAlignment="Center"></TextBlock>
+                    <TextBlock Text="Chapeau de paille" Style="{StaticResource descImage}"/>
                 </DockPanel>
                 <DockPanel Grid.Row="1" Grid.Column="4" Margin="10">
-                    <Border BorderBrush="Black" BorderThickness="1">
+                    <Border Style="{StaticResource contImage}">
                         <Image Source="Images\icone_one_piece.png"></Image>
                     </Border>
                 </DockPanel>
                 <DockPanel Grid.Row="2" Grid.Column="4">
-                    <TextBlock Text="Chapeau de paille" VerticalAlignment="Bottom" HorizontalAlignment="Center"></TextBlock>
+                    <TextBlock Text="Chapeau de paille" Style="{StaticResource descImage}"/>
                 </DockPanel>
             </Grid>
         </ScrollViewer>
-        <DockPanel Grid.Row="1">
-            <Menu VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="10" Background="#FFFFD4A1">
-                <MenuItem Header="Arc précédent" Background="White" BorderBrush="Black" BorderThickness="2"/>
+        <DockPanel Grid.Row="1" Background="#FF304A53">
+            <Menu VerticalAlignment="Center" HorizontalAlignment="Center" Background="#FF304A53">
+                <MenuItem Header="Arc précédent" Click="arcPre" Style="{StaticResource menuBas}" Padding="3"/>
                 <Separator/>
                 <Separator/>
                 <Separator/>
                 <Separator/>
-                <MenuItem Header="Ajouter infomations" Click="ClickAjouterInfo" Background="White" BorderBrush="Black" BorderThickness="2"/>
+                <MenuItem Header="Ajouter infomations" Click="ClickAjouterInfo" Style="{StaticResource menuBas}"/>
                 <Separator/>
-                <MenuItem Header="Ajouter image" Click="ClickImageArc" Background="White" BorderBrush="Black" BorderThickness="2"/>
-                <Separator/>
-                <Separator/>
+                <MenuItem Header="Ajouter image" Click="ClickImageArc" Style="{StaticResource menuBas}"/>
                 <Separator/>
                 <Separator/>
                 <Separator/>
-                <MenuItem Header="Arc suivant" Background="White" BorderBrush="Black" BorderThickness="2"/>
+                <Separator/>
+                <Separator/>
+                <MenuItem Header="Arc suivant" Click="arcSuiv" Style="{StaticResource menuBas}"/>
             </Menu>
         </DockPanel>
     </Grid>
