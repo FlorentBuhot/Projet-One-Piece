@@ -55,7 +55,7 @@
         </Grid>
 
         <ContentControl x:Name="content">
-            <local:Accueil/>
+            <local:ajouterInfoPerso/>
         </ContentControl>
     </DockPanel>
 </Window>
