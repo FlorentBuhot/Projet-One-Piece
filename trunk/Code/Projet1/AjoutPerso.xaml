@@ -9,9 +9,9 @@
     <Grid Background="#FFF7CD9B">
         <Grid DockPanel.Dock="Top">
             <Grid.RowDefinitions>
-                <RowDefinition Height="2*"></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition Height="0.5*"></RowDefinition>
+                <RowDefinition Height="56*"></RowDefinition>
+                <RowDefinition Height="36*"></RowDefinition>
+                <RowDefinition Height="8*"></RowDefinition>
             </Grid.RowDefinitions>
             <Grid>
                 <Grid.ColumnDefinitions>
@@ -102,12 +102,18 @@
                 </Grid>
             </Grid>
             <TextBox Grid.Row="1" BorderBrush="Black" BorderThickness="1" Text="Histoire du personnage" Margin="10"></TextBox>
-            <Menu Grid.Row="2" VerticalAlignment="Bottom" HorizontalAlignment="right" Margin="15" Background="#FFF7CD9B">
-                <MenuItem BorderThickness="2" BorderBrush="Black" Header="Annuler" Height="25" Background="White" Click="MenuItem_Click"/>
-                <Separator/>
-                <Separator/>
-                <MenuItem BorderThickness="2" BorderBrush="Black" Header="Ajouter" Background="White"/>
-            </Menu>
+            <DockPanel Grid.Row="2" Grid.ColumnSpan="2" Background="#FF304A53">
+                <Menu VerticalAlignment="Center" HorizontalAlignment="Center" Background="#FF304A53">
+                    <MenuItem Header="Annuler" Click="ClickAnnuler" Style="{StaticResource menuBas}"/>
+                    <Separator/>
+                    <Separator/>
+                    <Separator/>
+                    <Separator/>
+                    <Separator/>
+                    <Separator/>
+                    <MenuItem Header="Ajouter" Click="ClickAjouter" Style="{StaticResource menuBas}"/>
+                </Menu>
+            </DockPanel>
         </Grid>
     </Grid>
 </UserControl>

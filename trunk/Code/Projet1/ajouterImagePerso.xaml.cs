@@ -22,5 +22,15 @@ namespace Projet1
         {
             InitializeComponent();
         }
+
+        private void ClickAnnuler(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ClickAjouter(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
