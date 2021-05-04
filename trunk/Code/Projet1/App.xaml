@@ -24,6 +24,8 @@
             <Setter Property="BorderBrush" Value="Black"/>
             <Setter Property="BorderThickness" Value="2"/>
             <Setter Property="Padding" Value="10,3,10,3"/>
+            <Setter Property="MinWidth" Value="120"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
         </Style>
     </Application.Resources>
 </Application>

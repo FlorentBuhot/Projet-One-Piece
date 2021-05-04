@@ -32,12 +32,12 @@ namespace Projet1
 
         }
 
-        private void arcPre(object sender, RoutedEventArgs e)
+        private void ArcPre(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void arcSuiv(object sender, RoutedEventArgs e)
+        private void ArcSuiv(object sender, RoutedEventArgs e)
         {
 
         }

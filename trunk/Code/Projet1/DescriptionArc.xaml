@@ -88,7 +88,7 @@
         </ScrollViewer>
         <DockPanel Grid.Row="1" Background="#FF304A53">
             <Menu VerticalAlignment="Center" HorizontalAlignment="Center" Background="#FF304A53">
-                <MenuItem Header="Arc précédent" Click="arcPre" Style="{StaticResource menuBas}" Padding="3"/>
+                <MenuItem Header="Arc précédent" Click="ArcPre" Style="{StaticResource menuBas}" Padding="3"/>
                 <Separator/>
                 <Separator/>
                 <Separator/>
@@ -101,7 +101,7 @@
                 <Separator/>
                 <Separator/>
                 <Separator/>
-                <MenuItem Header="Arc suivant" Click="arcSuiv" Style="{StaticResource menuBas}"/>
+                <MenuItem Header="Arc suivant" Click="ArcSuiv" Style="{StaticResource menuBas}"/>
             </Menu>
         </DockPanel>
     </Grid>

@@ -22,5 +22,13 @@ namespace Projet1
         {
             InitializeComponent();
         }
+        private void ClickImagePerso(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void ClickInfoPerso(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
