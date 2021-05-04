@@ -28,6 +28,9 @@
     <Compile Update="DescriptionArc.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="DescriptionPerso.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="menuBas.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -52,6 +55,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="DescriptionArc.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DescriptionPerso.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
