@@ -26,10 +26,12 @@
             <RowDefinition Height="66*"/>
             <RowDefinition Height="33*"/>
         </Grid.RowDefinitions>
-        <StackPanel Grid.Row="0" DockPanel.Dock="Top">
-            <TextBlock Text="Monkey D. Luffy" HorizontalAlignment="Center" Margin="10"></TextBlock>
-            <TextBlock Text="Luffy est le personnage principal de One Piece" HorizontalAlignment="Center"></TextBlock>
-        </StackPanel>
+        <Border BorderBrush="#FF304A53" BorderThickness="0,0,10,0">
+            <StackPanel Grid.Row="0" DockPanel.Dock="Top">
+                <TextBlock Text="Monkey D. Luffy" HorizontalAlignment="Center" Margin="10"></TextBlock>
+                <TextBlock Text="Luffy est le personnage principal de One Piece" HorizontalAlignment="Center"></TextBlock>
+            </StackPanel>
+        </Border>
         <Grid Grid.Row="0" Grid.Column="1" Margin="10">
             <Grid.RowDefinitions>
                 <RowDefinition Height="10*"/>
@@ -40,7 +42,27 @@
                 <WrapPanel>
                     <Image Source="/Images/icone_one_piece.png" Width="40" Height="40" Margin="5"/>
                     <TextBlock Text="arc 1 : je sais plus" Margin="5"/>
-²               </WrapPanel>
+                </WrapPanel>
+                <WrapPanel>
+                    <Image Source="/Images/icone_one_piece.png" Width="40" Height="40" Margin="5"/>
+                    <TextBlock Text="arc 1 : je sais plus" Margin="5"/>
+                </WrapPanel>
+                <WrapPanel>
+                    <Image Source="/Images/icone_one_piece.png" Width="40" Height="40" Margin="5"/>
+                    <TextBlock Text="arc 1 : je sais plus" Margin="5"/>
+                </WrapPanel>
+                <WrapPanel>
+                    <Image Source="/Images/icone_one_piece.png" Width="40" Height="40" Margin="5"/>
+                    <TextBlock Text="arc 1 : je sais plus" Margin="5"/>
+                </WrapPanel>
+                <WrapPanel>
+                    <Image Source="/Images/icone_one_piece.png" Width="40" Height="40" Margin="5"/>
+                    <TextBlock Text="arc 1 : je sais plus" Margin="5"/>
+                </WrapPanel>
+                <WrapPanel>
+                    <Image Source="/Images/icone_one_piece.png" Width="40" Height="40" Margin="5"/>
+                    <TextBlock Text="arc 1 : je sais plus" Margin="5"/>
+                </WrapPanel>
             </ListBox>
         </Grid>
         <Border Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" BorderThickness="0,10,0,0" BorderBrush="#FF304A53">
