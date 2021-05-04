@@ -55,7 +55,7 @@
         </Grid>
 
         <ContentControl x:Name="content">
-            <local:AjouterInfoArc/>
+            <local:DescriptionPerso/>
         </ContentControl>
     </DockPanel>
 </Window>
