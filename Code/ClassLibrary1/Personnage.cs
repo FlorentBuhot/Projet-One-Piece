@@ -25,67 +25,26 @@ namespace ClassLibrary1
         /// <summary>
         /// Getter et setter pour le prénom
         /// </summary>
-        public string Prénom
-        {
-            get
-            {
-                return prénom;
-            }
-            set
-            {
-                prénom = value;
-            }
-        }
+        public string Prénom { get => prénom; set => prénom = value; }
         private string prénom;
 
 
         /// <summary>
         /// Getter et setter pour le nom
         /// </summary>
-        public string Nom
-        {
-            get
-            {
-                return nom;
-            }
-            set
-            {
-                nom = value;
-            }
-        }
+        public string Nom { get => nom; set => nom = value; }
         private string nom;
 
         /// <summary>
         /// Getter et setter pour l'age
         /// </summary>
-        public int Age
-        {
-            get
-            {
-                return age;
-            }
-            set
-            {
-                age = value;
-            }
-        }
-
+        public int Age { get => age; set => age = value; }
         private int age;
 
         /// <summary>
         /// Getter et setter pour l'équipage
         /// </summary>
-        public string Equipage
-        {
-            get
-            {
-                return équipage;
-            }
-            set
-            {
-                équipage = value;
-            }
-        }
+        public string Equipage { get => équipage; set => équipage = value; }
         private string équipage;
     }
 }
