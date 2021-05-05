@@ -30,7 +30,6 @@ namespace ClassLibrary1
         public string Prénom { get => prénom; set => prénom = value; }
         private string prénom;
 
-
         /// <summary>
         /// Getter et setter pour le nom
         /// </summary>
