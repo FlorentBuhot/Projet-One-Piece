@@ -46,5 +46,8 @@ namespace ClassLibrary1
         /// </summary>
         public string Equipage { get => équipage; set => équipage = value; }
         private string équipage;
+
+        public string TypeHaki { get => typeHaki; set => TypeHaki = value; }
+        private string typeHaki;
     }
 }
