@@ -6,10 +6,9 @@ namespace ClassLibrary1
 {
     class Arc
     {
-        private string description;
         public string Description { get => description; set => description = value; }
-
-        private string sourceImageArc;
+        private string description;
         public string SourceImageArc { get => sourceImageArc; set => sourceImageArc = value; }
+        private string sourceImageArc;
     }
 }

@@ -14,12 +14,14 @@ namespace ClassLibrary1
         /// <param name="prénom"> Le prénom du personnaga</param>
         /// <param name="age"> L'age du personnage</param>
         /// <param name="équpage"> Le nom de l'équipage du personnage</param>
-        public Personnage(string nom, string prénom, int age, string équpage)
+        public Personnage(string nom, string prénom, string info, int age, string équipage, string typeHaki)
         {
             Nom = nom;
             Prénom = prénom;
+            Info = info;
             Age = age;
             Equipage = équipage;
+            TypeHaki = typeHaki;
         }
 
         /// <summary>
@@ -35,6 +37,9 @@ namespace ClassLibrary1
         public string Nom { get => nom; set => nom = value; }
         private string nom;
 
+        public string Info { get => info; set => info = value; }
+        private string info;
+
         /// <summary>
         /// Getter et setter pour l'age
         /// </summary>
@@ -47,7 +52,7 @@ namespace ClassLibrary1
         public string Equipage { get => équipage; set => équipage = value; }
         private string équipage;
 
-        public string TypeHaki { get => typeHaki; set => TypeHaki = value; }
+        public string TypeHaki { get => typeHaki; set => typeHaki = value; }
         private string typeHaki;
     }
 }
