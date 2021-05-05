@@ -10,5 +10,13 @@ namespace ClassLibrary1
         private string description;
         public string SourceImageArc { get => sourceImageArc; set => sourceImageArc = value; }
         private string sourceImageArc;
+
+        private NomArc nom;
+        private LinkedList<Image> sourceImgArc;
+
+        public void AjouterImage(Image img)
+        {
+            sourceImgArc.AddLast(img);
+        }
     }
 }

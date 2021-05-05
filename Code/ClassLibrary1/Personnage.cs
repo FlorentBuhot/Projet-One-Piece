@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System.Collections.Generic;
+using ClassLibrary1;
 
 namespace ClassLibrary1
 {
@@ -20,8 +21,6 @@ namespace ClassLibrary1
             Prénom = prénom;
             Info = info;
             Age = age;
-            Equipage = équipage;
-            TypeHaki = typeHaki;
         }
 
         /// <summary>
@@ -45,13 +44,11 @@ namespace ClassLibrary1
         public int Age { get => age; set => age = value; }
         private int age;
 
-        /// <summary>
-        /// Getter et setter pour l'équipage
-        /// </summary>
-        public string Equipage { get => équipage; set => équipage = value; }
-        private string équipage;
+        private LinkedList<Image> sourceImgPerso;
 
-        public string TypeHaki { get => typeHaki; set => typeHaki = value; }
-        private string typeHaki;
+        public void AjouterImage(Image img)
+        {
+            sourceImgPerso.AddLast(img);
+        }
     }
 }
