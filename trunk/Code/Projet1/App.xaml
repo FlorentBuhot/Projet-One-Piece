@@ -26,6 +26,7 @@
             <Setter Property="Padding" Value="10,3,10,3"/>
             <Setter Property="MinWidth" Value="120"/>
             <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
         </Style>
     </Application.Resources>
 </Application>
