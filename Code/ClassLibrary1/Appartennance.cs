@@ -6,11 +6,9 @@ using System.Text;
 
 namespace ClassLibrary1
 {
-    class Appartennance
+    public class Appartennance
     {
-        private string description;
-        public string Description { get => description; set => description = value; }
-
-        private NomAppartennance nom;
+        public string Description { get; set; }
+        public string Nom { get; set; }
     }
 }
