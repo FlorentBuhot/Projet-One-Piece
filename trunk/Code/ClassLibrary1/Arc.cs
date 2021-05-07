@@ -8,15 +8,22 @@ namespace ClassLibrary1
     {
         public string Description { get => description; set => description = value; }
         private string description;
-        public string SourceImageArc { get => sourceImageArc; set => sourceImageArc = value; }
-        private string sourceImageArc;
 
+        public NomArc Nom { get => nom; set => nom = value; }
         private NomArc nom;
+
+        private string info;
+        public string Info { get => info; set => info = value; }
+
         private LinkedList<Image> sourceImgArc;
 
-        public void AjouterImage(Image img)
+        public void AjouterImageArc(Image img)
         {
             sourceImgArc.AddLast(img);
+        }
+        public void AjouterInfoArc(string info)
+        {
+            Info += info;
         }
     }
 }
