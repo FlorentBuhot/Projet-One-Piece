@@ -15,12 +15,14 @@ namespace ClassLibrary1
         /// <param name="prénom"> Le prénom du personnaga</param>
         /// <param name="age"> L'age du personnage</param>
         /// <param name="équpage"> Le nom de l'équipage du personnage</param>
-        public Personnage(string nom, string prénom, string info, int age, string équipage, string typeHaki)
+        public Personnage(string nom, string prénom, string info, int age, Haki haki, Image img)
         {
             Nom = nom;
             Prénom = prénom;
             Info = info;
             Age = age;
+            Haki = haki;
+            AjouterImagePerso(img);
         }
 
         /// <summary>
@@ -44,11 +46,27 @@ namespace ClassLibrary1
         public int Age { get => age; set => age = value; }
         private int age;
 
+        internal Haki Haki { get => haki; set => haki = value; }
+        private Haki haki;
+
         private LinkedList<Image> sourceImgPerso;
 
-        public void AjouterImage(Image img)
+        /// <summary>
+        /// Ajouter une image à la liste d'image du personnage
+        /// </summary>
+        /// <param name="img">L'image à ajouter</param>
+        public void AjouterImagePerso(Image img)
         {
             sourceImgPerso.AddLast(img);
+        }
+
+        /// <summary>
+        /// Ajouter une info au personnage
+        /// </summary>
+        /// <param name="info">L'info à ajouter</param>
+        public void AjouterInfoPerso(string info)
+        {
+            Info += info;
         }
     }
 }
