@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ClassLibrary1
 {
-    class Haki
+    public class Haki
     {
         public Haki(string nom, string description)
         {

@@ -4,26 +4,25 @@ using System.Text;
 
 namespace ClassLibrary1
 {
-    class Arc
+    public class Arc
     {
-        public string Description { get => description; set => description = value; }
-        private string description;
-
-        public NomArc Nom { get => nom; set => nom = value; }
-        private NomArc nom;
-
-        private string info;
-        public string Info { get => info; set => info = value; }
-
+        public string Description { get; set; }
+        public NomArc Nom { get; set; }
         private LinkedList<Image> sourceImgArc;
 
-        public void AjouterImageArc(Image img)
+        public Arc(string description, NomArc nom, Image img)
+        {
+            Description = description;
+            Nom = nom;
+            AjouterImage(img);
+        }
+        public void AjouterImage(Image img)
         {
             sourceImgArc.AddLast(img);
         }
-        public void AjouterInfoArc(string info)
+        public void AjouterDesc(string desc)
         {
-            Info += info;
+            Description += desc;
         }
     }
 }
