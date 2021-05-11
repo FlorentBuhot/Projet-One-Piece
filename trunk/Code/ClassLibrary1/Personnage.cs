@@ -14,9 +14,8 @@ namespace ClassLibrary1
         public int Age { get; set; }
         public Haki Haki { get; set; }
         public Appartennance Appart { get; set; }
-
-        private LinkedList<Image> sourceImgPerso;
-        private List<Arc> ListeArc;
+        public LinkedList<Image> SourceImgPerso { get; set; }
+        public List<Arc> ListeArc { get; set; }
 
 
         /// <summary>
@@ -30,16 +29,15 @@ namespace ClassLibrary1
         /// <param name="img">Une image du personnage</param>
         /// <param name="appartennance">L'appartenance du personnage</param>
         /// <param name="arcs">Listes des arcs du personnage</param>
-        public Personnage(string nom, string prénom, string info, int age, Haki haki, Image img, Appartennance appartennance, List<Arc> arcs)
+        public Personnage(string nom, string prénom, string info, int age, Haki haki, Appartennance appartennance, Image img, List<Arc> arcs)
         {
             Nom = nom;
             Prénom = prénom;
             Info = info;
             Age = age;
             Haki = haki;
-            AjouterImagePerso(img);
             Appart = appartennance;
-            List<Arc> ListeArc = new List<Arc>();
+            SourceImgPerso.AddLast(img);
             ListeArc = arcs;
         }
 
@@ -49,7 +47,7 @@ namespace ClassLibrary1
         /// <param name="img">L'image à ajouter</param>
         public void AjouterImagePerso(Image img)
         {
-            sourceImgPerso.AddLast(img);
+            SourceImgPerso.AddLast(img);
         }
 
         /// <summary>

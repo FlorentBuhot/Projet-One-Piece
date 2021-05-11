@@ -6,23 +6,23 @@ namespace ClassLibrary1
 {
     public class Arc
     {
-        public string Description { get; set; }
+        public string Info { get; set; }
         public NomArc Nom { get; set; }
-        private LinkedList<Image> sourceImgArc;
+        public LinkedList<Image> SourceImgArc { get; set; }
 
         public Arc(string description, NomArc nom, Image img)
         {
-            Description = description;
+            Info = description;
             Nom = nom;
             AjouterImage(img);
         }
         public void AjouterImage(Image img)
         {
-            sourceImgArc.AddLast(img);
+            SourceImgArc.AddLast(img);
         }
         public void AjouterDesc(string desc)
         {
-            Description += desc;
+            Info += desc;
         }
     }
 }
