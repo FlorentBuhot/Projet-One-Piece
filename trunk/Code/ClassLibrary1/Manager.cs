@@ -6,23 +6,28 @@ namespace ClassLibrary1
 {
     class Manager
     {
-        private HashSet<Personnage> listePreso;
-        private HashSet<Arc> listeArc;
+        public HashSet<Personnage> ListePreso { get; set; }
+        public HashSet<Arc> ListeArc { get; set; }
+        public Manager()
+        {
+            ListePreso = new HashSet<Personnage>();
+            ListeArc = new HashSet<Arc>();
+        }
         public void AjouterPerso(Personnage perso)
         {
-            if (listePreso.Contains(perso))
+            if (ListePreso.Contains(perso))
             {
                 return;
             }
             else
             {
-                listePreso.Add(perso);
+                ListePreso.Add(perso);
             }
         }
 
         public void AjouterImgPerso(Image img, Personnage perso)
         {
-            foreach(Personnage test in listePreso)
+            foreach(Personnage test in ListePreso)
             {
                 if (test.Equals(perso))
                 {
@@ -37,7 +42,7 @@ namespace ClassLibrary1
 
         public Personnage RechercherPerso(string nomPerso)
         {
-            foreach(Personnage test in listePreso)
+            foreach(Personnage test in ListePreso)
             {
                 if (test.Nom.Equals(nomPerso))
                 {
@@ -49,7 +54,7 @@ namespace ClassLibrary1
 
         public void AjouterImgArc(Image img, Arc arc)
         {
-            foreach (Arc test in listeArc)
+            foreach (Arc test in ListeArc)
             {
                 if (test.Equals(arc))
                 {
@@ -64,7 +69,7 @@ namespace ClassLibrary1
         }
         public Arc RechercherArc(string nomArc)
         {
-            foreach (Arc test in listeArc)
+            foreach (Arc test in ListeArc)
             {
                 if (test.Nom.Equals(nomArc))
                 {

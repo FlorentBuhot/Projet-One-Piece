@@ -10,5 +10,38 @@ namespace ClassLibrary1
     {
         public string Description { get; set; }
         public string Nom { get; set; }
+
+        public Appartennance(string nom, string description)
+        {
+            Nom = nom;
+            Description = description;
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (obj == null || !this.GetType().Equals(obj.GetType()))
+            {
+                return false;
+            }
+            Appartennance test = obj as Appartennance;
+            if (test.Description.Equals(this.Description) && test.Nom.Equals(this.Nom))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(Description, Nom);
+        }
+
+        public override string ToString()
+        {
+            return Nom + " " + Description;
+        }
     }
 }
