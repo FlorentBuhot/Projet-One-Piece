@@ -13,5 +13,29 @@ namespace ClassLibrary1
             Source = source;
             Description = description;
         }
+
+        public Image()
+        {
+            Source = "";
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (obj == null || !this.GetType().Equals(obj.GetType()))
+            {
+                return false;
+            }
+            Image test = obj as Image;
+            if (test.Source.Equals(this.Source))
+            {
+                return true;
+            }
+            else { return false; }
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(Source, Description);
+        }
     }
 }
