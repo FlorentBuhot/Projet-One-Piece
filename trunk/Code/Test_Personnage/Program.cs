@@ -10,11 +10,24 @@ namespace Test_Personnage
         {
             Console.WriteLine("Test de la classe personnage");
 
-            Personnage luffy = new Personnage("Monkey .D", "Luffy", "Capitaine des Mugiwara", 17, new Haki("Haki des rois", "pété de ouf") ,new Appartennance("Les Mugiwara", "Equipage Pirate"), new Image("sdgs", "Image simple"), new List<Arc> { new Arc(NomArc.Impel_Down, "Dans la prison", new Image("sgd", "gsgs"))});
+            testCreationPerso();
 
-            Console.WriteLine(luffy.ToString());
-            Console.WriteLine(luffy.Haki);
-            Console.WriteLine(luffy.Appart);
+
+            /// <summary>
+            /// Test de la création du personnage et de la redéfinition de ToStrong
+            /// </summary>
+            void testCreationPerso()
+            {
+                Personnage luffy = new Personnage("Monkey .D", "Luffy", "Capitaine des Mugiwara", 17, 
+                    new Haki("Haki des rois", "pété de ouf"), 
+                    new Appartennance("Les Mugiwara", "Equipage Pirate"), 
+                    new Image("sdgs", "Image simple"), 
+                    new List<Arc> { new Arc(NomArc.Impel_Down, "Dans la prison", new Image("sgd", "gsgs")) });
+
+                Console.WriteLine(luffy.ToString());
+                Console.WriteLine(luffy.Haki);
+                Console.WriteLine(luffy.Appart);
+            }
         }
     }
 }

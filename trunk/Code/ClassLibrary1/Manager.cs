@@ -1,10 +1,11 @@
-﻿using System;
+﻿using DocumentFormat.OpenXml.ExtendedProperties;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace ClassLibrary1
 {
-    class Manager
+    public class Manager
     {
         public HashSet<Personnage> ListePreso { get; set; }
         public HashSet<Arc> ListeArc { get; set; }
@@ -77,6 +78,16 @@ namespace ClassLibrary1
                 }
             }
             return null;
+        }
+
+        public int ArcSuivant(Arc arcActu)
+        {
+            return arcActu.GetHashCode() + 1;
+        }
+
+        public int ArcPrécédent(Arc arcActu)
+        {
+            return arcActu.GetHashCode() - 1;
         }
     }
 }
