@@ -7,10 +7,18 @@ namespace Test_Arc_Nom_Arc
     {
         static void Main(string[] args)
         {
-            Arc alabasta = new Arc(NomArc.Alabasta, "Dans la prison", new Image("sgd", "gsgs"));
+            testHashCode();
 
-            Console.WriteLine(NomArc.Alabasta.GetHashCode());
-            Console.WriteLine(alabasta.GetHashCode());
+            /// <summary>
+            /// Test du hashcode de l'arc et de nomArc pour qu'ils soient bien identiquz
+            /// </summary>
+            void testHashCode()
+            {
+                Arc alabasta = new Arc(NomArc.Alabasta, "Dans la prison", new Image("sgd", "gsgs"));
+
+                Console.WriteLine(NomArc.Alabasta.GetHashCode());
+                Console.WriteLine(alabasta.GetHashCode());
+            }
         }
     }
 }

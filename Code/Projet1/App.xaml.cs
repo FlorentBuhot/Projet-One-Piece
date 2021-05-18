@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using ClassLibrary1;
 
 namespace Projet1
 {
@@ -13,5 +14,6 @@ namespace Projet1
     /// </summary>
     public partial class App : Application
     {
+        public Manager MonManager { get; set; }
     }
 }
