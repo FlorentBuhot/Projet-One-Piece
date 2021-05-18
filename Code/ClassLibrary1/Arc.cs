@@ -37,7 +37,7 @@ namespace ClassLibrary1
 
         public override int GetHashCode()
         {
-            return HashCode.Combine(Info, Nom, SourceImgArc);
+            return Nom.GetHashCode();
         }
     }
 }
