@@ -18,6 +18,13 @@ namespace ClassLibrary1
             SourceImgArc.AddLast(img);
         }
 
+        public Arc(NomArc nom)
+        {
+            Info = null;
+            Nom = nom;
+            SourceImgArc = new LinkedList<Image>();
+        }
+
         public override bool Equals(object obj)
         {
             if(obj == null || !this.GetType().Equals(obj.GetType()))
@@ -35,9 +42,9 @@ namespace ClassLibrary1
             }
         }
 
-        public override int GetHashCode()
+        public override string ToString()
         {
-            return Nom.GetHashCode();
+            return Nom + " " + Info;
         }
     }
 }

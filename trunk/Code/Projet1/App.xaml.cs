@@ -14,6 +14,6 @@ namespace Projet1
     /// </summary>
     public partial class App : Application
     {
-        public Manager MonManager { get; set; }
+        public Manager MonManager { get; set; } = new Manager();
     }
 }

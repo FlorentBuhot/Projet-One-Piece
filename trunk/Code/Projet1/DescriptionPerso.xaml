@@ -40,29 +40,29 @@
             </Grid.RowDefinitions>
             <TextBlock Grid.Row="0" Text="Listes des arcs" VerticalAlignment="Center" HorizontalAlignment="Center"/>
             <ListBox Grid.Row="1" Background="#FFFFD4A1">
-                <WrapPanel>
-                    <Image Source="/Images/icone_one_piece.png" Width="40" Height="40" Margin="5"/>
-                    <TextBlock Text="arc 1 : je sais plus" Margin="5"/>
+                <WrapPanel MaxWidth="250">
+                    <Image Source="/Images/icone_one_piece.png" Width="40" Height="40" Margin="0,0,5,0"/>
+                    <TextBlock Text="arc 1 : je sais plus" Margin="0,5"/>
                 </WrapPanel>
-                <WrapPanel>
-                    <Image Source="/Images/icone_one_piece.png" Width="40" Height="40" Margin="5"/>
-                    <TextBlock Text="arc 1 : je sais plus" Margin="5"/>
+                <WrapPanel MaxWidth="250">
+                    <Image Source="/Images/icone_one_piece.png" Width="40" Height="40" Margin="0,0,5,0"/>
+                    <TextBlock Text="arc 1 : je sais plus" Margin="0,5"/>
                 </WrapPanel>
-                <WrapPanel>
-                    <Image Source="/Images/icone_one_piece.png" Width="40" Height="40" Margin="5"/>
-                    <TextBlock Text="arc 1 : je sais plus" Margin="5"/>
+                <WrapPanel MaxWidth="250">
+                    <Image Source="/Images/icone_one_piece.png" Width="40" Height="40" Margin="0,0,5,0"/>
+                    <TextBlock Text="arc 1 : je sais plus" Margin="0,5"/>
                 </WrapPanel>
-                <WrapPanel>
-                    <Image Source="/Images/icone_one_piece.png" Width="40" Height="40" Margin="5"/>
-                    <TextBlock Text="arc 1 : je sais plus" Margin="5"/>
+                <WrapPanel MaxWidth="250">
+                    <Image Source="/Images/icone_one_piece.png" Width="40" Height="40" Margin="0,0,5,0"/>
+                    <TextBlock Text="arc 1 : je sais plus" Margin="0,5"/>
                 </WrapPanel>
-                <WrapPanel>
-                    <Image Source="/Images/icone_one_piece.png" Width="40" Height="40" Margin="5"/>
-                    <TextBlock Text="arc 1 : je sais plus" Margin="5"/>
+                <WrapPanel MaxWidth="250">
+                    <Image Source="/Images/icone_one_piece.png" Width="40" Height="40" Margin="0,0,5,0"/>
+                    <TextBlock Text="arc 1 : je sais plus" Margin="0,5"/>
                 </WrapPanel>
-                <WrapPanel>
-                    <Image Source="/Images/icone_one_piece.png" Width="40" Height="40" Margin="5"/>
-                    <TextBlock Text="arc 1 : je sais plus" Margin="5"/>
+                <WrapPanel MaxWidth="250">
+                    <Image Source="/Images/icone_one_piece.png" Width="40" Height="40" Margin="0,0,5,0"/>
+                    <TextBlock Text="arc 1 : je sais plus" Margin="0,5"/>
                 </WrapPanel>
             </ListBox>
         </Grid>
@@ -122,14 +122,14 @@
         </Border>
         <DockPanel Grid.Row="2" Grid.ColumnSpan="2" Background="#FF304A53">
             <Menu VerticalAlignment="Center" HorizontalAlignment="Center" Background="#FF304A53">
-                <MenuItem Header="Ajouter Image" Click="ClickImagePerso" Style="{StaticResource menuBas}"/>
+                <Button Content="Ajouter Image" Click="ClickImagePerso" Style="{StaticResource menuBas}"/>
                 <Separator/>
                 <Separator/>
                 <Separator/>
                 <Separator/>
                 <Separator/>
                 <Separator/>
-                <MenuItem Header="Ajouter Information" Click="ClickInfoPerso" Style="{StaticResource menuBas}"/>
+                <Button Content="Ajouter Information" Click="ClickInfoPerso" Style="{StaticResource menuBas}"/>
             </Menu>
         </DockPanel>
     </Grid>

@@ -14,10 +14,11 @@ namespace Test_Arc_Nom_Arc
             /// </summary>
             void testHashCode()
             {
-                Arc alabasta = new Arc(NomArc.Alabasta, "Dans la prison", new Image("sgd", "gsgs"));
+                Arc alabasta = new Arc(NomArc.Alabasta, "Dans le désert", new Image("sgd", "gsgs"));
 
                 Console.WriteLine(NomArc.Alabasta.GetHashCode());
                 Console.WriteLine(alabasta.GetHashCode());
+                Console.WriteLine(alabasta.ToString());
             }
         }
     }

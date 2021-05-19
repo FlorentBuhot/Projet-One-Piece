@@ -34,11 +34,6 @@ namespace ClassLibrary1
             }
         }
 
-        public override int GetHashCode()
-        {
-            return HashCode.Combine(Description, Nom);
-        }
-
         public override string ToString()
         {
             return Nom + " " + Description;
