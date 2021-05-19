@@ -9,7 +9,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
-using System.Windows.Shapes;    
+using System.Windows.Shapes;
+using ClassLibrary1;
 
 namespace Projet1
 {
@@ -18,9 +19,14 @@ namespace Projet1
     /// </summary>
     public partial class AjouterInfoArc : UserControl
     {
+        Arc NouvelleDesc { get; set; }
+        Manager MonManager => (App.Current as App).MonManager;
         public AjouterInfoArc()
         {
             InitializeComponent();
+            NouvelleDesc = new Arc(NomArc.Laboon);
+            NouvelleDesc.Info = "hehe je suis la description";
+            DataContext = NouvelleDesc;
         }
         private void ClickAnnuler(object sender, RoutedEventArgs e)
         {
