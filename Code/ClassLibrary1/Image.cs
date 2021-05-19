@@ -16,7 +16,8 @@ namespace ClassLibrary1
 
         public Image()
         {
-            Source = "";
+            Source = null;
+            Description = null;
         }
 
         public override bool Equals(object obj)

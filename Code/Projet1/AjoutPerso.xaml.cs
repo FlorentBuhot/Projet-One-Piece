@@ -25,6 +25,7 @@ namespace Projet1
         {
             InitializeComponent();
             NouveauPerso = new Personnage();
+            NouveauPerso.Nom = "bonjour";
             DataContext = NouveauPerso;
         }
 

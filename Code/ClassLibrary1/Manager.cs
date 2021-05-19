@@ -7,12 +7,45 @@ namespace ClassLibrary1
 {
     public class Manager
     {
-        public HashSet<Personnage> ListePreso { get; set; }
-        public HashSet<Arc> ListeArc { get; set; }
+        public HashSet<Personnage> ListePreso { get; private set; }
+        public List<Arc> ListeArc { get; private set; }
+        
         public Manager()
         {
             ListePreso = new HashSet<Personnage>();
-            ListeArc = new HashSet<Arc>();
+            ListeArc = new List<Arc>();
+            ListeArc.Add(new Arc(NomArc.Colonel_Morgan));
+            ListeArc.Add(new Arc(NomArc.Baggy_le_Clown));
+            ListeArc.Add(new Arc(NomArc.Capitaine_Kuro));
+            ListeArc.Add(new Arc(NomArc.Baratie));
+            ListeArc.Add(new Arc(NomArc.Arlong));
+            ListeArc.Add(new Arc(NomArc.LogueTown));
+            ListeArc.Add(new Arc(NomArc.Laboon));
+            ListeArc.Add(new Arc(NomArc.Whiskey_Peak));
+            ListeArc.Add(new Arc(NomArc.Little_Garden));
+            ListeArc.Add(new Arc(NomArc.Royaume_de_Drum));
+            ListeArc.Add(new Arc(NomArc.Alabasta));
+            ListeArc.Add(new Arc(NomArc.Jaya));
+            ListeArc.Add(new Arc(NomArc.Skypiea));
+            ListeArc.Add(new Arc(NomArc.Davy_Back_Fight));
+            ListeArc.Add(new Arc(NomArc.Water_Seven));
+            ListeArc.Add(new Arc(NomArc.Enies_Lobby));
+            ListeArc.Add(new Arc(NomArc.Post_Enies_Lobby));
+            ListeArc.Add(new Arc(NomArc.Thriller_Bark));
+            ListeArc.Add(new Arc(NomArc.Archipel_Sabaody));
+            ListeArc.Add(new Arc(NomArc.Amazon_Lily));
+            ListeArc.Add(new Arc(NomArc.Impel_Down));
+            ListeArc.Add(new Arc(NomArc.Marineford));
+            ListeArc.Add(new Arc(NomArc.Post_Enies_Lobby));
+            ListeArc.Add(new Arc(NomArc.Retour_a_Sabaody));
+            ListeArc.Add(new Arc(NomArc.Hommes_Poissons));
+            ListeArc.Add(new Arc(NomArc.Punk_Hazard));
+            ListeArc.Add(new Arc(NomArc.Dressrosa));
+            ListeArc.Add(new Arc(NomArc.Mine_Argentée));
+            ListeArc.Add(new Arc(NomArc.Zou));
+            ListeArc.Add(new Arc(NomArc.Whole_Cake));
+            ListeArc.Add(new Arc(NomArc.Reverie));
+            ListeArc.Add(new Arc(NomArc.Wano_Kuni));
         }
         public void AjouterPerso(Personnage perso)
         {
@@ -80,14 +113,14 @@ namespace ClassLibrary1
             return null;
         }
 
-        public int ArcSuivant(Arc arcActu)
+        public Arc ArcSuivant(Arc arcActu)
         {
-            return arcActu.GetHashCode() + 1;
+            return ListeArc[ListeArc.IndexOf(arcActu)+1];
         }
 
-        public int ArcPrécédent(Arc arcActu)
+        public Arc ArcPrécédent(Arc arcActu)
         {
-            return arcActu.GetHashCode() - 1;
+            return ListeArc[ListeArc.IndexOf(arcActu)-1];
         }
     }
 }
