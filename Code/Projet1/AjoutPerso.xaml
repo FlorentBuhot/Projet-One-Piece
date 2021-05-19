@@ -49,7 +49,7 @@
                     </Border>
                     <Button Grid.Row="3" Content="Parcourir" Width="150" Height="25"></Button>
                     <TextBlock Grid.Row="4" Text="Nom du personnage" Style="{StaticResource textPreci}"/>
-                    <TextBox Grid.Row="5" Style="{StaticResource petitChamps}"></TextBox>
+                    <TextBox Grid.Row="5" Style="{StaticResource petitChamps}" Text="{Binding Nom}"></TextBox>
                 </Grid>
                 <Grid Grid.Column="1">
                     <Grid.RowDefinitions>
@@ -63,7 +63,7 @@
                     <TextBlock Text="Nom de l'équipage" Style="{StaticResource textPreci}"></TextBlock>
                     <TextBox Grid.Row="1" Style="{StaticResource petitChamps}"></TextBox>
                     <TextBlock Grid.Row="2" Text="Age" Style="{StaticResource textPreci}"></TextBlock>
-                    <TextBox Grid.Row="3" Style="{StaticResource petitChamps}"></TextBox>
+                    <TextBox Grid.Row="3" Style="{StaticResource petitChamps}" Text="{Binding Age}"></TextBox>
                     <TextBlock Grid.Row="4" Text="Type de haki" Style="{StaticResource textPreci}"></TextBlock>
                     <TextBox Grid.Row="5" Style="{StaticResource petitChamps}"></TextBox>
                 </Grid>
