@@ -18,6 +18,17 @@ namespace ClassLibrary1
         public LinkedList<Image> SourceImgPerso { get; set; }
         public List<Arc> ListeArc { get; set; }
 
+        public Personnage()
+        {
+            Nom = null;
+            Prénom = null;
+            Info = null;
+            Age = 0;
+            Haki = null;
+            Appart = null;
+            SourceImgPerso = new LinkedList<Image>();
+            ListeArc = new List<Arc>();
+        }
 
         /// <summary>
         /// constructeur du personnage
