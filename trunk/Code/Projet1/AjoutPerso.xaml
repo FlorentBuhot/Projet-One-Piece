@@ -45,9 +45,9 @@
                         <RowDefinition/>
                     </Grid.RowDefinitions>
                     <Border Grid.RowSpan="3" BorderBrush="Black" BorderThickness="1" Margin="20">
-                        <Image Source="Images/icone_one_piece.png"></Image>
+                        <Image x:Name="image_perso" Source="Images/icone_one_piece.png"></Image>
                     </Border>
-                    <Button Grid.Row="3" Content="Parcourir" Width="150" Height="25"></Button>
+                    <Button Grid.Row="3" Content="Parcourir" Click="Bouton_Parcourir" Width="150" Height="25"></Button>
                     <TextBlock Grid.Row="4" Text="Nom du personnage" Style="{StaticResource textPreci}"/>
                     <TextBox Grid.Row="5" Style="{StaticResource petitChamps}" Text="{Binding Nom}"></TextBox>
                 </Grid>
@@ -60,12 +60,12 @@
                         <RowDefinition></RowDefinition>
                         <RowDefinition></RowDefinition>
                     </Grid.RowDefinitions>
-                    <TextBlock Text="Nom de l'équipage" Style="{StaticResource textPreci}"></TextBlock>
-                    <TextBox Grid.Row="1" Style="{StaticResource petitChamps}"></TextBox>
+                    <TextBlock Text="Appartennance" Style="{StaticResource textPreci}"></TextBlock>
+                    <TextBox Grid.Row="1" Style="{StaticResource petitChamps}" Text="{Binding Appart.Nom}"></TextBox>
                     <TextBlock Grid.Row="2" Text="Age" Style="{StaticResource textPreci}"></TextBlock>
                     <TextBox Grid.Row="3" Style="{StaticResource petitChamps}" Text="{Binding Age}"></TextBox>
                     <TextBlock Grid.Row="4" Text="Type de haki" Style="{StaticResource textPreci}"></TextBlock>
-                    <TextBox Grid.Row="5" Style="{StaticResource petitChamps}"></TextBox>
+                    <TextBox Grid.Row="5" Style="{StaticResource petitChamps}" Text="{Binding Haki.Nom}"></TextBox>
                 </Grid>
                 <Grid Grid.Column="2" Margin="10">
                     <Grid.RowDefinitions>
@@ -120,7 +120,7 @@
                     <CheckBox Content="Wano Kuni" Grid.Column="2" Grid.Row="9"></CheckBox>
                 </Grid>
             </Grid>
-            <TextBox Grid.Row="1" BorderBrush="Black" BorderThickness="1" Text="Histoire du personnage" Margin="10"></TextBox>
+            <TextBox Grid.Row="1" BorderBrush="Black" BorderThickness="1" Text="{Binding Info}" Margin="10"></TextBox>
             <DockPanel Grid.Row="2" Grid.ColumnSpan="2" Background="#FF304A53">
                 <ContentControl x:Name="contentMenu">
                     <local:menuBas/>

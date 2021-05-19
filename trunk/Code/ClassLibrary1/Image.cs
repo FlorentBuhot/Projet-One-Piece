@@ -6,9 +6,9 @@ namespace ClassLibrary1
 {
     public class Image
     {
-        public string Source { get; set; }
+        public Uri Source { get; set; }
         public string Description { get; set; }
-        public Image(string source, string description)
+        public Image(Uri source, string description)
         {
             Source = source;
             Description = description;
