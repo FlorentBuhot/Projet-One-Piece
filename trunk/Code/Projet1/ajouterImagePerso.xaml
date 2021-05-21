@@ -17,9 +17,9 @@
             </Grid.RowDefinitions>
             <StackPanel Grid.Column="0">
             <Border BorderBrush="black" BorderThickness="1" Margin="50" MinHeight="150" MinWidth="200" Background="White">
-                <Image></Image>
+                <Image x:Name="image_perso1"></Image>
                 </Border>
-                <Button Content="Parcourir" Height="30" Width="180" HorizontalAlignment="Center" Margin="25"/>
+                <Button Content="Parcourir" Click="Bouton_Parcourir" Height="30" Width="180" HorizontalAlignment="Center" Margin="25"/>
             </StackPanel>
             <StackPanel Grid.Column="1">
                 <TextBlock DockPanel.Dock="top" TextWrapping="Wrap" Text="Description de l'image et explication" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="30"/>

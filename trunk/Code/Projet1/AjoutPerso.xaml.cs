@@ -29,6 +29,21 @@ namespace Projet1
             DataContext = NouveauPerso;
         }
 
+        private void Bouton_Parcourir(object sender, RoutedEventArgs e)
+        {
+            Microsoft.Win32.OpenFileDialog dialog = new Microsoft.Win32.OpenFileDialog();
+            dialog.InitialDirectory = @"C:\Utilisateurs";
+            dialog.FileName = "Image_Perso";
+            dialog.DefaultExt = ".jpg | .png | .gif";
+
+            bool? result = dialog.ShowDialog();
+
+            if(result == true)
+            {
+                string filename = dialog.FileName;
+                image_perso.Source = new BitmapImage(new Uri(filename, UriKind.Absolute));
+            }
+        }
         private void ClickAnnuler(object sender, RoutedEventArgs e)
         {
             
