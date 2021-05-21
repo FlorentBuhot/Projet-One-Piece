@@ -9,6 +9,10 @@
   <ItemGroup>
     <None Remove="Icones\rechBouttun.png" />
     <None Remove="icone_one_piece.png" />
+    <None Remove="ImagePerso\ancien_luffy.png" />
+    <None Remove="ImagePerso\gear4_luffy.png" />
+    <None Remove="ImagePerso\luffy_petit.png" />
+    <None Remove="ImagePerso\luffy_po_content.png" />
     <None Remove="Images\carte_one_piece3.png" />
     <None Remove="Images\icone_one_piece.png" />
   </ItemGroup>
@@ -27,6 +31,21 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="ImagePerso\ancien_luffy.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="ImagePerso\gear4_luffy.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="ImagePerso\luffy_petit.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="ImagePerso\luffy_po_content.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>

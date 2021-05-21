@@ -29,8 +29,19 @@
         </Grid.RowDefinitions>
         <Border BorderBrush="#FF304A53" BorderThickness="0,0,10,0">
             <StackPanel Grid.Row="0" DockPanel.Dock="Top">
-                <TextBlock Text="Monkey D. Luffy" HorizontalAlignment="Center" Margin="10"></TextBlock>
-                <TextBlock Text="Luffy est le personnage principal de One Piece" HorizontalAlignment="Center"></TextBlock>
+                <TextBlock HorizontalAlignment="Center" Margin="10">
+                    <Run Text="{Binding Nom}"></Run>
+                    <Run Text="{Binding Prénom}"></Run>
+                </TextBlock>
+                <TextBlock HorizontalAlignment="Center">
+                    <Run Text="Age :"></Run>
+                    <Run Text="{Binding Age}"></Run>
+                </TextBlock>
+                <TextBlock HorizontalAlignment="Center">
+                    <Run Text="Appartenance :"></Run>
+                    <Run Text="{Binding Appart.Nom}"></Run>
+                </TextBlock>
+                <TextBlock Text="{Binding Info}" HorizontalAlignment="Center"></TextBlock>
             </StackPanel>
         </Border>
         <Grid Grid.Row="0" Grid.Column="1" Margin="10">
@@ -80,11 +91,11 @@
             </Grid.RowDefinitions>
             <DockPanel Grid.Row="1" Grid.Column="0" Margin="10">
                 <Border Style="{StaticResource contImage}">
-                    <Image Source="Images\icone_one_piece.png"></Image>
+                    <Image Source="{Binding SourceimagePerso[0].source}"></Image>
                 </Border>
             </DockPanel>
             <DockPanel Grid.Row="2" Grid.Column="0">
-                <TextBlock Text="Chapeau de paille" Style="{StaticResource descImage}"/>
+                <TextBlock Text="{Binding SourceImagePerso[0].description}" Style="{StaticResource descImage}"/>
             </DockPanel>
             <DockPanel Grid.Row="1" Grid.Column="1" Margin="10">
                 <Border Style="{StaticResource contImage}">
