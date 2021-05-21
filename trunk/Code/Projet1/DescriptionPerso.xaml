@@ -28,21 +28,51 @@
             <RowDefinition Height="8*"/>
         </Grid.RowDefinitions>
         <Border BorderBrush="#FF304A53" BorderThickness="0,0,10,0">
-            <StackPanel Grid.Row="0" DockPanel.Dock="Top">
-                <TextBlock HorizontalAlignment="Center" Margin="10">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.4*"></RowDefinition>
+                    <RowDefinition Height="0.6*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <StackPanel Grid.Row="0" DockPanel.Dock="Top">
+                    <TextBlock FontWeight="Bold" TextDecorations="Underline" FontFamily="Arial Black" FontSize="20" HorizontalAlignment="Center" Margin="10">
                     <Run Text="{Binding Nom}"></Run>
                     <Run Text="{Binding Prénom}"></Run>
-                </TextBlock>
-                <TextBlock HorizontalAlignment="Center">
-                    <Run Text="Age :"></Run>
+                    </TextBlock>
+                    <TextBlock Margin="0,5,0,5" HorizontalAlignment="Center">
+                    <Run Text="Age :" TextDecorations="Underline"></Run>
                     <Run Text="{Binding Age}"></Run>
-                </TextBlock>
-                <TextBlock HorizontalAlignment="Center">
-                    <Run Text="Appartenance :"></Run>
+                    </TextBlock>
+                    <TextBlock Margin="0,5,0,5" HorizontalAlignment="Center">
+                    <Run Text="Appartenance :" TextDecorations="Underline"></Run>
                     <Run Text="{Binding Appart.Nom}"></Run>
-                </TextBlock>
-                <TextBlock Text="{Binding Info}" HorizontalAlignment="Center"></TextBlock>
-            </StackPanel>
+                    </TextBlock>
+                    <TextBlock Margin="0,5,0,5" Text="Haki :" TextDecorations="Underline" HorizontalAlignment="Center"></TextBlock>
+                    <TextBlock Margin="0,5,0,5" HorizontalAlignment="Center">                     
+                    <Border BorderBrush="#FF304A53" BorderThickness="2
+">
+                        <ListBox Background="#FFFFD4A1" ItemsSource="{Binding ListHaki}">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <WrapPanel>
+                                        <TextBlock>
+                                            <Run Text="{Binding Nom}"></Run>
+                                            <Run Text="("></Run>
+                                            <Run Text="{Binding Description}"></Run>
+                                            <Run Text=")"></Run>
+                                        </TextBlock>
+                                    </WrapPanel>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                    </Border>
+                    </TextBlock>
+                </StackPanel>
+                </ScrollViewer>
+                <ScrollViewer VerticalScrollBarVisibility="Auto" Grid.Row="1">
+                    <TextBlock TextWrapping="Wrap" Margin="10" Padding="10" TextAlignment="Center" Text="{Binding Info}"></TextBlock>
+                </ScrollViewer>
+            </Grid>
         </Border>
         <Grid Grid.Row="0" Grid.Column="1" Margin="10">
             <Grid.RowDefinitions>
@@ -50,86 +80,42 @@
                 <RowDefinition Height="90*"/>
             </Grid.RowDefinitions>
             <TextBlock Grid.Row="0" Text="Listes des arcs" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-            <ListBox Grid.Row="1" Background="#FFFFD4A1">
-                <WrapPanel MaxWidth="250">
-                    <Image Source="/Images/icone_one_piece.png" Width="40" Height="40" Margin="0,0,5,0"/>
-                    <TextBlock Text="arc 1 : je sais plus" Margin="0,5"/>
-                </WrapPanel>
-                <WrapPanel MaxWidth="250">
-                    <Image Source="/Images/icone_one_piece.png" Width="40" Height="40" Margin="0,0,5,0"/>
-                    <TextBlock Text="arc 1 : je sais plus" Margin="0,5"/>
-                </WrapPanel>
-                <WrapPanel MaxWidth="250">
-                    <Image Source="/Images/icone_one_piece.png" Width="40" Height="40" Margin="0,0,5,0"/>
-                    <TextBlock Text="arc 1 : je sais plus" Margin="0,5"/>
-                </WrapPanel>
-                <WrapPanel MaxWidth="250">
-                    <Image Source="/Images/icone_one_piece.png" Width="40" Height="40" Margin="0,0,5,0"/>
-                    <TextBlock Text="arc 1 : je sais plus" Margin="0,5"/>
-                </WrapPanel>
-                <WrapPanel MaxWidth="250">
-                    <Image Source="/Images/icone_one_piece.png" Width="40" Height="40" Margin="0,0,5,0"/>
-                    <TextBlock Text="arc 1 : je sais plus" Margin="0,5"/>
-                </WrapPanel>
-                <WrapPanel MaxWidth="250">
-                    <Image Source="/Images/icone_one_piece.png" Width="40" Height="40" Margin="0,0,5,0"/>
-                    <TextBlock Text="arc 1 : je sais plus" Margin="0,5"/>
-                </WrapPanel>
+            <ListBox Grid.Row="1" Background="#FFFFD4A1" ItemsSource="{Binding ListeArc}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <WrapPanel>
+                            <Border BorderBrush="Black" BorderThickness="2" Margin="0,0,10,0">
+                                <Image Source="{Binding ImgDeBase.Source}" MinHeight="40" MaxHeight="40" MinWidth="40" MaxWidth="40"></Image>
+                            </Border>
+                            <TextBlock Text="{Binding Nom}" TextAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                        </WrapPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+                <ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel></StackPanel>
+                    </ItemsPanelTemplate>
+                </ListBox.ItemsPanel>
             </ListBox>
         </Grid>
         <Border Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" BorderThickness="0,10,0,0" BorderBrush="#FF304A53">
-            <Grid Margin="10">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
-            <DockPanel Grid.Row="1" Grid.Column="0" Margin="10">
-                <Border Style="{StaticResource contImage}">
-                    <Image Source="{Binding SourceimagePerso[0].source}"></Image>
-                </Border>
-            </DockPanel>
-            <DockPanel Grid.Row="2" Grid.Column="0">
-                <TextBlock Text="{Binding SourceImagePerso[0].description}" Style="{StaticResource descImage}"/>
-            </DockPanel>
-            <DockPanel Grid.Row="1" Grid.Column="1" Margin="10">
-                <Border Style="{StaticResource contImage}">
-                    <Image Source="Images\icone_one_piece.png"></Image>
-                </Border>
-            </DockPanel>
-            <DockPanel Grid.Row="2" Grid.Column="1">
-                <TextBlock Text="Chapeau de paille" Style="{StaticResource descImage}"/>
-            </DockPanel>
-            <DockPanel Grid.Row="1" Grid.Column="2" Margin="10">
-                <Border Style="{StaticResource contImage}">
-                    <Image Source="Images\icone_one_piece.png" ></Image>
-                </Border>
-            </DockPanel>
-            <DockPanel Grid.Row="2" Grid.Column="2">
-                <TextBlock Text="Chapeau de paille" Style="{StaticResource descImage}"/>
-            </DockPanel>
-            <DockPanel Grid.Row="1" Grid.Column="3" Margin="10">
-                <Border Style="{StaticResource contImage}">
-                    <Image Source="Images\icone_one_piece.png"></Image>
-                </Border>
-            </DockPanel>
-            <DockPanel Grid.Row="2" Grid.Column="3">
-                <TextBlock Text="Chapeau de paille" Style="{StaticResource descImage}"/>
-            </DockPanel>
-            <DockPanel Grid.Row="1" Grid.Column="4" Margin="10">
-                <Border Style="{StaticResource contImage}">
-                    <Image Source="Images\icone_one_piece.png"></Image>
-                </Border>
-            </DockPanel>
-            <DockPanel Grid.Row="2" Grid.Column="4">
-                <TextBlock Text="Chapeau de paille" Style="{StaticResource descImage}"/>
-            </DockPanel>
-        </Grid>
+            <ListBox ItemsSource="{Binding SourceImgPerso}" Background="#FFFFD4A1" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <Border BorderBrush="Black" BorderThickness="2" Margin="20,20,20,10">
+                                <Image Source="{Binding Source}" MinHeight="40" MaxHeight="200" MinWidth="40" MaxWidth="200"></Image>
+                            </Border>
+                            <TextBlock Text="{Binding Description}" TextAlignment="Center"></TextBlock>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+                <ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel></WrapPanel>
+                    </ItemsPanelTemplate>
+                </ListBox.ItemsPanel>
+            </ListBox>
         </Border>
         <DockPanel Grid.Row="2" Grid.ColumnSpan="2" Background="#FF304A53">
             <Menu VerticalAlignment="Center" HorizontalAlignment="Center" Background="#FF304A53">

@@ -13,6 +13,7 @@
     <None Remove="ImagePerso\gear4_luffy.png" />
     <None Remove="ImagePerso\luffy_petit.png" />
     <None Remove="ImagePerso\luffy_po_content.png" />
+    <None Remove="ImagePerso\luffy_wano.png" />
     <None Remove="Images\carte_one_piece3.png" />
     <None Remove="Images\icone_one_piece.png" />
   </ItemGroup>
@@ -34,18 +35,21 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="ImagePerso\ancien_luffy.png">
+    <Content Include="ImagePerso\ancien_luffy.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="ImagePerso\gear4_luffy.png">
+    </Content>
+    <Content Include="ImagePerso\gear4_luffy.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="ImagePerso\luffy_petit.png">
+    </Content>
+    <Content Include="ImagePerso\luffy_petit.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="ImagePerso\luffy_po_content.png">
+    </Content>
+    <Content Include="ImagePerso\luffy_po_content.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
+    </Content>
+    <Content Include="ImagePerso\luffy_wano.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

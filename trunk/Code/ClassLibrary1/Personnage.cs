@@ -15,7 +15,7 @@ namespace ClassLibrary1
         public int Age { get; set; }
         public List<Haki> ListHaki { get; set; }
         public Appartennance Appart { get; set; }
-        public LinkedList<Image> SourceImgPerso { get; set; }
+        public List<Image> SourceImgPerso { get; set; }
         public List<Arc> ListeArc { get; set; }
 
         public Personnage()
@@ -26,7 +26,7 @@ namespace ClassLibrary1
             Age = 0;
             ListHaki = new List<Haki>();
             Appart = null;
-            SourceImgPerso = new LinkedList<Image>();
+            SourceImgPerso = new List<Image>();
             ListeArc = new List<Arc>();
         }
 
@@ -50,8 +50,8 @@ namespace ClassLibrary1
             ListHaki = new List<Haki>();
             ListHaki = hakis;
             Appart = appartennance;
-            SourceImgPerso = new LinkedList<Image>();
-            SourceImgPerso.AddLast(img);
+            SourceImgPerso = new List<Image>();
+            SourceImgPerso.Add(img);
             ListeArc = new List<Arc>();
             ListeArc = arcs;
         }
@@ -62,7 +62,7 @@ namespace ClassLibrary1
         /// <param name="img">L'image à ajouter</param>
         public void AjouterImagePerso(Image img)
         {
-            SourceImgPerso.AddLast(img);
+            SourceImgPerso.Add(img);
         }
 
         /// <summary>
