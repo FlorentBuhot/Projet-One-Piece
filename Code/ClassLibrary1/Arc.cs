@@ -8,6 +8,7 @@ namespace ClassLibrary1
     {
         public string Info { get; set; }
         public NomArc Nom { get; set; }
+        public ClassLibrary1.Image ImgDeBase { get; set; }
         public LinkedList<Image> SourceImgArc { get; set; }
 
         public Arc(NomArc nom, string description, Image img)
@@ -16,6 +17,7 @@ namespace ClassLibrary1
             Info = description;
             SourceImgArc = new LinkedList<Image>();
             SourceImgArc.AddLast(img);
+            ImgDeBase = img;
         }
 
         public Arc(NomArc nom)

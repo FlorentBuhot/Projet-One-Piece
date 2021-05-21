@@ -71,7 +71,7 @@ namespace ClassLibrary1
             {
                 if (test.Equals(perso))
                 {
-                    test.SourceImgPerso.AddLast(img);
+                    test.SourceImgPerso.Add(img);
                 }
             }
         }
