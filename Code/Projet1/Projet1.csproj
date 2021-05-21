@@ -9,10 +9,45 @@
   <ItemGroup>
     <None Remove="Icones\rechBouttun.png" />
     <None Remove="icone_one_piece.png" />
+    <None Remove="ImageArc\alabasta.png" />
+    <None Remove="ImageArc\amazon.png" />
+    <None Remove="ImageArc\arlong.png" />
+    <None Remove="ImageArc\baggy.png" />
+    <None Remove="ImageArc\baratie.png" />
+    <None Remove="ImageArc\davy.png" />
+    <None Remove="ImageArc\dressrosa.png" />
+    <None Remove="ImageArc\drum.png" />
+    <None Remove="ImageArc\enies.png" />
+    <None Remove="ImageArc\garden.png" />
+    <None Remove="ImageArc\hommes.png" />
+    <None Remove="ImageArc\impel.png" />
+    <None Remove="ImageArc\jaya.png" />
+    <None Remove="ImageArc\kuro.png" />
+    <None Remove="ImageArc\laboon.png" />
+    <None Remove="ImageArc\loguetown.png" />
+    <None Remove="ImageArc\marineford.png" />
+    <None Remove="ImageArc\mine.png" />
+    <None Remove="ImageArc\morgan.png" />
+    <None Remove="ImageArc\post_enies.png" />
+    <None Remove="ImageArc\post_marineford.png" />
+    <None Remove="ImageArc\punk.png" />
+    <None Remove="ImageArc\retour.png" />
+    <None Remove="ImageArc\reverie.png" />
+    <None Remove="ImageArc\sabaody.png" />
+    <None Remove="ImageArc\skypiea.png" />
+    <None Remove="ImageArc\thriller.png" />
+    <None Remove="ImageArc\wano.png" />
+    <None Remove="ImageArc\water.png" />
+    <None Remove="ImageArc\whiskey.png" />
+    <None Remove="ImageArc\whole.png" />
+    <None Remove="ImageArc\zou.png" />
     <None Remove="ImagePerso\ancien_luffy.png" />
     <None Remove="ImagePerso\gear4_luffy.png" />
+    <None Remove="ImagePerso\luffy_capitaine.jpg" />
+    <None Remove="ImagePerso\luffy_drame.png" />
     <None Remove="ImagePerso\luffy_petit.png" />
     <None Remove="ImagePerso\luffy_po_content.png" />
+    <None Remove="ImagePerso\luffy_sourire.png" />
     <None Remove="ImagePerso\luffy_wano.png" />
     <None Remove="Images\carte_one_piece3.png" />
     <None Remove="Images\icone_one_piece.png" />
@@ -20,6 +55,99 @@
 
   <ItemGroup>
     <Content Include="Icones\rechBouttun.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImageArc\alabasta.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImageArc\amazon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImageArc\arlong.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImageArc\baggy.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImageArc\baratie.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImageArc\davy.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImageArc\dressrosa.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImageArc\enies.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImageArc\garden.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImageArc\hommes.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImageArc\impel.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImageArc\jaya.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImageArc\kuro.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImageArc\laboon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImageArc\mine.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImageArc\morgan.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImageArc\post_enies.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImageArc\post_marineford.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImageArc\punk.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImageArc\retour.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImageArc\reverie.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImageArc\sabaody.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImageArc\skypiea.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImageArc\thriller.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImageArc\wano.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImageArc\whiskey.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImageArc\whole.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImageArc\zou.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagePerso\Luffy\luffy_capitaine.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagePerso\Luffy\luffy_drame.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImagePerso\Luffy\luffy_sourire.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\carte_one_piece3.png">
@@ -35,19 +163,43 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="ImagePerso\ancien_luffy.png">
+    <Content Include="ImagePerso\Luffy\ancien_luffy.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ImagePerso\gear4_luffy.png">
+    <Content Include="ImagePerso\Luffy\gear4_luffy.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ImagePerso\luffy_petit.png">
+    <Content Include="ImagePerso\Luffy\luffy_petit.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ImagePerso\luffy_po_content.png">
+    <Content Include="ImagePerso\Luffy\luffy_po_content.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ImagePerso\luffy_wano.png">
+    <Content Include="ImagePerso\Luffy\luffy_wano.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="ImageArc\drum.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="ImageArc\loguetown.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="ImageArc\marineford.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="ImageArc\water.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
