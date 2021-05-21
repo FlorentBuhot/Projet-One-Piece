@@ -43,16 +43,13 @@ namespace Projet1
             Appartennance LuffyAppart = new Appartennance("Pirate au Chapeau de Paille", "2quipage trop fort");
             Luffy.Appart = LuffyAppart;
 
-            ClassLibrary1.Image Image1 = new ClassLibrary1.Image("ImagePerso/ancien_luffy.png", "Luffy au début");
-            ClassLibrary1.Image Image2 = new ClassLibrary1.Image("ImagePerso/gear4_luffy.png", "Luffy au début");
-            ClassLibrary1.Image Image3 = new ClassLibrary1.Image("ImagePerso/luffy_petit.png", "Luffy au début");
-            ClassLibrary1.Image Image4 = new ClassLibrary1.Image("ImagePerso/luffy_po_content.png", "Luffy au début");
-            ClassLibrary1.Image Image5 = new ClassLibrary1.Image("ImagePerso/luffy_wano.png", "Luffy au début");
-            ClassLibrary1.Image Image6 = new ClassLibrary1.Image("ImagePerso/luffy_wano.png", "Luffy au début");
-            ClassLibrary1.Image Image7 = new ClassLibrary1.Image("ImagePerso/luffy_wano.png", "Luffy au début");
-            ClassLibrary1.Image Image8 = new ClassLibrary1.Image("ImagePerso/luffy_wano.png", "Luffy au début");
-            ClassLibrary1.Image Image9 = new ClassLibrary1.Image("ImagePerso/luffy_wano.png", "Luffy au début");
-            ClassLibrary1.Image Image10 = new ClassLibrary1.Image("ImagePerso/luffy_wano.png", "Luffy au début");
+            ClassLibrary1.Image Image1 = new ClassLibrary1.Image("ImagePerso/Luffy/ancien_luffy.png", "Luffy a Sabaody");
+            ClassLibrary1.Image Image2 = new ClassLibrary1.Image("ImagePerso/Luffy/gear4_luffy.png", "Le fameux Gear 4");
+            ClassLibrary1.Image Image3 = new ClassLibrary1.Image("ImagePerso/Luffy/luffy_petit.png", "Luffy enfant");
+            ClassLibrary1.Image Image4 = new ClassLibrary1.Image("ImagePerso/Luffy/luffy_po_content.png", "Luffy énervé");
+            ClassLibrary1.Image Image5 = new ClassLibrary1.Image("ImagePerso/Luffy/luffy_drame.png", "Luffy avant la tempete");
+            ClassLibrary1.Image Image6 = new ClassLibrary1.Image("ImagePerso/Luffy/luffy_capitaine.jpg", "Luffy le capitaine");
+            ClassLibrary1.Image Image7 = new ClassLibrary1.Image("ImagePerso/Luffy/luffy_sourire.png", "Luffy heureux");
 
             Luffy.SourceImgPerso.Add(Image1);
             Luffy.SourceImgPerso.Add(Image2);
@@ -61,22 +58,75 @@ namespace Projet1
             Luffy.SourceImgPerso.Add(Image5);
             Luffy.SourceImgPerso.Add(Image6);
             Luffy.SourceImgPerso.Add(Image7);
-            Luffy.SourceImgPerso.Add(Image8);
-            Luffy.SourceImgPerso.Add(Image9);
-            Luffy.SourceImgPerso.Add(Image10);
 
-            Arc Arc1 = new Arc(NomArc.Alabasta, "hgquf", new ClassLibrary1.Image("ImagePerso/luffy_wano.png", "Luffy au début"));
+
+            Arc Arc1 = new Arc(NomArc.Colonel_Morgan, "Début", new ClassLibrary1.Image("ImageArc/morgan.png", "Luffy au début"));
             Luffy.ListeArc.Add(Arc1);
-            Arc Arc2 = new Arc(NomArc.Alabasta, "hgquf", new ClassLibrary1.Image("ImagePerso/luffy_wano.png", "Luffy au début"));
+            Arc Arc2 = new Arc(NomArc.Baggy_le_Clown, "hgquf", new ClassLibrary1.Image("ImageArc/baggy.png", "Luffy au début"));
             Luffy.ListeArc.Add(Arc2);
-            Arc Arc3 = new Arc(NomArc.Alabasta, "hgquf", new ClassLibrary1.Image("ImagePerso/luffy_wano.png", "Luffy au début"));
+            Arc Arc3 = new Arc(NomArc.Capitaine_Kuro, "hgquf", new ClassLibrary1.Image("ImageArc/kuro.png", "Luffy au début"));
             Luffy.ListeArc.Add(Arc3);
-            Arc Arc4 = new Arc(NomArc.Alabasta, "hgquf", new ClassLibrary1.Image("ImagePerso/luffy_wano.png", "Luffy au début"));
+            Arc Arc4 = new Arc(NomArc.Baratie, "hgquf", new ClassLibrary1.Image("ImageArc/baratie.png", "Luffy au début"));
             Luffy.ListeArc.Add(Arc4);
-            Arc Arc5 = new Arc(NomArc.Alabasta, "hgquf", new ClassLibrary1.Image("ImagePerso/luffy_wano.png", "Luffy au début"));
+            Arc Arc5 = new Arc(NomArc.Arlong, "hgquf", new ClassLibrary1.Image("ImageArc/arlong.png", "Luffy au début"));
             Luffy.ListeArc.Add(Arc5);
-            Arc Arc6 = new Arc(NomArc.Alabasta, "hgquf", new ClassLibrary1.Image("ImagePerso/luffy_wano.png", "Luffy au début"));
+            Arc Arc6 = new Arc(NomArc.LogueTown, "hgquf", new ClassLibrary1.Image("ImageArc/loguetown.png", "Luffy au début"));
             Luffy.ListeArc.Add(Arc6);
+            Arc Arc7 = new Arc(NomArc.Laboon, "hgquf", new ClassLibrary1.Image("ImageArc/laboon.png", "Luffy au début"));
+            Luffy.ListeArc.Add(Arc7);
+            Arc Arc8 = new Arc(NomArc.Whiskey_Peak, "hgquf", new ClassLibrary1.Image("ImageArc/whiskey.png", "Luffy au début"));
+            Luffy.ListeArc.Add(Arc8);
+            Arc Arc9 = new Arc(NomArc.Little_Garden, "hgquf", new ClassLibrary1.Image("ImageArc/garden.png", "Luffy au début"));
+            Luffy.ListeArc.Add(Arc9);
+            Arc Arc10 = new Arc(NomArc.Royaume_de_Drum, "hgquf", new ClassLibrary1.Image("ImageArc/drum.png", "Luffy au début"));
+            Luffy.ListeArc.Add(Arc10);
+            Arc Arc11 = new Arc(NomArc.Alabasta, "hgquf", new ClassLibrary1.Image("ImageArc/alabasta.png", "Luffy au début"));
+            Luffy.ListeArc.Add(Arc11);
+            Arc Arc12 = new Arc(NomArc.Jaya, "hgquf", new ClassLibrary1.Image("ImageArc/jaya.png", "Luffy au début"));
+            Luffy.ListeArc.Add(Arc12);
+            Arc Arc13 = new Arc(NomArc.Skypiea, "hgquf", new ClassLibrary1.Image("ImageArc/skypiea.png", "Luffy au début"));
+            Luffy.ListeArc.Add(Arc13);
+            Arc Arc14 = new Arc(NomArc.Davy_Back_Fight, "hgquf", new ClassLibrary1.Image("ImageArc/davy.png", "Luffy au début"));
+            Luffy.ListeArc.Add(Arc14);
+            Arc Arc15 = new Arc(NomArc.Water_Seven, "hgquf", new ClassLibrary1.Image("ImageArc/water.png", "Luffy au début"));
+            Luffy.ListeArc.Add(Arc15);
+            Arc Arc16 = new Arc(NomArc.Enies_Lobby, "hgquf", new ClassLibrary1.Image("ImageArc/enies.png", "Luffy au début"));
+            Luffy.ListeArc.Add(Arc16);
+            Arc Arc17 = new Arc(NomArc.Post_Enies_Lobby, "hgquf", new ClassLibrary1.Image("ImageArc/post_enies.png", "Luffy au début"));
+            Luffy.ListeArc.Add(Arc17);
+            Arc Arc18 = new Arc(NomArc.Thriller_Bark, "hgquf", new ClassLibrary1.Image("ImageArc/thriller.png", "Luffy au début"));
+            Luffy.ListeArc.Add(Arc18);
+            Arc Arc19 = new Arc(NomArc.Archipel_Sabaody, "hgquf", new ClassLibrary1.Image("ImageArc/sabaody.png", "Luffy au début"));
+            Luffy.ListeArc.Add(Arc19);
+            Arc Arc20 = new Arc(NomArc.Amazon_Lily, "hgquf", new ClassLibrary1.Image("ImageArc/amazon.png", "Luffy au début"));
+            Luffy.ListeArc.Add(Arc20);
+            Arc Arc21 = new Arc(NomArc.Impel_Down, "hgquf", new ClassLibrary1.Image("ImageArc/impel.png", "Luffy au début"));
+            Luffy.ListeArc.Add(Arc21);
+            Arc Arc22 = new Arc(NomArc.Marineford, "hgquf", new ClassLibrary1.Image("ImageArc/marineford.png", "Luffy au début"));
+            Luffy.ListeArc.Add(Arc22);
+            Arc Arc23 = new Arc(NomArc.Post_Marineford, "hgquf", new ClassLibrary1.Image("ImageArc/post_marineford.png", "Luffy au début"));
+            Luffy.ListeArc.Add(Arc23);
+            Arc Arc24 = new Arc(NomArc.Retour_a_Sabaody, "hgquf", new ClassLibrary1.Image("ImageArc/retour.png", "Luffy au début"));
+            Luffy.ListeArc.Add(Arc24);
+            Arc Arc25 = new Arc(NomArc.Hommes_Poissons, "hgquf", new ClassLibrary1.Image("ImageArc/hommes.png", "Luffy au début"));
+            Luffy.ListeArc.Add(Arc25);
+            Arc Arc26 = new Arc(NomArc.Punk_Hazard, "hgquf", new ClassLibrary1.Image("ImageArc/punk.png", "Luffy au début"));
+            Luffy.ListeArc.Add(Arc26);
+            Arc Arc27 = new Arc(NomArc.Dressrosa, "hgquf", new ClassLibrary1.Image("ImageArc/dressrosa.png", "Luffy au début"));
+            Luffy.ListeArc.Add(Arc27);
+            Arc Arc28 = new Arc(NomArc.Mine_Argentée, "hgquf", new ClassLibrary1.Image("ImageArc/mine.png", "Luffy au début"));
+            Luffy.ListeArc.Add(Arc28);
+            Arc Arc29 = new Arc(NomArc.Zou, "hgquf", new ClassLibrary1.Image("ImageArc/zou.png", "Luffy au début"));
+            Luffy.ListeArc.Add(Arc29);
+            Arc Arc30 = new Arc(NomArc.Whole_Cake, "hgquf", new ClassLibrary1.Image("ImageArc/whole.png", "Luffy au début"));
+            Luffy.ListeArc.Add(Arc30);
+            Arc Arc31 = new Arc(NomArc.Reverie, "hgquf", new ClassLibrary1.Image("ImageArc/reverie.png", "Luffy au début"));
+            Luffy.ListeArc.Add(Arc31);
+            Arc Arc32 = new Arc(NomArc.Wano_Kuni, "hgquf", new ClassLibrary1.Image("ImageArc/wano.png", "Luffy au début"));
+            Luffy.ListeArc.Add(Arc32);
+
+
+
 
             DataContext = Luffy;
         }
