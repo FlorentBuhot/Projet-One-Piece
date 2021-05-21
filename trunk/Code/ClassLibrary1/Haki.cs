@@ -6,10 +6,10 @@ namespace ClassLibrary1
 {
     public class Haki
     {
-        public string Nom { get; set; }
+        public NomHaki Nom { get; set; }
         public string Description { get; set; }
 
-        public Haki(string nom, string description)
+        public Haki(NomHaki nom, string description)
         {
             Nom = nom;
             Description = description;
@@ -22,17 +22,14 @@ namespace ClassLibrary1
                 return false;
             }
             Haki test = obj as Haki;
-            if(test.Nom.Equals(this.Nom) && test.Description.Equals(this.Description))
+            if(test.Nom.Equals(this.Nom))
             {
                 return true;
             }
             else { return false; }
         }
 
-        public override int GetHashCode()
-        {
-            return HashCode.Combine(Nom, Description);
-        }
+
 
         public override string ToString()
         {
