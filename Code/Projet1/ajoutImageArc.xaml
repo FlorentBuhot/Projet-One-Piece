@@ -21,13 +21,13 @@
             </Grid.RowDefinitions>
             <StackPanel Grid.Column="0">
                 <Border BorderBrush="black" BorderThickness="1" Margin="50" MinHeight="150" MinWidth="200" Background="White">
-                    <Image></Image>
+                    <Image x:Name="image_arc"></Image>
                 </Border>
-                <Button Content="Parcourir" MinHeight="30" MinWidth="180" HorizontalAlignment="Center" Margin="30"/>
+                <Button Content="Parcourir" Click="Bouton_Parcourir" MinHeight="30" MinWidth="180" HorizontalAlignment="Center" Margin="30"/>
             </StackPanel>
             <StackPanel Grid.Column="1">
                 <TextBlock DockPanel.Dock="top" TextWrapping="Wrap" Text="Description de l'image et explication" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="30"/>
-                <TextBox DockPanel.Dock="Bottom" MinHeight="200" Margin="30"/>
+                <TextBox DockPanel.Dock="Bottom" Text="{Binding Description}" MinHeight="200" Margin="30"/>
             </StackPanel>
             <DockPanel Grid.Row="1" Grid.ColumnSpan="2" Background="#FF304A53">
                 <ContentControl x:Name="contentMenu">
