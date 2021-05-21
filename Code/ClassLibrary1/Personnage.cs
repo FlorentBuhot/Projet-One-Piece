@@ -13,7 +13,7 @@ namespace ClassLibrary1
         public string Nom { get; set; }
         public string Info { get; set; }
         public int Age { get; set; }
-        public Haki Haki { get; set; }
+        public List<Haki> ListHaki { get; set; }
         public Appartennance Appart { get; set; }
         public LinkedList<Image> SourceImgPerso { get; set; }
         public List<Arc> ListeArc { get; set; }
@@ -24,7 +24,7 @@ namespace ClassLibrary1
             Prénom = null;
             Info = null;
             Age = 0;
-            Haki = null;
+            ListHaki = new List<Haki>();
             Appart = null;
             SourceImgPerso = new LinkedList<Image>();
             ListeArc = new List<Arc>();
@@ -41,13 +41,14 @@ namespace ClassLibrary1
         /// <param name="appartennance">l'appartenance du personnage</param>
         /// <param name="img">une image du personnage</param>
         /// <param name="arcs">list des arcs dans lequel le personnage apparait</param>
-        public Personnage(string nom, string prénom, string info, int age, Haki haki, Appartennance appartennance, Image img, List<Arc> arcs)
+        public Personnage(string nom, string prénom, string info, int age, List<Haki> hakis, Appartennance appartennance, Image img, List<Arc> arcs)
         {
             Nom = nom;
             Prénom = prénom;
             Info = info;
             Age = age;
-            Haki = haki;
+            ListHaki = new List<Haki>();
+            ListHaki = hakis;
             Appart = appartennance;
             SourceImgPerso = new LinkedList<Image>();
             SourceImgPerso.AddLast(img);
@@ -88,7 +89,7 @@ namespace ClassLibrary1
             if (test.Nom.Equals(this.Nom) &&
                 test.Prénom.Equals(this.Prénom) &&
                 test.Info.Equals(this.Info) && test.Age.Equals(this.Age) &&
-                test.Haki.Equals(this.Haki) && test.Appart.Equals(this.Appart) &&
+                test.ListHaki.Equals(this.ListHaki) && test.Appart.Equals(this.Appart) &&
                 test.SourceImgPerso.Equals(this.SourceImgPerso) &&
                 test.ListeArc.Equals(this.ListeArc))
             {
@@ -116,7 +117,7 @@ namespace ClassLibrary1
         /// <returns></returns>
         public override int GetHashCode()
         {
-            return HashCode.Combine(Prénom, Nom, Info, Age, Haki, Appart, SourceImgPerso, ListeArc);
+            return HashCode.Combine(Prénom, Nom, Info, Age, ListHaki, Appart, SourceImgPerso, ListeArc);
         }
     }
 }

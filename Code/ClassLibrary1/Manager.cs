@@ -9,6 +9,7 @@ namespace ClassLibrary1
     {
         public HashSet<Personnage> ListePreso { get; private set; }
         public List<Arc> ListeArc { get; private set; }
+        public List<Haki> Hakis { get; private set; }
         
         public Manager()
         {
@@ -46,6 +47,11 @@ namespace ClassLibrary1
             ListeArc.Add(new Arc(NomArc.Whole_Cake));
             ListeArc.Add(new Arc(NomArc.Reverie));
             ListeArc.Add(new Arc(NomArc.Wano_Kuni));
+
+            List<Haki> Hakis = new List<Haki>();
+            Hakis.Add(new Haki(NomHaki.Haki_des_rois, "Pété de ouf"));
+            Hakis.Add(new Haki(NomHaki.Haki_de_perception, "Bonne perception"));
+            Hakis.Add(new Haki(NomHaki.Haki_du_renforcement, "Permet de se renforcé"));
         }
         public void AjouterPerso(Personnage perso)
         {

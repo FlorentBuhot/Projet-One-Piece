@@ -18,14 +18,16 @@ namespace Test_Personnage
             /// </summary>
             void testCreationPerso()
             {
-                Personnage luffy = new Personnage("Monkey .D", "Luffy", "Capitaine des Mugiwara", 17, 
-                    new Haki("Haki des rois", "pété de ouf"), 
+                Manager monManager = new Manager();
+                Personnage luffy = new Personnage("Monkey .D", "Luffy", "Capitaine des Mugiwara", 17,
+                    new List<Haki> { new Haki(NomHaki.Haki_des_rois, "pété de ouf"), 
+                                     new Haki(NomHaki.Haki_de_perception, "Perceptionne mieux"), 
+                                     new Haki(NomHaki.Haki_du_renforcement, "Permet de se renforcer")}, 
                     new Appartennance("Les Mugiwara", "Equipage Pirate"), 
                     new Image("sdgs", "Image simple"), 
                     new List<Arc> { new Arc(NomArc.Impel_Down, "Dans la prison", new Image("sgd", "gsgs")) });
 
                 Console.WriteLine(luffy.ToString());
-                Console.WriteLine(luffy.Haki);
                 Console.WriteLine(luffy.Appart);
             }
         }

@@ -53,19 +53,27 @@
                 </Grid>
                 <Grid Grid.Column="1">
                     <Grid.RowDefinitions>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
+                        <RowDefinition Height="0.5*"></RowDefinition>
+                        <RowDefinition Height="0.5*"></RowDefinition>
+                        <RowDefinition Height="0.5*"></RowDefinition>
+                        <RowDefinition Height="0.5*"></RowDefinition>
+                        <RowDefinition Height="0.5*"></RowDefinition>
+                        <RowDefinition Height="0.5*"></RowDefinition>
+                        <RowDefinition Height="0.5*"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
                     </Grid.RowDefinitions>
                     <TextBlock Text="Appartennance" Style="{StaticResource textPreci}"></TextBlock>
                     <TextBox Grid.Row="1" Style="{StaticResource petitChamps}" Text="{Binding Appart.Nom}"></TextBox>
-                    <TextBlock Grid.Row="2" Text="Age" Style="{StaticResource textPreci}"></TextBlock>
-                    <TextBox Grid.Row="3" Style="{StaticResource petitChamps}" Text="{Binding Age}"></TextBox>
-                    <TextBlock Grid.Row="4" Text="Type de haki" Style="{StaticResource textPreci}"></TextBlock>
-                    <TextBox Grid.Row="5" Style="{StaticResource petitChamps}" Text="{Binding Haki.Nom}"></TextBox>
+                    <TextBlock Grid.Row="2" Text="Description ppartennance" Style="{StaticResource textPreci}"></TextBlock>
+                    <TextBox Grid.Row="3" Style="{StaticResource petitChamps}" Text="{Binding Appart.Descritpion}"></TextBox>
+                    <TextBlock Grid.Row="4" Text="Age" Style="{StaticResource textPreci}"></TextBlock>
+                    <TextBox Grid.Row="5" Style="{StaticResource petitChamps}" Text="{Binding Age}"></TextBox>
+                    <TextBlock Grid.Row="6" Text="Type de haki" Style="{StaticResource textPreci}"></TextBlock>
+                    <ListBox Grid.Row="7" Background="#FFF7CD9B">
+                        <CheckBox Content="Haki des Rois" MinWidth="150" HorizontalAlignment="Center"></CheckBox>
+                        <CheckBox Content="Haki de perception" MinWidth="150" HorizontalAlignment="Center" Grid.Row="1"></CheckBox>
+                        <CheckBox Content="Haki du renforcement" MinWidth="150" HorizontalAlignment="Center" Grid.Row="2"></CheckBox>
+                    </ListBox>
                 </Grid>
                 <Grid Grid.Column="2" Margin="10">
                     <Grid.RowDefinitions>
