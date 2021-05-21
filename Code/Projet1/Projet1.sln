@@ -11,7 +11,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{7F67949B-8
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test_Personnage", "..\Test_Personnage\Test_Personnage.csproj", "{D4EB76BC-B2AD-48EF-9049-0B87668B3C32}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_Arc+Nom_Arc", "..\Test_Arc+Nom_Arc\Test_Arc+Nom_Arc.csproj", "{AC122B34-6286-4A6E-A2B0-38408B839F2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test_Arc+Nom_Arc", "..\Test_Arc+Nom_Arc\Test_Arc+Nom_Arc.csproj", "{AC122B34-6286-4A6E-A2B0-38408B839F2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitsTests", "..\UnitsTests\UnitsTests.csproj", "{291046EF-F029-49CE-90F7-A6023AA85997}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{AC122B34-6286-4A6E-A2B0-38408B839F2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC122B34-6286-4A6E-A2B0-38408B839F2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC122B34-6286-4A6E-A2B0-38408B839F2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{291046EF-F029-49CE-90F7-A6023AA85997}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{291046EF-F029-49CE-90F7-A6023AA85997}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{291046EF-F029-49CE-90F7-A6023AA85997}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{291046EF-F029-49CE-90F7-A6023AA85997}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -42,6 +48,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{D4EB76BC-B2AD-48EF-9049-0B87668B3C32} = {7F67949B-8BEA-419E-92FA-F488B553DBE9}
 		{AC122B34-6286-4A6E-A2B0-38408B839F2A} = {7F67949B-8BEA-419E-92FA-F488B553DBE9}
+		{291046EF-F029-49CE-90F7-A6023AA85997} = {7F67949B-8BEA-419E-92FA-F488B553DBE9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {54508853-C59A-4EE1-9DCA-0F59BCF449E0}
