@@ -25,7 +25,7 @@ namespace Projet1
         }
         private void ClickAnnuler(object sender, RoutedEventArgs e)
         {
-            Navigator.NavigateTo(Navigator.PART_AJT_IMG_PERSO);
+            
         }
 
         private void ClickAjouter(object sender, RoutedEventArgs e)

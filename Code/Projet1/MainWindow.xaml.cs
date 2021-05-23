@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace Projet1
 {
     /// <summary>
@@ -24,16 +25,17 @@ namespace Projet1
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = (App.Current as App).Navigator;
         }
 
         private void Clique_accueil(object sender, RoutedEventArgs e)
         {
-            content.Content = new Accueil();
+            (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.ACCUEIL;
         }
 
         private void Clique_ajt_perso(object sender, RoutedEventArgs e)
         {
-            content.Content = new AjoutPerso();
+            (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.PERSONNAGE;
         }
 
         public ContentControl GetContent()
