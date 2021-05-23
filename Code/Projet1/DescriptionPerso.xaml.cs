@@ -20,10 +20,9 @@ namespace Projet1
     public partial class DescriptionPerso : UserControl
     {
         Manager MonManager => (App.Current as App).MonManager;
+        public Navigator Navigator => (App.Current as App).Navigator;
         Personnage Luffy { get; set; }
-        List<Haki> LuffyHaki { get; set; }
-        Haki HakiLuf { get; set; }
-        Appartennance LuffyAppart { get; set; }
+        
         public DescriptionPerso()
         {
             InitializeComponent();
@@ -132,7 +131,7 @@ namespace Projet1
         }
         private void ClickImagePerso(object sender, RoutedEventArgs e)
         {
-
+            Navigator.NavigateTo(Navigator.PART_AJT_IMG_PERSO);
         }
         private void ClickInfoPerso(object sender, RoutedEventArgs e)
         {

@@ -20,6 +20,7 @@ namespace Projet1
     public partial class AjoutPerso : UserControl
     {
         Personnage NouveauPerso { get; set; }
+        public Navigator Navigator => (App.Current as App).Navigator;
         Manager MonManager => (App.Current as App).MonManager;
         public AjoutPerso()
         {
@@ -46,7 +47,7 @@ namespace Projet1
         }
         private void ClickAnnuler(object sender, RoutedEventArgs e)
         {
-            
+            Navigator.NavigateTo(Navigator.PART_AJT_IMG_PERSO);
         }
 
         private void ClickAjouter(object sender, RoutedEventArgs e)
