@@ -2,10 +2,9 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Projet1"
-             xmlns:conv="clr-namespace:Projet1.Converteurs" 
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        <conv:Func2WindowPartConverter x:Key="func2WindowPartConverter"/>
+        <local:Func2WindowPartConverter x:Key="Func2WindowPartConverter"></local:Func2WindowPartConverter>
         <Style TargetType="TextBox" x:Key="barreRecherche">
             <Setter Property="VerticalAlignment" Value="center"/>
             <Style.Resources>

@@ -28,7 +28,7 @@
                 <ColumnDefinition Width="20*"/>
             </Grid.ColumnDefinitions>
             <Image Grid.Column="0" Source="Images/icone_one_piece.png" Width="30"></Image>
-            <Menu ItemsSource="{Binding Navigator.PartieUse}" Grid.Column="1" VerticalAlignment="Center" Foreground="#FFF1E8E8">
+            <Menu Grid.Column="1" VerticalAlignment="Center" Foreground="#FFF1E8E8">
                 <Menu.Background>
                     <SolidColorBrush Color="#FF304A53" Opacity="0.1"/>
                 </Menu.Background>
@@ -54,7 +54,7 @@
             </DockPanel>
         </Grid>
 
-        <ContentControl x:Name="content" DataContext="{Binding Navigator}" Content="{Binding SelectedUserControlCreator.Value, Converter={StaticResource func2WindowPartConverter}}" >
+        <ContentControl x:Name="content" Content="{Binding EtatEnCours, Converter={StaticResource Func2WindowPartConverter}}" >
             
         </ContentControl>
     </DockPanel>
