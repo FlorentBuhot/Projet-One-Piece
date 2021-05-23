@@ -20,6 +20,7 @@ namespace Projet1
     /// </summary>
     public partial class MainWindow : Window
     {
+        public Navigator Navigator => (App.Current as App).Navigator;
         public MainWindow()
         {
             InitializeComponent();

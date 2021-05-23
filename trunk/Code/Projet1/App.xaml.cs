@@ -15,5 +15,7 @@ namespace Projet1
     public partial class App : Application
     {
         public Manager MonManager { get; set; } = new Manager();
+
+        public Navigator Navigator { get; private set; } = new Navigator();
     }
 }

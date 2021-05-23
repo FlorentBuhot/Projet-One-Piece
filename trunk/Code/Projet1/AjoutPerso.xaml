@@ -130,9 +130,16 @@
             </Grid>
             <TextBox Grid.Row="1" BorderBrush="Black" BorderThickness="1" Text="{Binding Info}" Margin="10"></TextBox>
             <DockPanel Grid.Row="2" Grid.ColumnSpan="2" Background="#FF304A53">
-                <ContentControl x:Name="contentMenu">
-                    <local:menuBas/>
-                </ContentControl>
+                <Menu VerticalAlignment="Center" HorizontalAlignment="Center" Background="#FF304A53">
+                    <Button Content="Annuler" Click="ClickAnnuler" Style="{StaticResource menuBas}"/>
+                    <Separator/>
+                    <Separator/>
+                    <Separator/>
+                    <Separator/>
+                    <Separator/>
+                    <Separator/>
+                    <Button Content="Ajouter" Click="ClickAjouter" Style="{StaticResource menuBas}"/>
+                </Menu>
             </DockPanel>
         </Grid>
     </Grid>
