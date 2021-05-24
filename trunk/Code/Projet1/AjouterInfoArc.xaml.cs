@@ -24,7 +24,7 @@ namespace Projet1
         public AjouterInfoArc()
         {
             InitializeComponent();
-            NouvelleDesc = new Arc(NomArc.Laboon);
+            NouvelleDesc = new Arc("Laboon");
             NouvelleDesc.Info = "hehe je suis la description";
             DataContext = NouvelleDesc;
         }

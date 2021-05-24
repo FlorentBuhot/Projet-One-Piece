@@ -7,11 +7,11 @@ namespace ClassLibrary1
     public class Arc
     {
         public string Info { get; set; }
-        public NomArc Nom { get; set; }
+        public string Nom { get; set; }
         public ClassLibrary1.Image ImgDeBase { get; set; }
         public LinkedList<Image> SourceImgArc { get; set; }
 
-        public Arc(NomArc nom, string description, Image img)
+        public Arc(string nom, string description, Image img)
         {
             Nom = nom;
             Info = description;
@@ -20,7 +20,7 @@ namespace ClassLibrary1
             ImgDeBase = img;
         }
 
-        public Arc(NomArc nom)
+        public Arc(string nom)
         {
             Info = null;
             Nom = nom;
