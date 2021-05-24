@@ -41,7 +41,7 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <StackPanel DockPanel.Dock="Top" Grid.ColumnSpan="5">
-                <TextBlock Text="Arc Romance Dawn" HorizontalAlignment="Center" Margin="10"></TextBlock>
+                <TextBlock Text="{Binding ArcAfficher.Nom}" HorizontalAlignment="Center" Margin="10"></TextBlock>
                 <TextBlock Text="1er Arc de One Piece. On découvre Luffy le personnage principal à Est Blue" HorizontalAlignment="Center"></TextBlock>
             </StackPanel>
             <DockPanel Grid.Row="1" Grid.Column="0" Margin="10">

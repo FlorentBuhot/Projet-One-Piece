@@ -21,6 +21,7 @@ namespace Projet1
         public DescriptionArc()
         {
             InitializeComponent();
+            DataContext = (App.Current as App).MonManager;
         }
 
         private void ClickImageArc(object sender, RoutedEventArgs e)

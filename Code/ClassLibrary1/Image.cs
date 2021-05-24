@@ -20,7 +20,7 @@ namespace ClassLibrary1
             Description = null;
         }
 
-        public override bool Equals(object obj)
+        /*public override bool Equals(object obj)
         {
             if (obj == null || !this.GetType().Equals(obj.GetType()))
             {
@@ -32,7 +32,7 @@ namespace ClassLibrary1
                 return true;
             }
             else { return false; }
-        }
+        }*/
 
         public override int GetHashCode()
         {
