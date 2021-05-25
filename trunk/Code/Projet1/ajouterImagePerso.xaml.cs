@@ -20,7 +20,7 @@ namespace Projet1
     public partial class ajouterImagePerso : UserControl
     {
         ClassLibrary1.Image NouvelleImage { get; set; }
-        Manager MonManager => (App.Current as App).MonManager;
+        
         public ajouterImagePerso()
         {
             InitializeComponent();
@@ -45,12 +45,12 @@ namespace Projet1
         }
         private void ClickAnnuler(object sender, RoutedEventArgs e)
         {
-
+            (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.PERSONNAGE;
         }
 
         private void ClickAjouter(object sender, RoutedEventArgs e)
         {
-
+            (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.PERSONNAGE;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
