@@ -24,6 +24,8 @@ namespace Projet1
                     return new DescriptionPerso();
                 case Navigator.EtatUC.ARC:
                     return new DescriptionArc();
+                case Navigator.EtatUC.AJT_IMG_PERSO:
+                    return new ajouterImagePerso();
                 default:
                     break;
             }

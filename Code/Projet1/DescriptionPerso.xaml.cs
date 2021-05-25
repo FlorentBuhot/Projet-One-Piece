@@ -131,7 +131,7 @@ namespace Projet1
         }
         private void ClickImagePerso(object sender, RoutedEventArgs e)
         {
-            (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.AJT_IMG_ARC;
+            (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.AJT_IMG_PERSO;
         }
         private void ClickInfoPerso(object sender, RoutedEventArgs e)
         {
