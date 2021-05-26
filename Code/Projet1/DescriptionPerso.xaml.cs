@@ -39,7 +39,7 @@ namespace Projet1
             Haki HakiLuf2 = new Haki(NomHaki.Haki_du_renforcement, "Taper fort");
             Luffy.ListHaki.Add(HakiLuf2);
 
-            Appartennance LuffyAppart = new Appartennance("Pirate au Chapeau de Paille", "2quipage trop fort");
+            Appartennance LuffyAppart = new Appartennance("Pirate au Chapeau de Paille", "Equipage trop fort");
             Luffy.Appart = LuffyAppart;
 
             ClassLibrary1.Image Image1 = new ClassLibrary1.Image("ImagePerso/Luffy/ancien_luffy.png", "Luffy a Sabaody");
