@@ -14,66 +14,98 @@
         <Style TargetType="Border" x:Key="contImage">
             <Setter Property="BorderBrush" Value="Black"/>
             <Setter Property="BorderThickness" Value="1"/>
-        </Style>
-        <Style TargetType="MenuItem" x:Key="menuBas">
-            <Setter Property="Background" Value="White"/>
-            <Setter Property="BorderBrush" Value="Black"/>
-            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="Margin" Value="10"/>
         </Style>
     </UserControl.Resources>
     <Grid Background="#FFFFD4A1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="75*"/>
+            <ColumnDefinition Width="25*"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="85*"/>
+            <RowDefinition Height="66*"/>
+            <RowDefinition Height="33*"/>
             <RowDefinition Height="8*"/>
         </Grid.RowDefinitions>
-        <ScrollViewer Grid.Row="0">
+        <Border BorderBrush="#FF304A53" BorderThickness="0,0,10,0">
             <Grid>
                 <Grid.RowDefinitions>
-                <RowDefinition Height="66*"/>
-                <RowDefinition Height="33*"/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
-            <StackPanel DockPanel.Dock="Top" Grid.ColumnSpan="5">
-                <TextBlock Text="{Binding ArcAfficher.Nom}" HorizontalAlignment="Center" Margin="10"></TextBlock>
-                <TextBlock Text="{Binding ArcAfficher.Info}" HorizontalAlignment="Center"></TextBlock>
-            </StackPanel>
-                <Border Grid.Row="1" BorderThickness="0,10,0,0" BorderBrush="#FF304A53">
-                    <ListBox ItemsSource="{Binding ArcAfficher.SourceImgArc}" Background="#FFFFD4A1" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
-                        <ListBox.ItemTemplate>
-                            <DataTemplate>
-                                <StackPanel>
-                                    <Border BorderBrush="Black" BorderThickness="2" Margin="20,20,20,10">
-                                        <Image Source="{Binding Source}" MinHeight="40" MaxHeight="200" MinWidth="40" MaxWidth="200"></Image>
-                                    </Border>
-                                    <TextBlock Text="{Binding Description}" TextAlignment="Center"></TextBlock>
-                                </StackPanel>
-                            </DataTemplate>
-                        </ListBox.ItemTemplate>
-                        <ListBox.ItemsPanel>
-                            <ItemsPanelTemplate>
-                                <WrapPanel></WrapPanel>
-                            </ItemsPanelTemplate>
-                        </ListBox.ItemsPanel>
-                    </ListBox>
-                </Border>
+                    <RowDefinition Height="0.4*"></RowDefinition>
+                    <RowDefinition Height="0.6*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <StackPanel Grid.Row="0" DockPanel.Dock="Top">
+                        <TextBlock Text="{Binding ArcAfficher.Nom}" FontWeight="Bold" TextDecorations="Underline" FontFamily="Arial Black" FontSize="20" HorizontalAlignment="Center" Margin="10">
+                        </TextBlock>
+                    </StackPanel>
+                </ScrollViewer>
+                <ScrollViewer VerticalScrollBarVisibility="Auto" Grid.Row="1">
+                    <TextBlock TextWrapping="Wrap" Margin="10" Padding="10" TextAlignment="Center" Text="{Binding ArcAfficher.Info}"></TextBlock>
+                </ScrollViewer>
             </Grid>
-        </ScrollViewer>
-        <DockPanel Grid.Row="1" Background="#FF304A53">
+        </Border>
+        <Grid Grid.Row="0" Grid.Column="1" Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="90*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Text="Listes des Personnages" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <ListBox Grid.Row="1" BorderBrush="#FF304A53" BorderThickness="2" Background="#FFFFD4A1" ItemsSource="{Binding ArcAfficher.ListePerso}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <WrapPanel>
+                            <Border BorderBrush="Black" BorderThickness="2" Margin="0,0,10,0">
+                                <Image Source="{Binding imgBase.Source}" MinHeight="40" MaxHeight="40" MinWidth="40" MaxWidth="40"></Image>
+                            </Border>
+                            <TextBlock TextAlignment="Center" VerticalAlignment="Center">
+                                <Run Text="{Binding Nom}"></Run>
+                                <Run Text="{Binding Prénom}"></Run>
+                            </TextBlock>
+                        </WrapPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+                <ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel></StackPanel>
+                    </ItemsPanelTemplate>
+                </ListBox.ItemsPanel>
+            </ListBox>
+        </Grid>
+        <Border Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" BorderThickness="0,10,0,0" BorderBrush="#FF304A53">
+            <ListBox ItemsSource="{Binding ArcAfficher.SourceImgArc}" Background="#FFFFD4A1" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <Border BorderBrush="Black" BorderThickness="2" Margin="20,20,20,10">
+                                <Image Source="{Binding Source}" MinHeight="40" MaxHeight="200" MinWidth="40" MaxWidth="200"></Image>
+                            </Border>
+                            <TextBlock Text="{Binding Description}" TextAlignment="Center"></TextBlock>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+                <ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel></WrapPanel>
+                    </ItemsPanelTemplate>
+                </ListBox.ItemsPanel>
+            </ListBox>
+        </Border>
+        <DockPanel Grid.Row="2" Grid.ColumnSpan="2" Background="#FF304A53">
             <Menu VerticalAlignment="Center" HorizontalAlignment="Center" Background="#FF304A53">
-                <MenuItem Header="Arc précédent" Click="ArcPre" Style="{StaticResource menuBas}" Padding="3"/>
+                <Button Content="Arc précédent" Click="ArcPre" Style="{StaticResource menuBas}" Padding="3"/>
                 <Separator/>
                 <Separator/>
                 <Separator/>
                 <Separator/>
-                <MenuItem Header="Ajouter infomations" Click="ClickInfoArc" Style="{StaticResource menuBas}"/>
+                <Button Content="Ajouter infomations" Click="ClickInfoArc" Style="{StaticResource menuBas}"/>
                 <Separator/>
-                <MenuItem Header="Ajouter image" Click="ClickImageArc" Style="{StaticResource menuBas}"/>
-                <Separator/>
-                <Separator/>
+                <Button Content="Ajouter image" Click="ClickImageArc" Style="{StaticResource menuBas}"/>
                 <Separator/>
                 <Separator/>
                 <Separator/>
-                <MenuItem Header="Arc suivant" Click="ArcSuiv" Style="{StaticResource menuBas}"/>
+                <Separator/>
+                <Separator/>
+                <Button Content="Arc suivant" Click="ArcSuiv" Style="{StaticResource menuBas}"/>
             </Menu>
         </DockPanel>
     </Grid>
