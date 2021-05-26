@@ -27,11 +27,11 @@ namespace Projet1
 
         private void ClickImageArc(object sender, RoutedEventArgs e)
         {
-
+            (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.AJT_IMG_ARC;
         }
-        private void ClickAjouterInfo(object sender, RoutedEventArgs e)
+        private void ClickInfoArc(object sender, RoutedEventArgs e)
         {
-
+            (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.AJT_INFO_ARC;
         }
 
         private void ArcPre(object sender, RoutedEventArgs e)

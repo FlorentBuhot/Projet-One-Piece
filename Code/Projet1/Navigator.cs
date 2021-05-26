@@ -14,12 +14,14 @@ namespace Projet1
     {
         public enum EtatUC
         {
-            ACCUEIL,
-            AJT_IMG_PERSO,
+            ACCUEIL, 
+            AJT_IMG_ARC,
+            AJT_INFO_ARC,
             ARC,
             PERSONNAGE,
-            AJT_IMG_ARC,
-            AJT_PERSO
+            AJT_IMG_PERSO,
+            AJT_PERSO,
+            INFO_PERSO
         }
 
         private EtatUC etatEnCours = EtatUC.ACCUEIL;

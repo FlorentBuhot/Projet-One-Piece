@@ -20,12 +20,18 @@ namespace Projet1
                     return new Accueil();
                 case Navigator.EtatUC.AJT_IMG_ARC:
                     return new ajoutImageArc();
+                case Navigator.EtatUC.AJT_INFO_ARC:
+                    return new AjouterInfoArc();
                 case Navigator.EtatUC.PERSONNAGE:
                     return new DescriptionPerso();
                 case Navigator.EtatUC.ARC:
                     return new DescriptionArc();
                 case Navigator.EtatUC.AJT_IMG_PERSO:
                     return new ajouterImagePerso();
+                case Navigator.EtatUC.INFO_PERSO:
+                    return new ajouterInfoPerso();
+                case Navigator.EtatUC.AJT_PERSO:
+                    return new AjoutPerso();
                 default:
                     break;
             }

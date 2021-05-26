@@ -135,7 +135,7 @@ namespace Projet1
         }
         private void ClickInfoPerso(object sender, RoutedEventArgs e)
         {
-
+            (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.INFO_PERSO;
         }
     }
 }
