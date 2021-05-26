@@ -2,21 +2,41 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 
 namespace ClassLibrary1
 {
-    public class Manager
+    public class Manager : INotifyPropertyChanged
     {
         public HashSet<Personnage> ListePreso { get; private set; }
         public List<Arc> ListeArc { get; private set; }
         public List<Haki> Hakis { get; private set; }
-        public Arc ArcAfficher { get; set; }
+        private Arc arcAfficher;
+        public Arc ArcAfficher {
+            get => arcAfficher;
+            set
+            {
+                if (value != arcAfficher)
+                {
+                    arcAfficher = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+        protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        public int NumArc { get; set; }
 
         public Manager()
         {
             ListePreso = new HashSet<Personnage>();
             ListeArc = new List<Arc>();
-            ListeArc.Add(new Arc("Colonel Morgan", "Première arc de One Piece", new Image()));
+            ListeArc.Add(new Arc("Colonel Morgan", "Première arc de One Piece", new Image("/ImageArc/morgan.png", "Le colonel Morgan"), new List<Personnage> { new Personnage("Monkey .D", "Luffy", new Image("/ImagePerso/Luffy/luffy_sourire.png", "Luffy de base"))}));
             ListeArc.Add(new Arc("Baggy le Clown"));
             ListeArc.Add(new Arc("Capitaine Kuro"));
             ListeArc.Add(new Arc("Baratie"));
@@ -56,9 +76,12 @@ namespace ClassLibrary1
             Hakis.Add(new Haki(NomHaki.Haki_du_renforcement, "Permet de se renforcé"));
         }
 
+        public event PropertyChangedEventHandler PropertyChanged;
+
         public void ArcAAfficher(int numArc)
         {
             ArcAfficher = ListeArc[numArc];
+            NumArc = numArc;
         }
         public void AjouterPerso(Personnage perso)
         {
@@ -126,14 +149,14 @@ namespace ClassLibrary1
             return null;
         }
 
-        public Arc ArcSuivant(Arc arcActu)
+        public int ArcSuivant()
         {
-            return ListeArc[ListeArc.IndexOf(arcActu)+1];
+            return NumArc + 1;
         }
 
-        public Arc ArcPrécédent(Arc arcActu)
+        public int ArcPrécédent(Arc arcActu)
         {
-            return ListeArc[ListeArc.IndexOf(arcActu)-1];
+            return NumArc - 1;
         }
     }
 }

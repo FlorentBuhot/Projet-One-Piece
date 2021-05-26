@@ -13,6 +13,7 @@ namespace ClassLibrary1
         public string Nom { get; set; }
         public string Info { get; set; }
         public int Age { get; set; }
+        public Image ImgBase { get; set; }
         public List<Haki> ListHaki { get; set; }
         public Appartennance Appart { get; set; }
         public List<Image> SourceImgPerso { get; set; }
@@ -28,6 +29,13 @@ namespace ClassLibrary1
             Appart = null;
             SourceImgPerso = new List<Image>();
             ListeArc = new List<Arc>();
+        }
+
+        public Personnage(string nom, string prenom, Image imgBase)
+        {
+            Nom = nom;
+            Prénom = prenom;
+            ImgBase = imgBase;
         }
 
         /// <summary>
@@ -73,34 +81,6 @@ namespace ClassLibrary1
         {
             Info += info;
         }
-
-        /// <summary>
-        /// Equals du personnage
-        /// </summary>
-        /// <param name="obj">obj pour lequel on test l'égalité</param>
-        /// <returns></returns>
-        public override bool Equals(object obj)
-        {
-            if (obj == null || !this.GetType().Equals(obj.GetType()))
-            {
-                return false;
-            }
-            Personnage test = obj as Personnage;
-            if (test.Nom.Equals(this.Nom) &&
-                test.Prénom.Equals(this.Prénom) &&
-                test.Info.Equals(this.Info) && test.Age.Equals(this.Age) &&
-                test.ListHaki.Equals(this.ListHaki) && test.Appart.Equals(this.Appart) &&
-                test.SourceImgPerso.Equals(this.SourceImgPerso) &&
-                test.ListeArc.Equals(this.ListeArc))
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-
 
         /// <summary>
         /// redeffinision de toString

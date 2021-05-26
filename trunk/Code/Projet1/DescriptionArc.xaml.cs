@@ -36,12 +36,20 @@ namespace Projet1
 
         private void ArcPre(object sender, RoutedEventArgs e)
         {
-
+            if (((App.Current as App).MonManager.NumArc - 1) >= 0)
+            {
+                (App.Current as App).MonManager.ArcAAfficher((App.Current as App).MonManager.NumArc - 1);
+                (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.ARC;
+            }
         }
 
         private void ArcSuiv(object sender, RoutedEventArgs e)
         {
-
+            if (((App.Current as App).MonManager.NumArc + 1) < (App.Current as App).MonManager.ListeArc.Count)
+            {
+                (App.Current as App).MonManager.ArcAAfficher((App.Current as App).MonManager.NumArc + 1);
+                (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.ARC;
+            }
         }
     }
 }

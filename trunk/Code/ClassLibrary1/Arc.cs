@@ -10,6 +10,7 @@ namespace ClassLibrary1
         public string Nom { get; set; }
         public ClassLibrary1.Image ImgDeBase { get; set; }
         public LinkedList<Image> SourceImgArc { get; set; }
+        public List<Personnage> ListePerso { get; set; }
 
         public Arc(string nom, string description, Image img)
         {
@@ -18,6 +19,17 @@ namespace ClassLibrary1
             SourceImgArc = new LinkedList<Image>();
             SourceImgArc.AddLast(img);
             ImgDeBase = img;
+        }
+
+        public Arc(string nom, string description, Image img, List<Personnage> personnages)
+        {
+            Nom = nom;
+            Info = description;
+            SourceImgArc = new LinkedList<Image>();
+            SourceImgArc.AddLast(img);
+            ImgDeBase = img;
+            ListePerso = new List<Personnage>();
+            ListePerso = personnages;
         }
 
         public Arc(string nom)
