@@ -26,64 +26,36 @@
             <RowDefinition Height="85*"/>
             <RowDefinition Height="8*"/>
         </Grid.RowDefinitions>
-        <ScrollViewer>
-        <Grid Grid.Row="0" Margin="10">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="60*"/>
-                <RowDefinition Height="60*"/>
+        <ScrollViewer Grid.Row="0">
+            <Grid>
+                <Grid.RowDefinitions>
+                <RowDefinition Height="66*"/>
+                <RowDefinition Height="33*"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <StackPanel DockPanel.Dock="Top" Grid.ColumnSpan="5">
                 <TextBlock Text="{Binding ArcAfficher.Nom}" HorizontalAlignment="Center" Margin="10"></TextBlock>
-                <TextBlock Text="1er Arc de One Piece. On découvre Luffy le personnage principal à Est Blue" HorizontalAlignment="Center"></TextBlock>
+                <TextBlock Text="{Binding ArcAfficher.Info}" HorizontalAlignment="Center"></TextBlock>
             </StackPanel>
-            <DockPanel Grid.Row="1" Grid.Column="0" Margin="10">
-                <Border Style="{StaticResource contImage}">
-                    <Image Source="Images\icone_one_piece.png"></Image>
+                <Border Grid.Row="1" BorderThickness="0,10,0,0" BorderBrush="#FF304A53">
+                    <ListBox ItemsSource="{Binding ArcAfficher.SourceImgArc}" Background="#FFFFD4A1" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel>
+                                    <Border BorderBrush="Black" BorderThickness="2" Margin="20,20,20,10">
+                                        <Image Source="{Binding Source}" MinHeight="40" MaxHeight="200" MinWidth="40" MaxWidth="200"></Image>
+                                    </Border>
+                                    <TextBlock Text="{Binding Description}" TextAlignment="Center"></TextBlock>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                        <ListBox.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <WrapPanel></WrapPanel>
+                            </ItemsPanelTemplate>
+                        </ListBox.ItemsPanel>
+                    </ListBox>
                 </Border>
-                </DockPanel>
-                <DockPanel Grid.Row="2" Grid.Column="0">
-                    <TextBlock Text="Chapeau de paille" Style="{StaticResource descImage}"/>
-                </DockPanel>
-            <DockPanel Grid.Row="1" Grid.Column="1" Margin="10">
-                    <Border Style="{StaticResource contImage}">
-                    <Image Source="Images\icone_one_piece.png"></Image>
-                </Border>
-                </DockPanel>
-                <DockPanel Grid.Row="2" Grid.Column="1">
-                    <TextBlock Text="Chapeau de paille" Style="{StaticResource descImage}"/>
-                </DockPanel>
-                <DockPanel Grid.Row="1" Grid.Column="2" Margin="10">
-                    <Border Style="{StaticResource contImage}">
-                        <Image Source="Images\icone_one_piece.png" ></Image>
-                    </Border>
-                </DockPanel>
-                <DockPanel Grid.Row="2" Grid.Column="2">
-                    <TextBlock Text="Chapeau de paille" Style="{StaticResource descImage}"/>
-                </DockPanel>
-                <DockPanel Grid.Row="1" Grid.Column="3" Margin="10">
-                    <Border Style="{StaticResource contImage}">
-                        <Image Source="Images\icone_one_piece.png"></Image>
-                    </Border>
-                </DockPanel>
-                <DockPanel Grid.Row="2" Grid.Column="3">
-                    <TextBlock Text="Chapeau de paille" Style="{StaticResource descImage}"/>
-                </DockPanel>
-                <DockPanel Grid.Row="1" Grid.Column="4" Margin="10">
-                    <Border Style="{StaticResource contImage}">
-                        <Image Source="Images\icone_one_piece.png"></Image>
-                    </Border>
-                </DockPanel>
-                <DockPanel Grid.Row="2" Grid.Column="4">
-                    <TextBlock Text="Chapeau de paille" Style="{StaticResource descImage}"/>
-                </DockPanel>
             </Grid>
         </ScrollViewer>
         <DockPanel Grid.Row="1" Background="#FF304A53">
