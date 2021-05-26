@@ -20,7 +20,16 @@
         <TextBox Grid.Row="1" Text="{Binding Info}"  Margin="50,30"/>
         <DockPanel Grid.Row="2" Background="#FF304A53">
             <ContentControl>
-                <local:menuBas/>
+                <Menu VerticalAlignment="Center" HorizontalAlignment="Center" Background="#FF304A53">
+                    <Button Content="Annuler" Click="ClickAnnuler" Style="{StaticResource menuBas}"/>
+                    <Separator/>
+                    <Separator/>
+                    <Separator/>
+                    <Separator/>
+                    <Separator/>
+                    <Separator/>
+                    <Button Content="Ajouter" Click="ClickAjouter" Style="{StaticResource menuBas}"/>
+                </Menu>
             </ContentControl>
         </DockPanel>
     </Grid>

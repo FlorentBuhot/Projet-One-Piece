@@ -65,7 +65,7 @@
                 <Separator/>
                 <Separator/>
                 <Separator/>
-                <MenuItem Header="Ajouter infomations" Click="ClickAjouterInfo" Style="{StaticResource menuBas}"/>
+                <MenuItem Header="Ajouter infomations" Click="ClickInfoArc" Style="{StaticResource menuBas}"/>
                 <Separator/>
                 <MenuItem Header="Ajouter image" Click="ClickImageArc" Style="{StaticResource menuBas}"/>
                 <Separator/>

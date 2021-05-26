@@ -24,12 +24,12 @@ namespace Projet1
         }
         private void ClickAnnuler(object sender, RoutedEventArgs e)
         {
-
+            (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.PERSONNAGE;
         }
 
         private void ClickAjouter(object sender, RoutedEventArgs e)
         {
-
+            (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.PERSONNAGE;
         }
     }
 }

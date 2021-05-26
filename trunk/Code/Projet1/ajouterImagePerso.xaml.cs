@@ -52,10 +52,5 @@ namespace Projet1
         {
             (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.PERSONNAGE;
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }
