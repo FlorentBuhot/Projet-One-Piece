@@ -36,6 +36,9 @@ namespace ClassLibrary1
             Nom = nom;
             Prénom = prenom;
             ImgBase = imgBase;
+            ListeArc = new List<Arc>();
+            SourceImgPerso = new List<Image>();
+            ListHaki = new List<Haki>();
         }
 
         /// <summary>
@@ -49,7 +52,7 @@ namespace ClassLibrary1
         /// <param name="appartennance">l'appartenance du personnage</param>
         /// <param name="img">une image du personnage</param>
         /// <param name="arcs">list des arcs dans lequel le personnage apparait</param>
-        public Personnage(string nom, string prénom, string info, int age, List<Haki> hakis, Appartennance appartennance, Image img, List<Arc> arcs)
+        public Personnage(string nom, string prénom, string info, int age, List<Haki> hakis, Image imgBase, Appartennance appartennance, List<Arc> arcs)
         {
             Nom = nom;
             Prénom = prénom;
@@ -58,8 +61,9 @@ namespace ClassLibrary1
             ListHaki = new List<Haki>();
             ListHaki = hakis;
             Appart = appartennance;
+            ImgBase = imgBase;
             SourceImgPerso = new List<Image>();
-            SourceImgPerso.Add(img);
+            SourceImgPerso.Add(imgBase);
             ListeArc = new List<Arc>();
             ListeArc = arcs;
         }
@@ -97,7 +101,7 @@ namespace ClassLibrary1
         /// <returns></returns>
         public override int GetHashCode()
         {
-            return HashCode.Combine(Prénom, Nom, Info, Age, ListHaki, Appart, SourceImgPerso, ListeArc);
+            return HashCode.Combine(Prénom, Nom, Info, Age, ListHaki, ImgBase, Appart, ListeArc);
         }
     }
 }

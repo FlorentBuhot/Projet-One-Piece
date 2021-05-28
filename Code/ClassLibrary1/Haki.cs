@@ -35,5 +35,10 @@ namespace ClassLibrary1
         {
             return Nom + " " + Description;
         }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(Nom, Description);
+        }
     }
 }

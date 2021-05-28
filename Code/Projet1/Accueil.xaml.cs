@@ -23,18 +23,10 @@ namespace Projet1
             InitializeComponent();
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-
-        }
         private void BaggyLeClown(object sender, RoutedEventArgs e)
         {
             (App.Current as App).MonManager.ArcAAfficher(1);
             (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.ARC;
-        }
-        private void Button_Click_13(object sender, RoutedEventArgs e)
-        {
-
         }
 
         private void Baratie(object sender, RoutedEventArgs e)
@@ -58,9 +50,10 @@ namespace Projet1
             (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.ARC;
         }
 
-        private void Button_Click_15(object sender, RoutedEventArgs e)
+        private void Whiskey_Peak(object sender, RoutedEventArgs e)
         {
-
+            (App.Current as App).MonManager.ArcAAfficher(7);
+            (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.ARC;
         }
 
         private void LittleGarden(object sender, RoutedEventArgs e)
@@ -86,6 +79,11 @@ namespace Projet1
         private void Skypiea(object sender, RoutedEventArgs e)
         {
             (App.Current as App).MonManager.ArcAAfficher(12);
+            (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.ARC;
+        }
+        private void Davy_Back_Fight(object sender, RoutedEventArgs e)
+        {
+            (App.Current as App).MonManager.ArcAAfficher(13);
             (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.ARC;
         }
         private void Water7(object sender, RoutedEventArgs e)

@@ -24,13 +24,12 @@ namespace ClassLibrary1
                 }
             }
         }
+        public int NumArc { get; set; }
 
         protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-
-        public int NumArc { get; set; }
 
         public Manager()
         {

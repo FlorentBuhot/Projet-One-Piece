@@ -96,12 +96,9 @@
                 <Separator/>
                 <Separator/>
                 <Separator/>
-                <Separator/>
                 <Button Content="Ajouter infomations" Click="ClickInfoArc" Style="{StaticResource menuBas}"/>
                 <Separator/>
                 <Button Content="Ajouter image" Click="ClickImageArc" Style="{StaticResource menuBas}"/>
-                <Separator/>
-                <Separator/>
                 <Separator/>
                 <Separator/>
                 <Separator/>
