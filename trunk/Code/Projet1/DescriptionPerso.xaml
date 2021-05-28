@@ -34,40 +34,51 @@
                     <RowDefinition Height="0.6*"></RowDefinition>
                 </Grid.RowDefinitions>
                 <ScrollViewer VerticalScrollBarVisibility="Auto">
-                    <StackPanel Grid.Row="0" DockPanel.Dock="Top">
-                    <TextBlock FontWeight="Bold" TextDecorations="Underline" FontFamily="Arial Black" FontSize="20" HorizontalAlignment="Center" Margin="10">
-                    <Run Text="{Binding Nom}"></Run>
-                    <Run Text="{Binding Prénom}"></Run>
-                    </TextBlock>
-                    <TextBlock Margin="0,5,0,5" HorizontalAlignment="Center">
-                    <Run Text="Age :" TextDecorations="Underline"></Run>
-                    <Run Text="{Binding Age}"></Run>
-                    </TextBlock>
-                    <TextBlock Margin="0,5,0,5" HorizontalAlignment="Center">
-                    <Run Text="Appartenance :" TextDecorations="Underline"></Run>
-                    <Run Text="{Binding Appart.Nom}"></Run>
-                    </TextBlock>
-                    <TextBlock Margin="0,5,0,5" Text="Haki :" TextDecorations="Underline" HorizontalAlignment="Center"></TextBlock>
-                    <TextBlock Margin="0,5,0,5" HorizontalAlignment="Center">                     
-                    <Border BorderBrush="#FF304A53" BorderThickness="2
-">
-                        <ListBox Background="#FFFFD4A1" ItemsSource="{Binding ListHaki}">
-                            <ListBox.ItemTemplate>
-                                <DataTemplate>
-                                    <WrapPanel>
-                                        <TextBlock>
-                                            <Run Text="{Binding Nom}"></Run>
-                                            <Run Text="("></Run>
-                                            <Run Text="{Binding Description}"></Run>
-                                            <Run Text=")"></Run>
-                                        </TextBlock>
-                                    </WrapPanel>
-                                </DataTemplate>
-                            </ListBox.ItemTemplate>
-                        </ListBox>
-                    </Border>
-                    </TextBlock>
-                </StackPanel>
+                    <Grid Grid.Row="0" DockPanel.Dock="Top">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>                            
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Image Source="{Binding ImgBase.Source}" MaxHeight="100" MaxWidth="100" HorizontalAlignment="Right" Margin="20" Grid.Column="0" Grid.Row="0"></Image>
+                        <TextBlock FontWeight="Bold" TextDecorations="Underline" FontFamily="Arial Black" FontSize="20" HorizontalAlignment="Left" Margin="10" Grid.Column="1" Grid.Row="0">
+                            <Run Text="{Binding Nom}"></Run>
+                            <Run Text="{Binding Prénom}"></Run>
+                        </TextBlock>
+                        <TextBlock Margin="0,5,0,5" HorizontalAlignment="Center" Grid.Row="1" Grid.ColumnSpan="2">
+                            <Run Text="Age :" TextDecorations="Underline"></Run>
+                            <Run Text="{Binding Age}"></Run>
+                            </TextBlock>
+                        <TextBlock Margin="0,5,0,5" HorizontalAlignment="Center" Grid.Row="2" Grid.ColumnSpan="2">
+                            <Run Text="Appartenance :" TextDecorations="Underline"></Run>
+                            <Run Text="{Binding Appart.Nom}"></Run>
+                        </TextBlock>
+                        <TextBlock Margin="0,5,0,5" Text="Haki :" TextDecorations="Underline" HorizontalAlignment="Center" Grid.Row="3" Grid.ColumnSpan="2"></TextBlock>
+                        <TextBlock Margin="0,5,0,5" HorizontalAlignment="Center" Grid.Row="4" Grid.ColumnSpan="2">                     
+                            <Border BorderBrush="#FF304A53" BorderThickness="2">
+                                <ListBox Background="#FFFFD4A1" ItemsSource="{Binding ListHaki}">
+                                    <ListBox.ItemTemplate>
+                                        <DataTemplate>
+                                            <WrapPanel>
+                                                <TextBlock>
+                                                    <Run Text="{Binding Nom}"></Run>
+                                                    <Run Text="("></Run>
+                                                    <Run Text="{Binding Description}"></Run>
+                                                    <Run Text=")"></Run>
+                                                </TextBlock>
+                                            </WrapPanel>
+                                        </DataTemplate>
+                                    </ListBox.ItemTemplate>
+                                </ListBox>
+                            </Border>
+                            </TextBlock>
+                    </Grid>
                 </ScrollViewer>
                 <ScrollViewer VerticalScrollBarVisibility="Auto" Grid.Row="1">
                     <TextBlock TextWrapping="Wrap" Margin="10" Padding="10" TextAlignment="Center" Text="{Binding Info}"></TextBlock>
