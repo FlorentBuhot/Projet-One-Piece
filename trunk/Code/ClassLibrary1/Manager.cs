@@ -9,7 +9,7 @@ namespace ClassLibrary1
 {
     public class Manager : INotifyPropertyChanged
     {
-        public HashSet<Personnage> ListePreso { get; private set; }
+        public HashSet<Personnage> ListePerso { get; private set; }
         public List<Arc> ListeArc { get; private set; }
         public List<Haki> Hakis { get; private set; }
         private Arc arcAfficher;
@@ -24,6 +24,21 @@ namespace ClassLibrary1
                 }
             }
         }
+
+        private Personnage persoAfficher;
+        public Personnage PersoAfficher
+        {
+            get => persoAfficher;
+            set
+            {
+                if (value != persoAfficher)
+                {
+                    persoAfficher = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
         public int NumArc { get; set; }
 
         protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
@@ -33,7 +48,7 @@ namespace ClassLibrary1
 
         public Manager()
         {
-            ListePreso = new HashSet<Personnage>();
+            ListePerso = new HashSet<Personnage>();
             ListeArc = new List<Arc>();
             ListeArc.Add(new Arc("Colonel Morgan", "Première arc de One Piece", new Image("/ImageArc/morgan.png", "Le colonel Morgan"), new List<Personnage> { new Personnage("Monkey .D", "Luffy", new Image("/ImagePerso/Luffy/luffy_sourire.png", "Luffy de base"))}));
             ListeArc.Add(new Arc("Baggy le Clown"));
@@ -67,6 +82,8 @@ namespace ClassLibrary1
             ListeArc.Add(new Arc("Whole Cake"));
             ListeArc.Add(new Arc("Reverie"));
             ListeArc.Add(new Arc("Wano Kuni"));
+
+            ListePerso.Add(new Personnage("Monkey .D", "Luffy", new Image("/ImagePerso/Luffy/luffy_sourire.png", "Luffy de base")));
             
 
             List<Haki> Hakis = new List<Haki>();
@@ -82,21 +99,22 @@ namespace ClassLibrary1
             ArcAfficher = ListeArc[numArc];
             NumArc = numArc;
         }
+
         public void AjouterPerso(Personnage perso)
         {
-            if (ListePreso.Contains(perso))
+            if (ListePerso.Contains(perso))
             {
                 return;
             }
             else
             {
-                ListePreso.Add(perso);
+                ListePerso.Add(perso);
             }
         }
 
         public void AjouterImgPerso(Image img, Personnage perso)
         {
-            foreach(Personnage test in ListePreso)
+            foreach(Personnage test in ListePerso)
             {
                 if (test.Equals(perso))
                 {
@@ -111,11 +129,11 @@ namespace ClassLibrary1
 
         public Personnage RechercherPerso(string nomPerso)
         {
-            foreach(Personnage test in ListePreso)
+            foreach(Personnage testPerso in ListePerso)
             {
-                if (test.Nom.Equals(nomPerso))
+                if (testPerso.Prénom.Equals(nomPerso))
                 {
-                    return test;
+                    return testPerso;
                 }
             }
             return null;
