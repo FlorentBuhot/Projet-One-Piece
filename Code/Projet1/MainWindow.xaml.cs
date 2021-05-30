@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ClassLibrary1;
 
 
 namespace Projet1
@@ -21,7 +22,6 @@ namespace Projet1
     /// </summary>
     public partial class MainWindow : Window
     {
-        public Navigator Navigator => (App.Current as App).Navigator;
         public MainWindow()
         {
             InitializeComponent();
@@ -45,12 +45,20 @@ namespace Projet1
 
         private void rechercheArc(object sender, RoutedEventArgs e)
         {
-
+            (App.Current as App).MonManager.ArcAfficher = (App.Current as App).MonManager.RechercherArc(ArcCherche.Text);
+            if ((App.Current as App).MonManager.ArcAfficher != null) 
+            {
+                (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.ARC;
+            }
         }
 
         private void recherchePerso(object sender, RoutedEventArgs e)
         {
-
+            (App.Current as App).MonManager.PersoAfficher = (App.Current as App).MonManager.RechercherPerso(PersoCherche.Text);
+            if ((App.Current as App).MonManager.PersoAfficher != null)
+            {
+                (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.PERSONNAGE;
+            }
         }
     }
 }

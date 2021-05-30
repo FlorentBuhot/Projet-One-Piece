@@ -42,7 +42,7 @@
                         <Image Source="Icones/rechBouttun.png" Width="25"/>
                     </Button.Content>
                 </Button>
-                <TextBox Style="{StaticResource barreRecherche}"/>
+                <TextBox x:Name="ArcCherche" Style="{StaticResource barreRecherche}"/>
             </DockPanel>
             <DockPanel Grid.Column="3" MinWidth="80" Margin="10">
                 <Button MinWidth="25" Style="{StaticResource boutonRecherche}" Click="recherchePerso">
@@ -50,7 +50,7 @@
                         <Image Source="Icones/rechBouttun.png" Width="25"/>
                     </Button.Content>
                 </Button>
-                <TextBox Style="{StaticResource barreRecherche}"/>
+                <TextBox x:Name="PersoCherche" Style="{StaticResource barreRecherche}"/>
             </DockPanel>
         </Grid>
 
