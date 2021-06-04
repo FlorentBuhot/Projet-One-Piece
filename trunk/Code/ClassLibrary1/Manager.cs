@@ -38,13 +38,24 @@ namespace ClassLibrary1
                 }
             }
         }
-
         public int NumArc { get; set; }
 
         /// <summary>
         /// Dépendance vers le gestionnaire de persistance  
         /// </summary>
-        public IPersistanceManager Persistance { get; private set; }
+        public IPersistanceManager Persistance { get; /*private*/ set; }
+
+        public Manager(IPersistanceManager p)
+        {
+            Persistance = p;
+            ListePerso = new List<Personnage>();
+            ListeArc = new List<Arc>();
+            Hakis = new List<Haki>();
+        }
+
+        public Manager()
+        {
+        }
 
         protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
@@ -58,10 +69,10 @@ namespace ClassLibrary1
             {
                 ListePerso.Add(p);
             }
-            foreach(var a in donnees.arcs)
-            {
-                ListeArc.Add(a);
-            }
+            //foreach(var a in donnees.arcs)
+            //{
+            //    ListeArc.Add(a);
+            //}
         }
 
         public void SauvegardeDonnees()
@@ -69,18 +80,6 @@ namespace ClassLibrary1
             Persistance.SauvegardeDonnees(ListePerso, ListeArc, Hakis); // <=== dépendance
         }
 
-        public Manager(IPersistanceManager p)
-        {
-            Persistance = p;
-            ListePerso = new List<Personnage>();
-            ListeArc = new List<Arc>();
-            Hakis = new List<Haki>();
-        }
-
-        public Manager()
-        {
-
-        }
 
         public event PropertyChangedEventHandler PropertyChanged;
 

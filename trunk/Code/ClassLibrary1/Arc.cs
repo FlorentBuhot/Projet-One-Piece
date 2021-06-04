@@ -1,15 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 using System.Text;
 
 namespace ClassLibrary1
 {
+    [DataContract]
     public class Arc
     {
+        [DataMember(EmitDefaultValue = false)]
         public string Info { get; set; }
+        [DataMember(EmitDefaultValue = false)]
         public string Nom { get; set; }
+        [DataMember(EmitDefaultValue = false)]
         public ClassLibrary1.Image ImgDeBase { get; set; }
+        [DataMember(EmitDefaultValue = false)]
         public LinkedList<Image> SourceImgArc { get; set; }
+        [DataMember(EmitDefaultValue = false)]
         public List<Personnage> ListePerso { get; set; }
 
         public Arc(string nom, string description, Image img)
@@ -38,24 +45,6 @@ namespace ClassLibrary1
             Nom = nom;
             SourceImgArc = new LinkedList<Image>();
         }
-
-        public override bool Equals(object obj)
-        {
-            if(obj == null || !this.GetType().Equals(obj.GetType()))
-            {
-                return false;
-            }
-            Arc test = obj as Arc;
-            if (test.Info.Equals(this.Info) && test.Nom.Equals(this.Nom) && test.SourceImgArc.Equals(this.SourceImgArc))
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-
         public override string ToString()
         {
             return Nom + " " + Info;

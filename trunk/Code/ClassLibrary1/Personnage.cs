@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 using ClassLibrary1;
 
 namespace ClassLibrary1
@@ -7,16 +8,27 @@ namespace ClassLibrary1
     /// <summary>
     /// Classe Personnage, reflette les information et les modification de personnages de l'application
     /// </summary>
+    
+    [DataContract]
     public class Personnage
     {
+        [DataMember (EmitDefaultValue = false)]
         public string Prénom { get; set; }
+        [DataMember(EmitDefaultValue = false)]
         public string Nom { get; set; }
+        [DataMember(EmitDefaultValue = false)]
         public string Info { get; set; }
+        [DataMember(EmitDefaultValue = false)]
         public int Age { get; set; }
+        [DataMember(EmitDefaultValue = false)]
         public Image ImgBase { get; set; }
+        [DataMember(EmitDefaultValue = false)]
         public List<Haki> ListHaki { get; set; }
+        [DataMember(EmitDefaultValue = false)]
         public Appartennance Appart { get; set; }
+        [DataMember(EmitDefaultValue = false)]
         public List<Image> SourceImgPerso { get; set; }
+        [DataMember(EmitDefaultValue = false)]
         public List<Arc> ListeArc { get; set; }
 
         public Personnage()
