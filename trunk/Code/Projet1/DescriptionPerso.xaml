@@ -47,23 +47,23 @@
                             <RowDefinition/>
                             <RowDefinition/>
                         </Grid.RowDefinitions>
-                        <Image Source="{Binding ImgBase.Source}" MaxHeight="100" MaxWidth="100" HorizontalAlignment="Right" Margin="20" Grid.Column="0" Grid.Row="0"></Image>
+                        <Image Source="{Binding PersoAfficher.ImgBase.Source}" MaxHeight="100" MaxWidth="100" HorizontalAlignment="Right" Margin="20" Grid.Column="0" Grid.Row="0"></Image>
                         <TextBlock FontWeight="Bold" TextDecorations="Underline" FontFamily="Arial Black" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10" Grid.Column="1" Grid.Row="0">
-                            <Run Text="{Binding Nom}"></Run>
-                            <Run Text="{Binding Prénom}"></Run>
+                            <Run Text="{Binding PersoAfficher.Nom}"></Run>
+                            <Run Text="{Binding PersoAfficher.Prénom}"></Run>
                         </TextBlock>
                         <TextBlock Margin="0,5,0,5" HorizontalAlignment="Center" Grid.Row="1" Grid.ColumnSpan="2">
                             <Run Text="Age :" TextDecorations="Underline"></Run>
-                            <Run Text="{Binding Age}"></Run>
+                            <Run Text="{Binding PersoAfficher.Age}"></Run>
                             </TextBlock>
                         <TextBlock Margin="0,5,0,5" HorizontalAlignment="Center" Grid.Row="2" Grid.ColumnSpan="2">
                             <Run Text="Appartenance :" TextDecorations="Underline"></Run>
-                            <Run Text="{Binding Appart.Nom}"></Run>
+                            <Run Text="{Binding PersoAfficher.Appart.Nom}"></Run>
                         </TextBlock>
                         <TextBlock Margin="0,5,0,5" Text="Haki :" TextDecorations="Underline" HorizontalAlignment="Center" Grid.Row="3" Grid.ColumnSpan="2"></TextBlock>
                         <TextBlock Margin="0,5,0,5" HorizontalAlignment="Center" Grid.Row="4" Grid.ColumnSpan="2">                     
                             <Border BorderBrush="#FF304A53" BorderThickness="2">
-                                <ListBox Background="#FFFFD4A1" ItemsSource="{Binding ListHaki}">
+                                <ListBox Background="#FFFFD4A1" ItemsSource="{Binding PersoAfficher.ListHaki}">
                                     <ListBox.ItemTemplate>
                                         <DataTemplate>
                                             <WrapPanel>
@@ -83,7 +83,7 @@
                 </ScrollViewer>
                 </Border>
                     <ScrollViewer VerticalScrollBarVisibility="Auto" Grid.Row="1">
-                    <TextBlock TextWrapping="Wrap" Margin="10" Padding="10" TextAlignment="Center" Text="{Binding Info}"></TextBlock>
+                    <TextBlock TextWrapping="Wrap" Margin="10" Padding="10" TextAlignment="Center" Text="{Binding PersoAfficher.Info}"></TextBlock>
                 </ScrollViewer>
             </Grid>
         </Border>
@@ -93,7 +93,7 @@
                 <RowDefinition Height="90*"/>
             </Grid.RowDefinitions>
             <TextBlock Grid.Row="0" Text="Listes des arcs" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-            <ListBox Grid.Row="1" BorderBrush="#FF304A53" BorderThickness="2" Background="#FFFFD4A1" ItemsSource="{Binding ListeArc}">
+            <ListBox Grid.Row="1" BorderBrush="#FF304A53" BorderThickness="2" Background="#FFFFD4A1" ItemsSource="{Binding PersoAfficher.ListeArc}">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <WrapPanel>
@@ -112,7 +112,7 @@
             </ListBox>
         </Grid>
         <Border Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" BorderThickness="0,10,0,0" BorderBrush="#FF304A53">
-            <ListBox ItemsSource="{Binding SourceImgPerso}" Background="#FFFFD4A1" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+            <ListBox ItemsSource="{Binding PersoAfficher.SourceImgPerso}" Background="#FFFFD4A1" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel>
