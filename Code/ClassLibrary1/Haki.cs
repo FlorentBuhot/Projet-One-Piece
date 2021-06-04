@@ -1,12 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 using System.Text;
 
 namespace ClassLibrary1
 {
+    [DataContract]
     public class Haki
     {
+        [DataMember(EmitDefaultValue = false)]
         public NomHaki Nom { get; set; }
+        [DataMember(EmitDefaultValue = false)]
         public string Description { get; set; }
 
         public Haki(NomHaki nom, string description)
@@ -34,11 +38,6 @@ namespace ClassLibrary1
         public override string ToString()
         {
             return Nom + " " + Description;
-        }
-
-        public override int GetHashCode()
-        {
-            return HashCode.Combine(Nom, Description);
         }
     }
 }
