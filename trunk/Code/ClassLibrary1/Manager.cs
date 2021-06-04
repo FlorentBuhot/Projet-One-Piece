@@ -55,6 +55,9 @@ namespace ClassLibrary1
 
         public Manager()
         {
+            ListePerso = new List<Personnage>();
+            ListeArc = new List<Arc>();
+            Hakis = new List<Haki>();
         }
 
         protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
@@ -69,10 +72,14 @@ namespace ClassLibrary1
             {
                 ListePerso.Add(p);
             }
-            //foreach(var a in donnees.arcs)
-            //{
-            //    ListeArc.Add(a);
-            //}
+            foreach (var a in donnees.arcs)
+            {
+                ListeArc.Add(a);
+            }
+            foreach(var h in donnees.hakis)
+            {
+                Hakis.Add(h);
+            }
         }
 
         public void SauvegardeDonnees()

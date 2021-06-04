@@ -21,7 +21,6 @@ namespace Projet1
     {
         Personnage NouveauPerso { get; set; }
         public Navigator Navigator => (App.Current as App).Navigator;
-        Manager MonManager => (App.Current as App).MonManager;
         public AjoutPerso()
         {
             InitializeComponent();
