@@ -23,22 +23,32 @@ namespace Projet1
             InitializeComponent();
         }
 
+        private void ColonelMorgan(object sender, RoutedEventArgs e)
+        {
+            (App.Current as App).MonManager.ArcAAfficher(0);
+            (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.ARC;
+        }
         private void BaggyLeClown(object sender, RoutedEventArgs e)
         {
             (App.Current as App).MonManager.ArcAAfficher(1);
             (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.ARC;
         }
-
+        private void CapitaineKuro(object sender, RoutedEventArgs e)
+        {
+            (App.Current as App).MonManager.ArcAAfficher(2);
+            (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.ARC;
+        }
         private void Baratie(object sender, RoutedEventArgs e)
         {
             (App.Current as App).MonManager.ArcAAfficher(3);
             (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.ARC;
         }
-
-        private void Button_Click_14(object sender, RoutedEventArgs e)
+        private void Arlong(object sender, RoutedEventArgs e)
         {
-
+            (App.Current as App).MonManager.ArcAAfficher(4);
+            (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.ARC;
         }
+        
         private void LogueTown(object sender, RoutedEventArgs e)
         {
             (App.Current as App).MonManager.ArcAAfficher(5);
@@ -61,9 +71,10 @@ namespace Projet1
             (App.Current as App).MonManager.ArcAAfficher(8);
             (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.ARC;
         }
-        private void Button_Click_17(object sender, RoutedEventArgs e)
+        private void Drum(object sender, RoutedEventArgs e)
         {
-
+            (App.Current as App).MonManager.ArcAAfficher(9);
+            (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.ARC;
         }
         private void Alabasta(object sender, RoutedEventArgs e)
         {
@@ -94,6 +105,11 @@ namespace Projet1
         private void EniesLobby(object sender, RoutedEventArgs e)
         {
             (App.Current as App).MonManager.ArcAAfficher(15);
+            (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.ARC;
+        }
+        private void ThrillerBark(object sender, RoutedEventArgs e)
+        {
+            (App.Current as App).MonManager.ArcAAfficher(17);
             (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.ARC;
         }
         private void Archipel(object sender, RoutedEventArgs e)
@@ -130,6 +146,11 @@ namespace Projet1
         private void Zou(object sender, RoutedEventArgs e)
         {
             (App.Current as App).MonManager.ArcAAfficher(28);
+            (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.ARC;
+        }
+        private void WholeCake(object sender, RoutedEventArgs e)
+        {
+            (App.Current as App).MonManager.ArcAAfficher(29);
             (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.ARC;
         }
         private void WanoKuni(object sender, RoutedEventArgs e)
