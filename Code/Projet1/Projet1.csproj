@@ -160,6 +160,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj" />
+    <ProjectReference Include="..\Stub\Stub.csproj" />
   </ItemGroup>
 
   <ItemGroup>

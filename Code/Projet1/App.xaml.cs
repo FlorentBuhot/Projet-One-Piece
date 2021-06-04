@@ -14,8 +14,13 @@ namespace Projet1
     /// </summary>
     public partial class App : Application
     {
-        public Manager MonManager { get; set; } = new Manager();
+        public Manager MonManager { get; set; } = new Manager(new Stub.Stub());
 
         public Navigator Navigator { get; private set; } = new Navigator();
+
+        public App() : base()
+        {
+            MonManager.ChargeDonnees();
+        }
     }
 }

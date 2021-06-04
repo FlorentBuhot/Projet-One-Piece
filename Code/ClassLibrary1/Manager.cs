@@ -9,7 +9,7 @@ namespace ClassLibrary1
 {
     public class Manager : INotifyPropertyChanged
     {
-        public HashSet<Personnage> ListePerso { get; private set; }
+        public List <Personnage> ListePerso { get; private set; }
         public List<Arc> ListeArc { get; private set; }
         public List<Haki> Hakis { get; private set; }
         private Arc arcAfficher;
@@ -41,55 +41,45 @@ namespace ClassLibrary1
 
         public int NumArc { get; set; }
 
+        /// <summary>
+        /// Dépendance vers le gestionnaire de persistance  
+        /// </summary>
+        public IPersistanceManager Persistance { get; private set; }
+
         protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
+        public void ChargeDonnees()
+        {
+            var donnees = Persistance.ChargeDonnees(); // <=== dépendance
+            foreach(var p in donnees.personnages)
+            {
+                ListePerso.Add(p);
+            }
+            foreach(var a in donnees.arcs)
+            {
+                ListeArc.Add(a);
+            }
+        }
+
+        public void SauvegardeDonnees()
+        {
+            Persistance.SauvegardeDonnees(ListePerso, ListeArc, Hakis); // <=== dépendance
+        }
+
+        public Manager(IPersistanceManager p)
+        {
+            Persistance = p;
+            ListePerso = new List<Personnage>();
+            ListeArc = new List<Arc>();
+            Hakis = new List<Haki>();
+        }
+
         public Manager()
         {
-            ListePerso = new HashSet<Personnage>();
-            ListeArc = new List<Arc>();
-            ListeArc.Add(new Arc("Colonel Morgan", "Première arc de One Piece", new Image("/ImageArc/morgan.png", "Le colonel Morgan"), new List<Personnage> { new Personnage("Monkey .D", "Luffy", new Image("/ImagePerso/Luffy/luffy_sourire.png", "Luffy de base"))}));
-            ListeArc.Add(new Arc("Baggy le Clown"));
-            ListeArc.Add(new Arc("Capitaine Kuro"));
-            ListeArc.Add(new Arc("Baratie"));
-            ListeArc.Add(new Arc("Arlong"));
-            ListeArc.Add(new Arc("LogueTown"));
-            ListeArc.Add(new Arc("Laboon"));
-            ListeArc.Add(new Arc("Whiskey Peak"));
-            ListeArc.Add(new Arc("Little Garden"));
-            ListeArc.Add(new Arc("Royaume de Drum"));
-            ListeArc.Add(new Arc("Alabasta"));
-            ListeArc.Add(new Arc("Jaya"));
-            ListeArc.Add(new Arc("Skypiea"));
-            ListeArc.Add(new Arc("Davy Back Fight"));
-            ListeArc.Add(new Arc("Water Seven"));
-            ListeArc.Add(new Arc("Enies Lobby"));
-            ListeArc.Add(new Arc("Post Enies Lobby"));
-            ListeArc.Add(new Arc("Thriller Bark"));
-            ListeArc.Add(new Arc("Archipel Sabaody"));
-            ListeArc.Add(new Arc("Amazon Lily"));
-            ListeArc.Add(new Arc("Impel Down"));
-            ListeArc.Add(new Arc("Marineford"));
-            ListeArc.Add(new Arc("Post Marineford"));
-            ListeArc.Add(new Arc("Retour à Sabaody"));
-            ListeArc.Add(new Arc("Hommes Poissons"));
-            ListeArc.Add(new Arc("Punk Hazard"));
-            ListeArc.Add(new Arc("Dressrosa"));
-            ListeArc.Add(new Arc("Mine Argentée"));
-            ListeArc.Add(new Arc("Zou"));
-            ListeArc.Add(new Arc("Whole Cake"));
-            ListeArc.Add(new Arc("Reverie"));
-            ListeArc.Add(new Arc("Wano Kuni"));
 
-            ListePerso.Add(new Personnage("Monkey .D", "Luffy", new Image("/ImagePerso/Luffy/luffy_sourire.png", "Luffy de base")));
-            
-
-            List<Haki> Hakis = new List<Haki>();
-            Hakis.Add(new Haki(NomHaki.Haki_des_rois, "Pété de ouf"));
-            Hakis.Add(new Haki(NomHaki.Haki_de_perception, "Bonne perception"));
-            Hakis.Add(new Haki(NomHaki.Haki_du_renforcement, "Permet de se renforcé"));
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

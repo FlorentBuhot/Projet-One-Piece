@@ -22,10 +22,10 @@ namespace Test_Personnage
                 Personnage luffy = new Personnage("Monkey .D", "Luffy", "Capitaine des Mugiwara", 17,
                     new List<Haki> { new Haki(NomHaki.Haki_des_rois, "pété de ouf"), 
                                      new Haki(NomHaki.Haki_de_perception, "Perceptionne mieux"), 
-                                     new Haki(NomHaki.Haki_du_renforcement, "Permet de se renforcer")}, 
-                    new Appartennance("Les Mugiwara", "Equipage Pirate"), 
-                    new Image("sdgs", "Image simple"), 
-                    new List<Arc> { new Arc(NomArc.Impel_Down, "Dans la prison", new Image("sgd", "gsgs")) });
+                                     new Haki(NomHaki.Haki_du_renforcement, "Permet de se renforcer")},
+                    new ClassLibrary1.Image(), 
+                    new Appartennance("Mugiwara", "Equipage Pirate"),  
+                    new List<Arc> { new Arc("Impel_Down", "Dans la prison", new Image("sgd", "gsgs")) });
 
                 Console.WriteLine(luffy.ToString());
                 Console.WriteLine(luffy.Appart);
