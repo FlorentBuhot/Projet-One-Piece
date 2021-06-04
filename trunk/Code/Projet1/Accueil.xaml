@@ -11,10 +11,12 @@
         <Viewbox DockPanel.Dock="Bottom" Stretch="Uniform">
             <Canvas x:Name="myGrid" Height="1200" Width="780">
                 <Image Source="Images/carte_one_piece3.png" Height="1200" Width="2369" Canvas.Left="-796"/>
-                <Button Canvas.Left="910" Canvas.Top="723" Height="12" Width="15" BorderBrush="Black" BorderThickness="2" Opacity="0" Click="Button_Click_17"></Button>
-                <Button Canvas.Left="842" Canvas.Top ="758" Height="41" Width="50" BorderBrush="Black" BorderThickness="2" Click="BaggyLeClown" ></Button>
+                <Button Canvas.Left="941" Canvas.Top="164" Height="51" Width="51" BorderBrush="Black" BorderThickness="2" Opacity="0" Click="ColonelMorgan"></Button>
+                <Button Canvas.Left="859" Canvas.Top ="253" Height="25" Width="25" BorderBrush="Black" BorderThickness="2" Opacity="0" Click="BaggyLeClown" ></Button>
+                <Button Canvas.Left="765" Canvas.Top="297" Height="25" Width="24" Opacity="0" Click="CapitaineKuro"></Button>
+                <Button Canvas.Left="650" Canvas.Top="229" Height="43" Width="48" Opacity="0" Click="Arlong"></Button>
                 <Button Canvas.Left="680" Canvas.Top="330" Height="60" Width="78" BorderBrush="Black" BorderThickness="2" Opacity="0" Click="Baratie"></Button>
-                <Button Canvas.Left="850" Canvas.Top="565" Height="31" Width="30" BorderBrush="Black" BorderThickness="2" Opacity="0" Click="Button_Click_14"></Button>
+                <Button Canvas.Left="631" Canvas.Top="672" Height="37" Width="49" BorderBrush="Black" BorderThickness="2" Opacity="0" Click="Drum"></Button>
                 <Button Canvas.Left="442" Canvas.Top ="458" Height="41" Width="50" BorderBrush="Black" BorderThickness="2" Opacity="0" Click="LogueTown" ></Button>
                 <Button Canvas.Left="510" Canvas.Top="600" Height="30" Width="25" BorderBrush="Black" BorderThickness="2" Opacity="0" Click="Laboon"></Button>
                 <Button Canvas.Left="595" Canvas.Top="621" Height="21" Width="25" BorderBrush="Black" BorderThickness="2" Opacity="0" Click="LittleGarden"></Button>
@@ -31,11 +33,9 @@
                 <Button Canvas.Left="-225" Canvas.Top="579" Height="28" Width="27" BorderBrush="Black" BorderThickness="2" Opacity="0" Click="PunkHazard"></Button>
                 <Button Canvas.Left="-200" Canvas.Top="635" Height="60" Width="73" BorderBrush="Black" BorderThickness="2" Opacity="0" Click="Dresrosa"></Button>
                 <Button Canvas.Left="-47" Canvas.Top="635" Height="47" Width="47" BorderBrush="Black" BorderThickness="2" Opacity="0" Click="Zou"></Button>
-                
-                
-                
+                <Button Canvas.Left="18" Canvas.Top="648" Height="61" Width="78" BorderBrush="Black" BorderThickness="2" Opacity="0" Click="WholeCake"></Button>
                 <Button Canvas.Left="-62" Canvas.Top="585" Height="31" Width="56" BorderBrush="Black" BorderThickness="2" Opacity="0" Click="WanoKuni"></Button>
-
+                <Button Canvas.Left="47" Canvas.Top="794" Height="95" Width="73" BorderBrush="Black" BorderThickness="2" Opacity="0" Click="ThrillerBark"></Button>
 
                 <!--
                 <Polygon Points = "1 0, 2 -6, 13 -7, 16 -10, 22 -11 ,27 -8, 31 -15, 36 -17, 43 -12, 45 -8, 42 -6, 42 0, 32 6, 27 6, 25 16, 3 23, -2 20, -2 15, -4 13, -4 8" Stroke = "OrangeRed" Canvas.Left = "447" Canvas.Top = "476"></Polygon>
