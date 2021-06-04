@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test_Personnage", "..\Test_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test_Arc+Nom_Arc", "..\Test_Arc+Nom_Arc\Test_Arc+Nom_Arc.csproj", "{AC122B34-6286-4A6E-A2B0-38408B839F2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitsTests", "..\UnitsTests\UnitsTests.csproj", "{291046EF-F029-49CE-90F7-A6023AA85997}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitsTests", "..\UnitsTests\UnitsTests.csproj", "{291046EF-F029-49CE-90F7-A6023AA85997}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stub", "..\Stub\Stub.csproj", "{8CF03336-4CAA-47B5-B9ED-83BC7FF357FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{291046EF-F029-49CE-90F7-A6023AA85997}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{291046EF-F029-49CE-90F7-A6023AA85997}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{291046EF-F029-49CE-90F7-A6023AA85997}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CF03336-4CAA-47B5-B9ED-83BC7FF357FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CF03336-4CAA-47B5-B9ED-83BC7FF357FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CF03336-4CAA-47B5-B9ED-83BC7FF357FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CF03336-4CAA-47B5-B9ED-83BC7FF357FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
