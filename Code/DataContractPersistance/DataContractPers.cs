@@ -11,10 +11,14 @@ namespace DataContractPersistance
     public class DataContractPers : IPersistanceManager
     {
 
-        public string FilePath { get; set; } = Path.Combine(Directory.GetCurrentDirectory(), "..//XML");
-        public string FileName { get; set; } = "OPForever.xml";
-        string PersFile => Path.Combine(FilePath, FileName);
-        private DataContractSerializer serializer { get; set; } = new DataContractSerializer(typeof(DataPersist));
+        private string FilePath { get; set; } = Path.Combine(Directory.GetCurrentDirectory(), "..//XML");
+        private string FileName { get; set; } = "OPForever.xml";
+        private string PersFile => Path.Combine(FilePath, FileName);
+        private DataContractSerializer serializer { get; set; } = new DataContractSerializer(typeof(DataPersist),
+                                                                                    new DataContractSerializerSettings()
+                                                                                    {
+                                                                                        PreserveObjectReferences = true
+                                                                                    });
         public (IEnumerable<Personnage> personnages, IEnumerable<Arc> arcs, IEnumerable<Haki> hakis) ChargeDonnees()
         {
             if (!File.Exists(PersFile))

@@ -167,7 +167,7 @@ namespace Stub
             return ListePerso;
         }
 
-        public List<Haki> chargeHaki()
+        private List<Haki> chargeHaki()
         {
             List<Haki> Hakis = new List<Haki>();
             Hakis.Add(new Haki(NomHaki.Haki_des_rois, "Pété de ouf"));
