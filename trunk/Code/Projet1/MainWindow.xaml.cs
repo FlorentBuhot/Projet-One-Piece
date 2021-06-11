@@ -35,7 +35,7 @@ namespace Projet1
 
         private void Clique_ajt_perso(object sender, RoutedEventArgs e)
         {
-            (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.PERSONNAGE;
+            (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.AJT_PERSO;
         }
 
         public ContentControl GetContent()

@@ -55,7 +55,7 @@
                     <DataTemplate>
                         <WrapPanel>
                             <Border BorderBrush="Black" BorderThickness="2" Margin="0,0,10,0">
-                                <Image Source="{Binding imgBase.Source}" MinHeight="40" MaxHeight="40" MinWidth="40" MaxWidth="40"></Image>
+                                <Image Source="{Binding ImgBase.Source}" MinHeight="40" MaxHeight="40" MinWidth="40" MaxWidth="40"></Image>
                             </Border>
                             <TextBlock TextAlignment="Center" VerticalAlignment="Center">
                                 <Run Text="{Binding Nom}"></Run>

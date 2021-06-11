@@ -19,14 +19,14 @@ namespace Projet1
     /// </summary>
     public partial class AjouterInfoArc : UserControl
     {
-        Arc NouvelleDesc { get; set; }
         Manager MonManager => (App.Current as App).MonManager;
+        public Arc larc { get; set; }
         public AjouterInfoArc()
         {
             InitializeComponent();
-            NouvelleDesc = new Arc("Laboon");
-            NouvelleDesc.Info = "hehe je suis la description";
-            DataContext = NouvelleDesc;
+            var p = MonManager.ArcAfficher;
+            larc = new Arc(p.Nom, p.Info, p.ImgDeBase, p.ListePerso);
+            DataContext = larc;
         }
         private void ClickAnnuler(object sender, RoutedEventArgs e)
         {
@@ -36,6 +36,7 @@ namespace Projet1
         private void ClickAjouter(object sender, RoutedEventArgs e)
         {
 
+            (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.ARC;
         }
     }
 }
