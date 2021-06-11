@@ -24,8 +24,8 @@ namespace Projet1
         public ajouterInfoPerso()
         {
             InitializeComponent();
-            var p = MonManager.PersoAfficher;
-            LePerso = new Personnage(p.Nom, p.Prénom, p.Info, p.Age, p.ListHaki, p.ImgBase, p.Appart, p.ListeArc);
+            LePerso = new Personnage();
+            LePerso = MonManager.PersoAfficher;
             DataContext = LePerso;
         }
         private void ClickAnnuler(object sender, RoutedEventArgs e)

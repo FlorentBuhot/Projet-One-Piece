@@ -158,9 +158,20 @@ namespace ClassLibrary1
             }
         }
 
-        public void AjouterInfoArc(Arc arc, string info)
+        public Arc AjouterInfoArc(Arc ancien, Arc nouveau)
         {
-            arc.Info += info;
+            if (!ancien.Equals(nouveau))
+            {
+                return null;
+            }
+            Type typeArc = typeof(Arc);
+            var PersProperties = typeArc.GetProperties();
+            foreach (var property in PersProperties.Where(ppty => ppty.CanWrite))
+            {
+                property.SetValue(ancien, property.GetValue(nouveau));
+            }
+            OnPropertyChanged();
+            return ancien;
         }
         public Arc RechercherArc(string nomArc)
         {

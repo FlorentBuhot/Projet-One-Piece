@@ -24,8 +24,8 @@ namespace Projet1
         public AjouterInfoArc()
         {
             InitializeComponent();
-            var p = MonManager.ArcAfficher;
-            larc = new Arc(p.Nom, p.Info, p.ImgDeBase, p.ListePerso);
+            larc = new Arc();
+            larc = MonManager.ArcAfficher;
             DataContext = larc;
         }
         private void ClickAnnuler(object sender, RoutedEventArgs e)
@@ -35,7 +35,7 @@ namespace Projet1
 
         private void ClickAjouter(object sender, RoutedEventArgs e)
         {
-
+            MonManager.AjouterInfoArc(MonManager.ArcAfficher, larc);
             (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.ARC;
         }
     }
