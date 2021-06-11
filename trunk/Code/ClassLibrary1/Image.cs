@@ -27,16 +27,9 @@ namespace ClassLibrary1
 
         public override bool Equals(object obj)
         {
-            if (obj == null || !this.GetType().Equals(obj.GetType()))
-            {
-                return false;
-            }
-            Image test = obj as Image;
-            if (test.Source.Equals(this.Source))
-            {
-                return true;
-            }
-            else { return false; }
+            return obj is Image image &&
+                   Source == image.Source &&
+                   Description == image.Description;
         }
     }
 }

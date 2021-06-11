@@ -1,15 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 using System.Runtime.Serialization;
 using System.Text;
 
 namespace ClassLibrary1
 {
     [DataContract]
-    public class Arc
+    public class Arc : INotifyPropertyChanged
     {
+        public Arc self => this;
         [DataMember(EmitDefaultValue = false)]
-        public string Info { get; set; }
+        public string Info
+        {
+            get => info;
+            set
+            {
+                if (info == value) return;
+                info = value;
+                OnPropertyChanged();
+                OnPropertyChanged(nameof(self));
+            }
+        }
+        private string info;
         [DataMember(EmitDefaultValue = false)]
         public string Nom { get; set; }
         [DataMember(EmitDefaultValue = false)]
@@ -45,6 +59,19 @@ namespace ClassLibrary1
             Nom = nom;
             SourceImgArc = new LinkedList<Image>();
         }
+
+        public Arc()
+        {
+            Nom = null;
+            Info = null;
+            SourceImgArc = new LinkedList<Image>();
+            ImgDeBase = null;
+            ListePerso = new List<Personnage>();
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+            => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         public override string ToString()
         {
             return Nom + " " + Info;
