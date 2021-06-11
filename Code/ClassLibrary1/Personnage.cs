@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
+using System.ComponentModel;
 using ClassLibrary1;
+using System.Runtime.CompilerServices;
 
 namespace ClassLibrary1
 {
@@ -10,14 +12,27 @@ namespace ClassLibrary1
     /// </summary>
     
     [DataContract]
-    public class Personnage
+    public class Personnage : INotifyPropertyChanged
     {
+        public Personnage self => this;
         [DataMember (EmitDefaultValue = false)]
         public string Prénom { get; set; }
         [DataMember(EmitDefaultValue = false)]
         public string Nom { get; set; }
         [DataMember(EmitDefaultValue = false)]
-        public string Info { get; set; }
+        public string Info 
+        { 
+            get => info;
+            set
+            {
+               if (info == value) return;
+               info = value;
+               OnPropertyChanged();
+               OnPropertyChanged(nameof(self));
+            }
+        }
+        private string info;
+
         [DataMember(EmitDefaultValue = false)]
         public int Age { get; set; }
         [DataMember(EmitDefaultValue = false)]
@@ -53,6 +68,23 @@ namespace ClassLibrary1
             ListHaki = new List<Haki>();
         }
 
+
+        /// <summary>
+        /// Créer pour la modification des informations 
+        /// </summary>
+        /// <param name="info"></param>
+        public Personnage(string info)
+        {
+            Nom = null;
+            Prénom = null;
+            Info = info;
+            Age = 0;
+            ListHaki = new List<Haki>();
+            Appart = null;
+            SourceImgPerso = new List<Image>();
+            ListeArc = new List<Arc>();
+        }
+
         /// <summary>
         /// constructeur du personnage
         /// </summary>
@@ -79,6 +111,10 @@ namespace ClassLibrary1
             ListeArc = new List<Arc>();
             ListeArc = arcs;
         }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected virtual void OnPropertyChanged([CallerMemberName]string propertyName = null)
+            => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
 
         /// <summary>
         /// Ajouter une image à la liste d'image du personnage
@@ -107,13 +143,18 @@ namespace ClassLibrary1
             return Nom + " " + Prénom;
         }
 
-        /// <summary>
-        /// Donne le hashcode du personnage en fonction de tous ses attributs
-        /// </summary>
-        /// <returns></returns>
-        public override int GetHashCode()
+        public override bool Equals(object obj)
         {
-            return HashCode.Combine(Prénom, Nom, Info, Age, ListHaki, ImgBase, Appart, ListeArc);
+            return obj is Personnage personnage &&
+                   Prénom == personnage.Prénom &&
+                   Nom == personnage.Nom &&
+                   Info == personnage.Info &&
+                   Age == personnage.Age &&
+                   EqualityComparer<Image>.Default.Equals(ImgBase, personnage.ImgBase) &&
+                   EqualityComparer<List<Haki>>.Default.Equals(ListHaki, personnage.ListHaki) &&
+                   EqualityComparer<Appartennance>.Default.Equals(Appart, personnage.Appart) &&
+                   EqualityComparer<List<Image>>.Default.Equals(SourceImgPerso, personnage.SourceImgPerso) &&
+                   EqualityComparer<List<Arc>>.Default.Equals(ListeArc, personnage.ListeArc);
         }
     }
 }

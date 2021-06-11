@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Linq;
 
 namespace ClassLibrary1
 {
@@ -118,9 +119,20 @@ namespace ClassLibrary1
                 }
             }
         }
-        public void AjouterInfoPerso(Personnage perso, string info)
+        public Personnage AjouterInfoPerso(Personnage ancien, Personnage nouveau)
         {
-            perso.Info += info;
+            if (!ancien.Equals(nouveau))
+            {
+                return null;
+            }
+            Type typePerso = typeof(Personnage);
+            var PersProperties = typePerso.GetProperties();
+            foreach(var property in PersProperties.Where(ppty => ppty.CanWrite))
+            {
+                property.SetValue(ancien, property.GetValue(nouveau));
+            }
+            OnPropertyChanged();
+            return ancien;
         }
 
         public Personnage RechercherPerso(string nomPerso)

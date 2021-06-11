@@ -19,13 +19,14 @@ namespace Projet1
     /// </summary>
     public partial class ajouterImagePerso : UserControl
     {
+        public Manager MonManger => (App.Current as App).MonManager;
         ClassLibrary1.Image NouvelleImage { get; set; }
         
         public ajouterImagePerso()
         {
             InitializeComponent();
             NouvelleImage = new ClassLibrary1.Image();
-            DataContext = NouvelleImage;
+            DataContext = MonManger.PersoAfficher;
         }
 
         private void Bouton_Parcourir(object sender, RoutedEventArgs e)
