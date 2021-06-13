@@ -130,9 +130,9 @@ namespace Stub
                 Luffy.SourceImgPerso.Add(Image7);
 
 
-            Luffy.ListeArc.Add(ListeArc[ListeArc.IndexOf(Arc1)]);
-            Luffy.ListeArc.Add(ListeArc[ListeArc.IndexOf(Arc2)]);
-            Luffy.ListeArc.Add(ListeArc[ListeArc.IndexOf(Arc3)]);
+                Luffy.ListeArc.Add(ListeArc[ListeArc.IndexOf(Arc1)]);
+                Luffy.ListeArc.Add(ListeArc[ListeArc.IndexOf(Arc2)]);
+                Luffy.ListeArc.Add(ListeArc[ListeArc.IndexOf(Arc3)]);
 
             ListePerso.Add(Luffy);
             ListePerso.Add(new Personnage("coucuoc", "prenom", new Image()));

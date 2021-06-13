@@ -6,6 +6,10 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>C:\Users\flore\Desktop\ProjetOP\trunk\Code\Projetbin\</OutputPath>
+  </PropertyGroup>
+
   <ItemGroup>
     <None Remove="Icones\rechBouttun.png" />
     <None Remove="icone_one_piece.png" />

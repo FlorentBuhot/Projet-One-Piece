@@ -17,7 +17,7 @@
             </Grid.RowDefinitions>
             <StackPanel Grid.Column="0">
             <Border BorderBrush="black" BorderThickness="1" Margin="50" MinHeight="150" MinWidth="200" Background="White">
-                <Image x:Name="image_perso1" Source="{Binding Source}"></Image>
+                <Image x:Name="image_perso1" Source="{Binding Source}" MaxHeight="150" MaxWidth="200"></Image>
                 </Border>
                 <Button Content="Parcourir" Click="Bouton_Parcourir" Height="30" Width="180" HorizontalAlignment="Center" Margin="25"/>
             </StackPanel>

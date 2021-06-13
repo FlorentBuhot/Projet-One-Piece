@@ -5,6 +5,7 @@
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         <local:Func2WindowPartConverter x:Key="Func2WindowPartConverter"></local:Func2WindowPartConverter>
+        <local:StringToImageConverter x:Key="StringToImageConverter"/>
         <Style TargetType="TextBox" x:Key="barreRecherche">
             <Setter Property="VerticalAlignment" Value="center"/>
             <Style.Resources>

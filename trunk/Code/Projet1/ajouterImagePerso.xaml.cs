@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -42,6 +43,7 @@ namespace Projet1
             {
                 string filename = dialog.FileName;
                 image_perso1.Source = new BitmapImage(new Uri(filename, UriKind.Absolute));
+                File.Copy(filename, System.IO.Path.Combine("../Image", MonManger.PersoAfficher.Nom));
             }
         }
         private void ClickAnnuler(object sender, RoutedEventArgs e)
