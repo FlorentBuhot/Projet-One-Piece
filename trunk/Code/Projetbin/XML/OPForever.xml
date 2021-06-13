@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataPersist xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/DataContractPersistance">
+  <Arcs xmlns:d2p1="http://schemas.datacontract.org/2004/07/ClassLibrary1" z:Id="2" z:Size="32">
+    <d2p1:Arc z:Id="3">
+      <d2p1:ImgDeBase z:Id="4">
+        <d2p1:Description z:Id="5">Le colonel Morgan</d2p1:Description>
+        <d2p1:Source z:Id="6">/ImageArc/morgan.png</d2p1:Source>
+      </d2p1:ImgDeBase>
+      <d2p1:Info z:Id="7">Première arc de One Piece</d2p1:Info>
+      <d2p1:ListePerso z:Id="8" z:Size="1">
+        <d2p1:Personnage z:Id="9">
+          <d2p1:Age>18</d2p1:Age>
+          <d2p1:Appart z:Id="10">
+            <d2p1:Description z:Id="11">Equipage trop fort</d2p1:Description>
+            <d2p1:Nom z:Id="12">Pirate au Chapeau de Paille</d2p1:Nom>
+          </d2p1:Appart>
+          <d2p1:ImgBase z:Id="13">
+            <d2p1:Description z:Id="14">Luffy heureux</d2p1:Description>
+            <d2p1:Source z:Id="15">ImagePerso/Luffy/luffy_sourire.png</d2p1:Source>
+          </d2p1:ImgBase>
+          <d2p1:Info z:Id="16">Monkey D. Luffy (モンキー・Ｄディー・ルフィ, Monkī Dī Rufi) est un pirate et le principal protagoniste du manga et anime One Piece. Luffy est le fils du chef de l'Armée Révolutionnaire, Monkey D. Dragon, le petit-fils du célèbre Vice-Amiral de la Marine, Monkey D. Garp, le fils adoptif d'une bandit des montagnes, Curly Dadan ainsi que le frère adoptif du défunt Portgas D. Ace et de Sabo. Son rêve le plus cher est de devenir le Seigneur des Pirates en trouvant le trésor légendaire One Piece, caché quelque part dans le monde par Gol D. Roger. Selon lui, être le Seigneur des Pirates signifie être celui qui jouit d'une liberté sans pareille dans le monde. Il a mangé un Fruit du Démon : le Gomu Gomu no Mi, qui a été rapporté lors d'un voyage par L'Équipage du Roux au Village de Fuchsia, à ce moment là. En tant que fondateur et Capitaine de l'Équipage du Chapeau de Paille, il est le premier membre à en faire partie, ainsi que l'un des trois combattants les plus forts de ce dernier, s'il n'est le plus fort. C'est également le fondateur involontaire de La Grande Flotte du Chapeau de Paille, il refuse cependant d'en être le Capitaine, ne désirant pas priver les autres de leur liberté. Luffy a une réputation mondiale pour avoir causé des troubles et des catastrophes, même parmi les 7 Capitaines Corsaires et la Marine, en étant allé jusqu'à défier deux des Quatre Empereurs (Big Mom et Kaidô), ainsi qu'en commettant des crimes et actions considérées comme dangereuses par le Gouvernement Mondial. Il a reçu la réputation d'être "téméraire" et "fou", dans certains cas. Il est, en effet, célèbre pour avoir fait brûler le drapeau du Gouvernement Mondial à Enies Lobby (il s'agissait d'un ordre donné à Sogeking), avant d'y vaincre le CP9 avec son équipage; avoir frappé un Dragon Céleste à Sabaody; vaincu plusieurs des 7 Grands Corsaires (Crocodile, Gecko Moria ou Doflamingo); s'être infiltré et échappé d'Impel Down en y causant une gigantesque évasion (la plus grande de l'histoire de la prison); et s'être joint à la Bataille de Marine Ford, du côté de l'Équipage de Barbe Blanche. De plus, il est connu pour être le seul pirate à s'être non seulement infiltré dans les trois installations capitales du Gouvernement, mais aussi pour s'être échappé vivant de toutes les trois. Ce passé de fauteur de troubles valut rapidement à Luffy le qualificatif "d'élément dangereux dans le futur", notamment pour l'Amiral Commandant en Chef Sakazuki, faisant de la Marine l'un de ses plus grands ennemis. Luffy est réputé pour porter son Chapeau de Paille (d'où son épithète "Luffy au Chapeau de Paille") que le légendaire capitaine pirate Shanks "le Roux" lui a confié lorsqu'il était jeune, ce dernier le tenant lui-même de Roger. Luffy a également une cicatrice avec deux points de suture sous son œil gauche (blessure qu'il s'est lui-même infligée avec un couteau sous l’œil pour prouver son courage à Shanks), et des cheveux noirs assez courts. Similaire à la plupart des hommes de son équipage, Luffy porte la plupart du temps les mêmes vêtements, à l'opposé du reste de l'équipage (spécialement Nami et Nico Robin), qui quant à elles, changent fréquemment de tenues. Quel que soit l'endroit où il se trouve, Luffy porte en toutes circonstances son Chapeau de Paille, même si au début, le chapeau pouvait facilement tomber de sa tête, car instable, ce qui forçait Luffy à le mettre de côté, ou à demander à quelqu'un de le tenir pour lui (le plus souvent à Nami). Il porte des pantalons courts ainsi que des sandales et une veste rouge sans manches. Ayant l'air un peu maigre sous sa chemise, il a pourtant un physique étonnamment bien bâti. Il est assez petit, éclipsé par beaucoup de personnages de la série plus grands.</d2p1:Info>
+          <d2p1:ListHaki z:Id="17" z:Size="3">
+            <d2p1:Haki z:Id="18">
+              <d2p1:Description z:Id="19">Pété de ouf</d2p1:Description>
+            </d2p1:Haki>
+            <d2p1:Haki z:Id="20">
+              <d2p1:Description z:Id="21">Bonne perception</d2p1:Description>
+              <d2p1:Nom>Haki_de_perception</d2p1:Nom>
+            </d2p1:Haki>
+            <d2p1:Haki z:Id="22">
+              <d2p1:Description z:Id="23">Permet de se renforcé</d2p1:Description>
+              <d2p1:Nom>Haki_du_renforcement</d2p1:Nom>
+            </d2p1:Haki>
+          </d2p1:ListHaki>
+          <d2p1:ListeArc z:Id="24" z:Size="2">
+            <d2p1:Arc z:Ref="3" i:nil="true" />
+            <d2p1:Arc z:Id="25">
+              <d2p1:ImgDeBase z:Id="26">
+                <d2p1:Description z:Id="27">Luffy au début</d2p1:Description>
+                <d2p1:Source z:Id="28">ImageArc/kuro.png</d2p1:Source>
+              </d2p1:ImgDeBase>
+              <d2p1:Info z:Id="29">hgquf</d2p1:Info>
+              <d2p1:Nom z:Id="30">Capitaine Kuro</d2p1:Nom>
+              <d2p1:SourceImgArc z:Id="31" z:Size="1">
+                <d2p1:Image z:Ref="26" i:nil="true" />
+              </d2p1:SourceImgArc>
+            </d2p1:Arc>
+          </d2p1:ListeArc>
+          <d2p1:Nom z:Id="32">Monkey D.</d2p1:Nom>
+          <d2p1:Prénom z:Id="33">Luffy</d2p1:Prénom>
+          <d2p1:SourceImgPerso z:Id="34" z:Size="7">
+            <d2p1:Image z:Id="35">
+              <d2p1:Description z:Id="36">Luffy a Sabaody</d2p1:Description>
+              <d2p1:Source z:Id="37">ImagePerso/Luffy/ancien_luffy.png</d2p1:Source>
+            </d2p1:Image>
+            <d2p1:Image z:Id="38">
+              <d2p1:Description z:Id="39">Le fameux Gear 4</d2p1:Description>
+              <d2p1:Source z:Id="40">ImagePerso/Luffy/gear4_luffy.png</d2p1:Source>
+            </d2p1:Image>
+            <d2p1:Image z:Id="41">
+              <d2p1:Description z:Id="42">Luffy enfant</d2p1:Description>
+              <d2p1:Source z:Id="43">ImagePerso/Luffy/luffy_petit.png</d2p1:Source>
+            </d2p1:Image>
+            <d2p1:Image z:Id="44">
+              <d2p1:Description z:Id="45">Luffy énervé</d2p1:Description>
+              <d2p1:Source z:Id="46">ImagePerso/Luffy/luffy_po_content.png</d2p1:Source>
+            </d2p1:Image>
+            <d2p1:Image z:Id="47">
+              <d2p1:Description z:Id="48">Luffy avant la tempete</d2p1:Description>
+              <d2p1:Source z:Id="49">ImagePerso/Luffy/luffy_drame.png</d2p1:Source>
+            </d2p1:Image>
+            <d2p1:Image z:Id="50">
+              <d2p1:Description z:Id="51">Luffy le capitaine</d2p1:Description>
+              <d2p1:Source z:Id="52">ImagePerso/Luffy/luffy_capitaine.jpg</d2p1:Source>
+            </d2p1:Image>
+            <d2p1:Image z:Id="53">
+              <d2p1:Description z:Ref="14" i:nil="true" />
+              <d2p1:Source z:Ref="15" i:nil="true" />
+            </d2p1:Image>
+          </d2p1:SourceImgPerso>
+        </d2p1:Personnage>
+      </d2p1:ListePerso>
+      <d2p1:Nom z:Id="54">Colonel Morgan</d2p1:Nom>
+      <d2p1:SourceImgArc z:Id="55" z:Size="1">
+        <d2p1:Image z:Ref="4" i:nil="true" />
+      </d2p1:SourceImgArc>
+    </d2p1:Arc>
+    <d2p1:Arc z:Id="56">
+      <d2p1:ImgDeBase z:Id="57">
+        <d2p1:Description z:Ref="5" i:nil="true" />
+        <d2p1:Source z:Id="58">/ImageArc/baggy.png</d2p1:Source>
+      </d2p1:ImgDeBase>
+      <d2p1:Info z:Id="59">Deuxième arc de One Piece</d2p1:Info>
+      <d2p1:ListePerso z:Id="60" z:Size="1">
+        <d2p1:Personnage z:Ref="9" i:nil="true" />
+      </d2p1:ListePerso>
+      <d2p1:Nom z:Id="61">Baggy le clown</d2p1:Nom>
+      <d2p1:SourceImgArc z:Id="62" z:Size="1">
+        <d2p1:Image z:Ref="57" i:nil="true" />
+      </d2p1:SourceImgArc>
+    </d2p1:Arc>
+    <d2p1:Arc z:Ref="25" i:nil="true" />
+    <d2p1:Arc z:Id="63">
+      <d2p1:ImgDeBase z:Id="64">
+        <d2p1:Description z:Ref="27" i:nil="true" />
+        <d2p1:Source z:Id="65">ImageArc/baratie.png</d2p1:Source>
+      </d2p1:ImgDeBase>
+      <d2p1:Info z:Ref="29" i:nil="true" />
+      <d2p1:Nom z:Id="66">Baratie</d2p1:Nom>
+      <d2p1:SourceImgArc z:Id="67" z:Size="1">
+        <d2p1:Image z:Ref="64" i:nil="true" />
+      </d2p1:SourceImgArc>
+    </d2p1:Arc>
+    <d2p1:Arc z:Id="68">
+      <d2p1:ImgDeBase z:Id="69">
+        <d2p1:Description z:Ref="27" i:nil="true" />
+        <d2p1:Source z:Id="70">ImageArc/arlong.png</d2p1:Source>
+      </d2p1:ImgDeBase>
+      <d2p1:Info z:Ref="29" i:nil="true" />
+      <d2p1:Nom z:Id="71">Arlong</d2p1:Nom>
+      <d2p1:SourceImgArc z:Id="72" z:Size="1">
+        <d2p1:Image z:Ref="69" i:nil="true" />
+      </d2p1:SourceImgArc>
+    </d2p1:Arc>
+    <d2p1:Arc z:Id="73">
+      <d2p1:ImgDeBase z:Id="74">
+        <d2p1:Description z:Ref="27" i:nil="true" />
+        <d2p1:Source z:Id="75">ImageArc/loguetown.png</d2p1:Source>
+      </d2p1:ImgDeBase>
+      <d2p1:Info z:Ref="29" i:nil="true" />
+      <d2p1:Nom z:Id="76">LogueTown</d2p1:Nom>
+      <d2p1:SourceImgArc z:Id="77" z:Size="1">
+        <d2p1:Image z:Ref="74" i:nil="true" />
+      </d2p1:SourceImgArc>
+    </d2p1:Arc>
+    <d2p1:Arc z:Id="78">
+      <d2p1:ImgDeBase z:Id="79">
+        <d2p1:Description z:Ref="27" i:nil="true" />
+        <d2p1:Source z:Id="80">ImageArc/laboon.png</d2p1:Source>
+      </d2p1:ImgDeBase>
+      <d2p1:Info z:Ref="29" i:nil="true" />
+      <d2p1:Nom z:Id="81">Laboon</d2p1:Nom>
+      <d2p1:SourceImgArc z:Id="82" z:Size="1">
+        <d2p1:Image z:Ref="79" i:nil="true" />
+      </d2p1:SourceImgArc>
+    </d2p1:Arc>
+    <d2p1:Arc z:Id="83">
+      <d2p1:ImgDeBase z:Id="84">
+        <d2p1:Description z:Ref="27" i:nil="true" />
+        <d2p1:Source z:Id="85">ImageArc/whiskey.png</d2p1:Source>
+      </d2p1:ImgDeBase>
+      <d2p1:Info z:Ref="29" i:nil="true" />
+      <d2p1:Nom z:Id="86">Whiskey Peak</d2p1:Nom>
+      <d2p1:SourceImgArc z:Id="87" z:Size="1">
+        <d2p1:Image z:Ref="84" i:nil="true" />
+      </d2p1:SourceImgArc>
+    </d2p1:Arc>
+    <d2p1:Arc z:Id="88">
+      <d2p1:ImgDeBase z:Id="89">
+        <d2p1:Description z:Ref="27" i:nil="true" />
+        <d2p1:Source z:Id="90">ImageArc/garden.png</d2p1:Source>
+      </d2p1:ImgDeBase>
+      <d2p1:Info z:Ref="29" i:nil="true" />
+      <d2p1:Nom z:Id="91">Little_Garden</d2p1:Nom>
+      <d2p1:SourceImgArc z:Id="92" z:Size="1">
+        <d2p1:Image z:Ref="89" i:nil="true" />
+      </d2p1:SourceImgArc>
+    </d2p1:Arc>
+    <d2p1:Arc z:Id="93">
+      <d2p1:ImgDeBase z:Id="94">
+        <d2p1:Description z:Ref="27" i:nil="true" />
+        <d2p1:Source z:Id="95">ImageArc/drum.png</d2p1:Source>
+      </d2p1:ImgDeBase>
+      <d2p1:Info z:Ref="29" i:nil="true" />
+      <d2p1:Nom z:Id="96">Royaume de Drum</d2p1:Nom>
+      <d2p1:SourceImgArc z:Id="97" z:Size="1">
+        <d2p1:Image z:Ref="94" i:nil="true" />
+      </d2p1:SourceImgArc>
+    </d2p1:Arc>
+    <d2p1:Arc z:Id="98">
+      <d2p1:ImgDeBase z:Id="99">
+        <d2p1:Description z:Ref="27" i:nil="true" />
+        <d2p1:Source z:Id="100">ImageArc/alabasta.png</d2p1:Source>
+      </d2p1:ImgDeBase>
+      <d2p1:Info z:Ref="29" i:nil="true" />
+      <d2p1:Nom z:Id="101">Alabasta</d2p1:Nom>
+      <d2p1:SourceImgArc z:Id="102" z:Size="1">
+        <d2p1:Image z:Ref="99" i:nil="true" />
+      </d2p1:SourceImgArc>
+    </d2p1:Arc>
+    <d2p1:Arc z:Id="103">
+      <d2p1:ImgDeBase z:Id="104">
+        <d2p1:Description z:Ref="27" i:nil="true" />
+        <d2p1:Source z:Id="105">ImageArc/jaya.png</d2p1:Source>
+      </d2p1:ImgDeBase>
+      <d2p1:Info z:Ref="29" i:nil="true" />
+      <d2p1:Nom z:Id="106">Jaya</d2p1:Nom>
+      <d2p1:SourceImgArc z:Id="107" z:Size="1">
+        <d2p1:Image z:Ref="104" i:nil="true" />
+      </d2p1:SourceImgArc>
+    </d2p1:Arc>
+    <d2p1:Arc z:Id="108">
+      <d2p1:ImgDeBase z:Id="109">
+        <d2p1:Description z:Ref="27" i:nil="true" />
+        <d2p1:Source z:Id="110">ImageArc/skypiea.png</d2p1:Source>
+      </d2p1:ImgDeBase>
+      <d2p1:Info z:Ref="29" i:nil="true" />
+      <d2p1:Nom z:Id="111">Skypiea</d2p1:Nom>
+      <d2p1:SourceImgArc z:Id="112" z:Size="1">
+        <d2p1:Image z:Ref="109" i:nil="true" />
+      </d2p1:SourceImgArc>
+    </d2p1:Arc>
+    <d2p1:Arc z:Id="113">
+      <d2p1:ImgDeBase z:Id="114">
+        <d2p1:Description z:Ref="27" i:nil="true" />
+        <d2p1:Source z:Id="115">ImageArc/davy.png</d2p1:Source>
+      </d2p1:ImgDeBase>
+      <d2p1:Info z:Ref="29" i:nil="true" />
+      <d2p1:Nom z:Id="116">Davy Back Fight</d2p1:Nom>
+      <d2p1:SourceImgArc z:Id="117" z:Size="1">
+        <d2p1:Image z:Ref="114" i:nil="true" />
+      </d2p1:SourceImgArc>
+    </d2p1:Arc>
+    <d2p1:Arc z:Id="118">
+      <d2p1:ImgDeBase z:Id="119">
+        <d2p1:Description z:Ref="27" i:nil="true" />
+        <d2p1:Source z:Id="120">ImageArc/water.png</d2p1:Source>
+      </d2p1:ImgDeBase>
+      <d2p1:Info z:Ref="29" i:nil="true" />
+      <d2p1:Nom z:Id="121">Water Seven</d2p1:Nom>
+      <d2p1:SourceImgArc z:Id="122" z:Size="1">
+        <d2p1:Image z:Ref="119" i:nil="true" />
+      </d2p1:SourceImgArc>
+    </d2p1:Arc>
+    <d2p1:Arc z:Id="123">
+      <d2p1:ImgDeBase z:Id="124">
+        <d2p1:Description z:Ref="27" i:nil="true" />
+        <d2p1:Source z:Id="125">ImageArc/enies.png</d2p1:Source>
+      </d2p1:ImgDeBase>
+      <d2p1:Info z:Ref="29" i:nil="true" />
+      <d2p1:Nom z:Id="126">Enies Lobby</d2p1:Nom>
+      <d2p1:SourceImgArc z:Id="127" z:Size="1">
+        <d2p1:Image z:Ref="124" i:nil="true" />
+      </d2p1:SourceImgArc>
+    </d2p1:Arc>
+    <d2p1:Arc z:Id="128">
+      <d2p1:ImgDeBase z:Id="129">
+        <d2p1:Description z:Ref="27" i:nil="true" />
+        <d2p1:Source z:Id="130">ImageArc/post_enies.png</d2p1:Source>
+      </d2p1:ImgDeBase>
+      <d2p1:Info z:Ref="29" i:nil="true" />
+      <d2p1:Nom z:Id="131">Post Enies Lobby</d2p1:Nom>
+      <d2p1:SourceImgArc z:Id="132" z:Size="1">
+        <d2p1:Image z:Ref="129" i:nil="true" />
+      </d2p1:SourceImgArc>
+    </d2p1:Arc>
+    <d2p1:Arc z:Id="133">
+      <d2p1:ImgDeBase z:Id="134">
+        <d2p1:Description z:Ref="27" i:nil="true" />
+        <d2p1:Source z:Id="135">ImageArc/thriller.png</d2p1:Source>
+      </d2p1:ImgDeBase>
+      <d2p1:Info z:Ref="29" i:nil="true" />
+      <d2p1:Nom z:Id="136">Thriller Bark</d2p1:Nom>
+      <d2p1:SourceImgArc z:Id="137" z:Size="1">
+        <d2p1:Image z:Ref="134" i:nil="true" />
+      </d2p1:SourceImgArc>
+    </d2p1:Arc>
+    <d2p1:Arc z:Id="138">
+      <d2p1:ImgDeBase z:Id="139">
+        <d2p1:Description z:Ref="27" i:nil="true" />
+        <d2p1:Source z:Id="140">ImageArc/sabaody.png</d2p1:Source>
+      </d2p1:ImgDeBase>
+      <d2p1:Info z:Ref="29" i:nil="true" />
+      <d2p1:Nom z:Id="141">Archipel Sabaody</d2p1:Nom>
+      <d2p1:SourceImgArc z:Id="142" z:Size="1">
+        <d2p1:Image z:Ref="139" i:nil="true" />
+      </d2p1:SourceImgArc>
+    </d2p1:Arc>
+    <d2p1:Arc z:Id="143">
+      <d2p1:ImgDeBase z:Id="144">
+        <d2p1:Description z:Ref="27" i:nil="true" />
+        <d2p1:Source z:Id="145">ImageArc/amazon.png</d2p1:Source>
+      </d2p1:ImgDeBase>
+      <d2p1:Info z:Ref="29" i:nil="true" />
+      <d2p1:Nom z:Id="146">Amazon Lily</d2p1:Nom>
+      <d2p1:SourceImgArc z:Id="147" z:Size="1">
+        <d2p1:Image z:Ref="144" i:nil="true" />
+      </d2p1:SourceImgArc>
+    </d2p1:Arc>
+    <d2p1:Arc z:Id="148">
+      <d2p1:ImgDeBase z:Id="149">
+        <d2p1:Description z:Ref="27" i:nil="true" />
+        <d2p1:Source z:Id="150">ImageArc/impel.png</d2p1:Source>
+      </d2p1:ImgDeBase>
+      <d2p1:Info z:Ref="29" i:nil="true" />
+      <d2p1:Nom z:Id="151">Impel Down</d2p1:Nom>
+      <d2p1:SourceImgArc z:Id="152" z:Size="1">
+        <d2p1:Image z:Ref="149" i:nil="true" />
+      </d2p1:SourceImgArc>
+    </d2p1:Arc>
+    <d2p1:Arc z:Id="153">
+      <d2p1:ImgDeBase z:Id="154">
+        <d2p1:Description z:Ref="27" i:nil="true" />
+        <d2p1:Source z:Id="155">ImageArc/marineford.png</d2p1:Source>
+      </d2p1:ImgDeBase>
+      <d2p1:Info z:Ref="29" i:nil="true" />
+      <d2p1:Nom z:Id="156">Marineford</d2p1:Nom>
+      <d2p1:SourceImgArc z:Id="157" z:Size="1">
+        <d2p1:Image z:Ref="154" i:nil="true" />
+      </d2p1:SourceImgArc>
+    </d2p1:Arc>
+    <d2p1:Arc z:Id="158">
+      <d2p1:ImgDeBase z:Id="159">
+        <d2p1:Description z:Ref="27" i:nil="true" />
+        <d2p1:Source z:Id="160">ImageArc/post_marineford.png</d2p1:Source>
+      </d2p1:ImgDeBase>
+      <d2p1:Info z:Ref="29" i:nil="true" />
+      <d2p1:Nom z:Id="161">Post Marineford</d2p1:Nom>
+      <d2p1:SourceImgArc z:Id="162" z:Size="1">
+        <d2p1:Image z:Ref="159" i:nil="true" />
+      </d2p1:SourceImgArc>
+    </d2p1:Arc>
+    <d2p1:Arc z:Id="163">
+      <d2p1:ImgDeBase z:Id="164">
+        <d2p1:Description z:Ref="27" i:nil="true" />
+        <d2p1:Source z:Id="165">ImageArc/retour.png</d2p1:Source>
+      </d2p1:ImgDeBase>
+      <d2p1:Info z:Ref="29" i:nil="true" />
+      <d2p1:Nom z:Id="166">Retour a Sabaody</d2p1:Nom>
+      <d2p1:SourceImgArc z:Id="167" z:Size="1">
+        <d2p1:Image z:Ref="164" i:nil="true" />
+      </d2p1:SourceImgArc>
+    </d2p1:Arc>
+    <d2p1:Arc z:Id="168">
+      <d2p1:ImgDeBase z:Id="169">
+        <d2p1:Description z:Ref="27" i:nil="true" />
+        <d2p1:Source z:Id="170">ImageArc/hommes.png</d2p1:Source>
+      </d2p1:ImgDeBase>
+      <d2p1:Info z:Ref="29" i:nil="true" />
+      <d2p1:Nom z:Id="171">Hommes Poissons</d2p1:Nom>
+      <d2p1:SourceImgArc z:Id="172" z:Size="1">
+        <d2p1:Image z:Ref="169" i:nil="true" />
+      </d2p1:SourceImgArc>
+    </d2p1:Arc>
+    <d2p1:Arc z:Id="173">
+      <d2p1:ImgDeBase z:Id="174">
+        <d2p1:Description z:Ref="27" i:nil="true" />
+        <d2p1:Source z:Id="175">ImageArc/punk.png</d2p1:Source>
+      </d2p1:ImgDeBase>
+      <d2p1:Info z:Ref="29" i:nil="true" />
+      <d2p1:Nom z:Id="176">Punk Hazard</d2p1:Nom>
+      <d2p1:SourceImgArc z:Id="177" z:Size="1">
+        <d2p1:Image z:Ref="174" i:nil="true" />
+      </d2p1:SourceImgArc>
+    </d2p1:Arc>
+    <d2p1:Arc z:Id="178">
+      <d2p1:ImgDeBase z:Id="179">
+        <d2p1:Description z:Ref="27" i:nil="true" />
+        <d2p1:Source z:Id="180">ImageArc/dressrosa.png</d2p1:Source>
+      </d2p1:ImgDeBase>
+      <d2p1:Info z:Ref="29" i:nil="true" />
+      <d2p1:Nom z:Id="181">Dressrosa</d2p1:Nom>
+      <d2p1:SourceImgArc z:Id="182" z:Size="1">
+        <d2p1:Image z:Ref="179" i:nil="true" />
+      </d2p1:SourceImgArc>
+    </d2p1:Arc>
+    <d2p1:Arc z:Id="183">
+      <d2p1:ImgDeBase z:Id="184">
+        <d2p1:Description z:Ref="27" i:nil="true" />
+        <d2p1:Source z:Id="185">ImageArc/mine.png</d2p1:Source>
+      </d2p1:ImgDeBase>
+      <d2p1:Info z:Ref="29" i:nil="true" />
+      <d2p1:Nom z:Id="186">Mine Argentée</d2p1:Nom>
+      <d2p1:SourceImgArc z:Id="187" z:Size="1">
+        <d2p1:Image z:Ref="184" i:nil="true" />
+      </d2p1:SourceImgArc>
+    </d2p1:Arc>
+    <d2p1:Arc z:Id="188">
+      <d2p1:ImgDeBase z:Id="189">
+        <d2p1:Description z:Ref="27" i:nil="true" />
+        <d2p1:Source z:Id="190">ImageArc/zou.png</d2p1:Source>
+      </d2p1:ImgDeBase>
+      <d2p1:Info z:Ref="29" i:nil="true" />
+      <d2p1:Nom z:Id="191">Zou</d2p1:Nom>
+      <d2p1:SourceImgArc z:Id="192" z:Size="1">
+        <d2p1:Image z:Ref="189" i:nil="true" />
+      </d2p1:SourceImgArc>
+    </d2p1:Arc>
+    <d2p1:Arc z:Id="193">
+      <d2p1:ImgDeBase z:Id="194">
+        <d2p1:Description z:Ref="27" i:nil="true" />
+        <d2p1:Source z:Id="195">ImageArc/whole.png</d2p1:Source>
+      </d2p1:ImgDeBase>
+      <d2p1:Info z:Ref="29" i:nil="true" />
+      <d2p1:Nom z:Id="196">Whole Cake</d2p1:Nom>
+      <d2p1:SourceImgArc z:Id="197" z:Size="1">
+        <d2p1:Image z:Ref="194" i:nil="true" />
+      </d2p1:SourceImgArc>
+    </d2p1:Arc>
+    <d2p1:Arc z:Id="198">
+      <d2p1:ImgDeBase z:Id="199">
+        <d2p1:Description z:Ref="27" i:nil="true" />
+        <d2p1:Source z:Id="200">ImageArc/reverie.png</d2p1:Source>
+      </d2p1:ImgDeBase>
+      <d2p1:Info z:Ref="29" i:nil="true" />
+      <d2p1:Nom z:Id="201">Reverie</d2p1:Nom>
+      <d2p1:SourceImgArc z:Id="202" z:Size="1">
+        <d2p1:Image z:Ref="199" i:nil="true" />
+      </d2p1:SourceImgArc>
+    </d2p1:Arc>
+    <d2p1:Arc z:Id="203">
+      <d2p1:ImgDeBase z:Id="204">
+        <d2p1:Description z:Ref="27" i:nil="true" />
+        <d2p1:Source z:Id="205">ImageArc/wano.png</d2p1:Source>
+      </d2p1:ImgDeBase>
+      <d2p1:Info z:Ref="29" i:nil="true" />
+      <d2p1:Nom z:Id="206">Wano Kuni</d2p1:Nom>
+      <d2p1:SourceImgArc z:Id="207" z:Size="1">
+        <d2p1:Image z:Ref="204" i:nil="true" />
+      </d2p1:SourceImgArc>
+    </d2p1:Arc>
+  </Arcs>
+  <Hakis xmlns:d2p1="http://schemas.datacontract.org/2004/07/ClassLibrary1" z:Id="208" z:Size="3">
+    <d2p1:Haki z:Ref="18" i:nil="true" />
+    <d2p1:Haki z:Ref="20" i:nil="true" />
+    <d2p1:Haki z:Ref="22" i:nil="true" />
+  </Hakis>
+  <Personnages xmlns:d2p1="http://schemas.datacontract.org/2004/07/ClassLibrary1" z:Id="209" z:Size="2">
+    <d2p1:Personnage z:Ref="9" i:nil="true" />
+    <d2p1:Personnage z:Id="210">
+      <d2p1:ImgBase z:Id="211" />
+      <d2p1:ListHaki z:Id="212" z:Size="0" />
+      <d2p1:ListeArc z:Id="213" z:Size="0" />
+      <d2p1:Nom z:Id="214">coucuoc</d2p1:Nom>
+      <d2p1:Prénom z:Id="215">prenom</d2p1:Prénom>
+      <d2p1:SourceImgPerso z:Id="216" z:Size="0" />
+    </d2p1:Personnage>
+  </Personnages>
+</DataPersist>
