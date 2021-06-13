@@ -5,25 +5,20 @@ using System.IO;
 using System.Text;
 using System.Windows.Data;
 using System.Windows.Controls;
+using System.Diagnostics;
 
 namespace Projet1
 {
     class StringToImageConverter : IValueConverter
     {
-        private static string imagesPath;
-
-        static StringToImageConverter()
-        {
-            imagesPath = Path.Combine(Directory.GetCurrentDirectory(), "..\\Image\\");
-        }
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            string imageName = value as string;
-            if (string.IsNullOrWhiteSpace(imageName)) return null;
-
-            string imagePath = Path.Combine(imagesPath, imageName);
-
-            return new Uri(imagePath, UriKind.RelativeOrAbsolute);
+            string nomImage = (value as string);
+            if (string.IsNullOrWhiteSpace(nomImage)) return null;
+            Debug.WriteLine(Directory.GetCurrentDirectory());
+            string dossierImage = Path.Combine(Directory.GetCurrentDirectory(), "../Image");
+            string cheminImage = Path.Combine(dossierImage, nomImage);
+            return new Uri(cheminImage, UriKind.RelativeOrAbsolute);
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

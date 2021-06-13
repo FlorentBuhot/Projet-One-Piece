@@ -55,7 +55,7 @@
                     <DataTemplate>
                         <WrapPanel>
                             <Border BorderBrush="Black" BorderThickness="2" Margin="0,0,10,0">
-                                <Image Source="{Binding ImgBase.Source}" MinHeight="40" MaxHeight="40" MinWidth="40" MaxWidth="40"></Image>
+                                <Image Source="{Binding ImgBase.Source , Converter={StaticResource StringToImageConverter}}" MinHeight="40" MaxHeight="40" MinWidth="40" MaxWidth="40"></Image>
                             </Border>
                             <TextBlock TextAlignment="Center" VerticalAlignment="Center">
                                 <Run Text="{Binding Nom}"></Run>
@@ -77,7 +77,7 @@
                     <DataTemplate>
                         <StackPanel>
                             <Border BorderBrush="Black" BorderThickness="2" Margin="20,20,20,10">
-                                <Image Source="{Binding Source}" MinHeight="40" MaxHeight="200" MinWidth="40" MaxWidth="200"></Image>
+                                <Image Source="{Binding Source, Converter={StaticResource StringToImageConverter}}" MinHeight="40" MaxHeight="200" MinWidth="40" MaxWidth="200"></Image>
                             </Border>
                             <TextBlock Text="{Binding Description}" TextAlignment="Center"></TextBlock>
                         </StackPanel>

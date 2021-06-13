@@ -51,7 +51,7 @@
                             <RowDefinition/>
                             <RowDefinition/>
                             </Grid.RowDefinitions>
-                            <Image Source="{Binding PersoAfficher.ImgBase.Source}" MaxHeight="100" MaxWidth="100" HorizontalAlignment="Right" Margin="20" Grid.Column="0" Grid.Row="0"></Image>
+                            <Image Source="{Binding PersoAfficher.ImgBase.Source, Converter={StaticResource StringToImageConverter}}" MaxHeight="100" MaxWidth="100" HorizontalAlignment="Right" Margin="20" Grid.Column="0" Grid.Row="0"></Image>
                         <TextBlock FontWeight="Bold" TextDecorations="Underline" FontFamily="Arial Black" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10" Grid.Column="1" Grid.Row="0">
                             <Run Text="{Binding PersoAfficher.Nom}"></Run>
                             <Run Text="{Binding PersoAfficher.Prénom}"></Run>
@@ -125,7 +125,7 @@
                     <DataTemplate>
                         <StackPanel>
                             <Border BorderBrush="Black" BorderThickness="2" Margin="20,20,20,10">
-                                <Image Source="{Binding Source}" MinHeight="40" MaxHeight="200" MinWidth="40" MaxWidth="200"></Image>
+                                <Image Source="{Binding Source, Converter={StaticResource StringToImageConverter}}" MinHeight="40" MaxHeight="200" MinWidth="40" MaxWidth="200"></Image>
                             </Border>
                             <TextBlock Text="{Binding Description}" TextAlignment="Center"></TextBlock>
                         </StackPanel>

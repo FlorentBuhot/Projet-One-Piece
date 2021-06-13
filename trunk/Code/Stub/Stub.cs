@@ -21,7 +21,9 @@ namespace Stub
         public (IEnumerable<Personnage> personnages, IEnumerable<Arc> arcs, IEnumerable<Haki> hakis) ChargeDonnees()
         {
             Personnage Luffy = new Personnage();
-            Luffy.ImgBase = new ClassLibrary1.Image("ImagePerso/Luffy/luffy_sourire.png", "Luffy heureux");
+            Luffy.ImgBase = new ClassLibrary1.Image("ImagePerso/luffy_sourire.png", "Luffy heureux");
+            Personnage Zoro = new Personnage();
+            Zoro.ImgBase = new ClassLibrary1.Image("ImagePerso/luffy_sourire.png", "Luffy heureux");
 
             List<Arc> ListeArc = new List<Arc>();
             Arc Arc1 = new Arc("Colonel Morgan", "Première arc de One Piece", new ClassLibrary1.Image("/ImageArc/morgan.png", "Le colonel Morgan"), new List<Personnage> {Luffy});
@@ -113,13 +115,13 @@ namespace Stub
                 Appartennance LuffyAppart = new Appartennance("Pirate au Chapeau de Paille", "Equipage trop fort");
                 Luffy.Appart = LuffyAppart;
 
-                ClassLibrary1.Image Image1 = new ClassLibrary1.Image("ImagePerso/Luffy/ancien_luffy.png", "Luffy a Sabaody");
-                ClassLibrary1.Image Image2 = new ClassLibrary1.Image("ImagePerso/Luffy/gear4_luffy.png", "Le fameux Gear 4");
-                ClassLibrary1.Image Image3 = new ClassLibrary1.Image("ImagePerso/Luffy/luffy_petit.png", "Luffy enfant");
-                ClassLibrary1.Image Image4 = new ClassLibrary1.Image("ImagePerso/Luffy/luffy_po_content.png", "Luffy énervé");
-                ClassLibrary1.Image Image5 = new ClassLibrary1.Image("ImagePerso/Luffy/luffy_drame.png", "Luffy avant la tempete");
-                ClassLibrary1.Image Image6 = new ClassLibrary1.Image("ImagePerso/Luffy/luffy_capitaine.jpg", "Luffy le capitaine");
-                ClassLibrary1.Image Image7 = new ClassLibrary1.Image("ImagePerso/Luffy/luffy_sourire.png", "Luffy heureux");
+                ClassLibrary1.Image Image1 = new ClassLibrary1.Image("ImagePerso/ancien_luffy.png", "Luffy a Sabaody");
+                ClassLibrary1.Image Image2 = new ClassLibrary1.Image("ImagePerso/gear4_luffy.png", "Le fameux Gear 4");
+                ClassLibrary1.Image Image3 = new ClassLibrary1.Image("ImagePerso/luffy_petit.png", "Luffy enfant");
+                ClassLibrary1.Image Image4 = new ClassLibrary1.Image("ImagePerso/luffy_po_content.png", "Luffy énervé");
+                ClassLibrary1.Image Image5 = new ClassLibrary1.Image("ImagePerso/luffy_drame.png", "Luffy avant la tempete");
+                ClassLibrary1.Image Image6 = new ClassLibrary1.Image("ImagePerso/luffy_capitaine.jpg", "Luffy le capitaine");
+                ClassLibrary1.Image Image7 = new ClassLibrary1.Image("ImagePerso/luffy_sourire.png", "Luffy heureux");
 
                 Luffy.SourceImgPerso.Add(Image1);
                 Luffy.SourceImgPerso.Add(Image2);
@@ -133,9 +135,27 @@ namespace Stub
                 Luffy.ListeArc.Add(ListeArc[ListeArc.IndexOf(Arc1)]);
                 Luffy.ListeArc.Add(ListeArc[ListeArc.IndexOf(Arc2)]);
                 Luffy.ListeArc.Add(ListeArc[ListeArc.IndexOf(Arc3)]);
+                Luffy.ListeArc.Add(ListeArc[ListeArc.IndexOf(Arc4)]);
+                Luffy.ListeArc.Add(ListeArc[ListeArc.IndexOf(Arc5)]);
+                Luffy.ListeArc.Add(ListeArc[ListeArc.IndexOf(Arc6)]);
+                Luffy.ListeArc.Add(ListeArc[ListeArc.IndexOf(Arc7)]);
+                Luffy.ListeArc.Add(ListeArc[ListeArc.IndexOf(Arc8)]);
+                Luffy.ListeArc.Add(ListeArc[ListeArc.IndexOf(Arc9)]);
+                Luffy.ListeArc.Add(ListeArc[ListeArc.IndexOf(Arc10)]);
+                Luffy.ListeArc.Add(ListeArc[ListeArc.IndexOf(Arc11)]);
+                Luffy.ListeArc.Add(ListeArc[ListeArc.IndexOf(Arc12)]);
+                Luffy.ListeArc.Add(ListeArc[ListeArc.IndexOf(Arc13)]);
+                Luffy.ListeArc.Add(ListeArc[ListeArc.IndexOf(Arc14)]);
+                Luffy.ListeArc.Add(ListeArc[ListeArc.IndexOf(Arc15)]);
+                Luffy.ListeArc.Add(ListeArc[ListeArc.IndexOf(Arc16)]);
+                Luffy.ListeArc.Add(ListeArc[ListeArc.IndexOf(Arc17)]);
+                Luffy.ListeArc.Add(ListeArc[ListeArc.IndexOf(Arc18)]);
+                Luffy.ListeArc.Add(ListeArc[ListeArc.IndexOf(Arc19)]);
+                Luffy.ListeArc.Add(ListeArc[ListeArc.IndexOf(Arc20)]);
+                Luffy.ListeArc.Add(ListeArc[ListeArc.IndexOf(Arc21)]);
+                Luffy.ListeArc.Add(ListeArc[ListeArc.IndexOf(Arc22)]);
 
             ListePerso.Add(Luffy);
-            ListePerso.Add(new Personnage("coucuoc", "prenom", new Image()));
 
             return (ListePerso, ListeArc, ListHaki);
         }
