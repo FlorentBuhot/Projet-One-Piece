@@ -16,7 +16,7 @@
             <RowDefinition Height="8*"></RowDefinition>
         </Grid.RowDefinitions>
         <TextBlock Grid.Row="0" HorizontalAlignment="Center" Text="Information sur le personnage" Margin="20"/>
-        <TextBox Grid.Row="1" Margin="50,30" Text="{Binding Info}"/>
+        <TextBox TextWrapping="Wrap" Grid.Row="1" Margin="50,30" Text="{Binding Info}"/>
         <DockPanel Grid.Row="2" Background="#FF304A53">
             <ContentControl>
                 <Menu VerticalAlignment="Center" HorizontalAlignment="Center" Background="#FF304A53">
