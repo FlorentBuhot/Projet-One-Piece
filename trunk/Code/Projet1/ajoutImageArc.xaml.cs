@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -25,7 +26,6 @@ namespace Projet1
         {
             InitializeComponent();
             NouvelleImage = new ClassLibrary1.Image();
-            NouvelleImage.Description = "WOW une image";
             DataContext = NouvelleImage;
         }
 
@@ -33,7 +33,7 @@ namespace Projet1
         {
             Microsoft.Win32.OpenFileDialog dialog = new Microsoft.Win32.OpenFileDialog();
             dialog.InitialDirectory = @"C:\Utilisateurs";
-            dialog.FileName = "Image_Perso";
+            dialog.FileName = "Image_Arc";
             dialog.DefaultExt = ".jpg | .png | .gif";
 
             bool? result = dialog.ShowDialog();
@@ -41,7 +41,8 @@ namespace Projet1
             if (result == true)
             {
                 string filename = dialog.FileName;
-                image_arc.Source = new BitmapImage(new Uri(filename, UriKind.Absolute));
+                image_Arc.Source = new BitmapImage(new Uri(filename, UriKind.Absolute));
+                File.Copy(filename, @"C:Users/flore/Desktop/ProjetOP/trunk/Code/Projet1/Images/");
             }
         }
 
@@ -52,7 +53,8 @@ namespace Projet1
 
         private void ClickAjouter(object sender, RoutedEventArgs e)
         {
-
+            MonManager.AjouterImgArc(NouvelleImage, MonManager.ArcAfficher);
+            (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.ARC;
         }
     }
 }

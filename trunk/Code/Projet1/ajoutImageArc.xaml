@@ -21,7 +21,7 @@
             </Grid.RowDefinitions>
             <StackPanel Grid.Column="0">
                 <Border BorderBrush="black" BorderThickness="1" Margin="50" MinHeight="150" MinWidth="200" Background="White">
-                    <Image x:Name="image_arc"></Image>
+                    <Image x:Name="image_Arc"></Image>
                 </Border>
                 <Button Content="Parcourir" Click="Bouton_Parcourir" MinHeight="30" MinWidth="180" HorizontalAlignment="Center" Margin="30"/>
             </StackPanel>

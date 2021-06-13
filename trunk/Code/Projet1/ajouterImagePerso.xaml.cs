@@ -26,7 +26,7 @@ namespace Projet1
         {
             InitializeComponent();
             NouvelleImage = new ClassLibrary1.Image();
-            DataContext = MonManger.PersoAfficher;
+            DataContext = NouvelleImage;
         }
 
         private void Bouton_Parcourir(object sender, RoutedEventArgs e)
@@ -51,6 +51,7 @@ namespace Projet1
 
         private void ClickAjouter(object sender, RoutedEventArgs e)
         {
+            MonManger.AjouterImgPerso(NouvelleImage, MonManger.PersoAfficher);
             (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.PERSONNAGE;
         }
     }

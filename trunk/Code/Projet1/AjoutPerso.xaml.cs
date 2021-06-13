@@ -19,13 +19,13 @@ namespace Projet1
     /// </summary>
     public partial class AjoutPerso : UserControl
     {
+        public Manager MonManager => (App.Current as App).MonManager;
         Personnage NouveauPerso { get; set; }
         public Navigator Navigator => (App.Current as App).Navigator;
         public AjoutPerso()
         {
             InitializeComponent();
             NouveauPerso = new Personnage();
-            NouveauPerso.Nom = "bonjour";
             DataContext = NouveauPerso;
         }
 
@@ -46,12 +46,21 @@ namespace Projet1
         }
         private void ClickAnnuler(object sender, RoutedEventArgs e)
         {
-            
+            (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.ACCUEIL;
         }
 
         private void ClickAjouter(object sender, RoutedEventArgs e)
         {
-
+            if(NouveauPerso.Age <= 0)
+            {
+                return;
+            }
+            else
+            {
+                MonManager.PersoAfficher = NouveauPerso;
+                MonManager.AjouterPerso(NouveauPerso);
+                (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.PERSONNAGE;
+            }
         }
     }
 }

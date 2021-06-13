@@ -17,13 +17,13 @@
             </Grid.RowDefinitions>
             <StackPanel Grid.Column="0">
             <Border BorderBrush="black" BorderThickness="1" Margin="50" MinHeight="150" MinWidth="200" Background="White">
-                <Image x:Name="image_perso1"></Image>
+                <Image x:Name="image_perso1" Source="{Binding Source}"></Image>
                 </Border>
                 <Button Content="Parcourir" Click="Bouton_Parcourir" Height="30" Width="180" HorizontalAlignment="Center" Margin="25"/>
             </StackPanel>
             <StackPanel Grid.Column="1">
                 <TextBlock DockPanel.Dock="top" TextWrapping="Wrap" Text="Description de l'image et explication" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="30"/>
-            <TextBox DockPanel.Dock="Bottom" Text="{Binding SourceImgPerso.Description}" MinHeight="200" Margin="30"/>
+            <TextBox DockPanel.Dock="Bottom" Text="{Binding Description}" MinHeight="200" Margin="30"/>
             </StackPanel>
         <DockPanel Grid.Row="1" Grid.ColumnSpan="2" Background="#FF304A53">
             <Menu VerticalAlignment="Center" HorizontalAlignment="Center" Background="#FF304A53">

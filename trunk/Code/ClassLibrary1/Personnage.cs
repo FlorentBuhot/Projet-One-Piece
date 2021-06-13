@@ -34,7 +34,16 @@ namespace ClassLibrary1
         private string info;
 
         [DataMember(EmitDefaultValue = false)]
-        public int Age { get; set; }
+        public int Age 
+        { 
+            get => age; 
+            set
+            {
+                if (age == value || value <= 0) return;
+                age = value;
+            }
+        }
+        private int age;
         [DataMember(EmitDefaultValue = false)]
         public Image ImgBase { get; set; }
         [DataMember(EmitDefaultValue = false)]
