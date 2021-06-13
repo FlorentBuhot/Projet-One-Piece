@@ -73,9 +73,9 @@
                     <TextBox Grid.Row="5" Style="{StaticResource petitChamps}" Text="{Binding Age}"></TextBox>
                     <TextBlock Grid.Row="6" Text="Type de haki" Style="{StaticResource textPreci}"></TextBlock>
                     <ListBox Grid.Row="7" Background="#FFF7CD9B">
-                        <CheckBox Content="Haki des Rois" MinWidth="150" HorizontalAlignment="Center"></CheckBox>
-                        <CheckBox Content="Haki de perception" MinWidth="150" HorizontalAlignment="Center" Grid.Row="1"></CheckBox>
-                        <CheckBox Content="Haki du renforcement" MinWidth="150" HorizontalAlignment="Center" Grid.Row="2"></CheckBox>
+                        <CheckBox x:Name="haki_rois" Content="Haki des Rois" MinWidth="150" HorizontalAlignment="Center"></CheckBox>
+                        <CheckBox x:Name="haki_obs" Content="Haki de perception" MinWidth="150" HorizontalAlignment="Center" Grid.Row="1"></CheckBox>
+                        <CheckBox x:Name="haki_att" Content="Haki du renforcement" MinWidth="150" HorizontalAlignment="Center" Grid.Row="2"></CheckBox>
                     </ListBox>
                 </Grid>
                 <Grid Grid.Column="2" Margin="10">
@@ -97,38 +97,38 @@
                         <ColumnDefinition></ColumnDefinition>
                         <ColumnDefinition></ColumnDefinition>
                     </Grid.ColumnDefinitions>
-                    <CheckBox Content="Colonel Morgan" ></CheckBox>
-                    <CheckBox Content="Baggy le clown" Grid.Row="1"></CheckBox>
-                    <CheckBox Content="Capitaine Kuro" Grid.Row="2"></CheckBox>
-                    <CheckBox Content="Baratie" Grid.Row="3"></CheckBox>
-                    <CheckBox Content="Arlong" Grid.Row="4"></CheckBox>
-                    <CheckBox Content="LogueTown" Grid.Row="5"></CheckBox>
-                    <CheckBox Content="Laboon" Grid.Row="6"></CheckBox>
-                    <CheckBox Content="Whiskey Peak" Grid.Row="7"></CheckBox>
-                    <CheckBox Content="Little Garden" Grid.Row="8"></CheckBox>
-                    <CheckBox Content="Royaume de Drum" Grid.Row="9"></CheckBox>
-                    <CheckBox Content="Alabasta" Grid.Row="10"></CheckBox>
-                    <CheckBox Content="Jaya" Grid.Column="1"></CheckBox>
-                    <CheckBox Content="Skypiea" Grid.Column="1" Grid.Row="1"></CheckBox>
-                    <CheckBox Content="Davy Back Fight" Grid.Column="1" Grid.Row="2"></CheckBox>
-                    <CheckBox Content="Water Seven" Grid.Column="1" Grid.Row="3"></CheckBox>
-                    <CheckBox Content="Enies Lobby" Grid.Column="1" Grid.Row="4"></CheckBox>
-                    <CheckBox Content="Post Enies Lobby" Grid.Column="1" Grid.Row="5"></CheckBox>
-                    <CheckBox Content="Thriller Bark" Grid.Column="1" Grid.Row="6"></CheckBox>
-                    <CheckBox Content="Archipel Sabaody" Grid.Column="1" Grid.Row="7"></CheckBox>
-                    <CheckBox Content="Amazon Lily" Grid.Column="1" Grid.Row="8"></CheckBox>
-                    <CheckBox Content="Impel Down" Grid.Column="1" Grid.Row="9"></CheckBox>
-                    <CheckBox Content="Marine Ford" Grid.Column="1" Grid.Row="10"></CheckBox>
-                    <CheckBox Content="Post Marine Ford" Grid.Column="2"></CheckBox>
-                    <CheckBox Content="Retour a Sabaody" Grid.Column="2" Grid.Row="1"></CheckBox>
-                    <CheckBox Content="Hommes-poissons" Grid.Column="2" Grid.Row="2"></CheckBox>
-                    <CheckBox Content="Punk Hazard" Grid.Column="2" Grid.Row="3"></CheckBox>
-                    <CheckBox Content="Dressrosa" Grid.Column="2" Grid.Row="4"></CheckBox>
-                    <CheckBox Content="Mine Argentée" Grid.Column="2" Grid.Row="5"></CheckBox>
-                    <CheckBox Content="Zou" Grid.Column="2" Grid.Row="6"></CheckBox>
-                    <CheckBox Content="Whole Cake" Grid.Column="2" Grid.Row="7"></CheckBox>
-                    <CheckBox Content="Reverie" Grid.Column="2" Grid.Row="8"></CheckBox>
-                    <CheckBox Content="Wano Kuni" Grid.Column="2" Grid.Row="9"></CheckBox>
+                    <CheckBox x:Name="arc0" Content="Colonel Morgan" ></CheckBox>
+                    <CheckBox x:Name="arc1" Content="Baggy le clown" Grid.Row="1"></CheckBox>
+                    <CheckBox x:Name="arc2" Content="Capitaine Kuro" Grid.Row="2"></CheckBox>
+                    <CheckBox x:Name="arc3" Content="Baratie" Grid.Row="3"></CheckBox>
+                    <CheckBox x:Name="arc4" Content="Arlong" Grid.Row="4"></CheckBox>
+                    <CheckBox x:Name="arc5" Content="LogueTown" Grid.Row="5"></CheckBox>
+                    <CheckBox x:Name="arc6" Content="Laboon" Grid.Row="6"></CheckBox>
+                    <CheckBox x:Name="arc7" Content="Whiskey Peak" Grid.Row="7"></CheckBox>
+                    <CheckBox x:Name="arc8" Content="Little Garden" Grid.Row="8"></CheckBox>
+                    <CheckBox x:Name="arc9" Content="Royaume de Drum" Grid.Row="9"></CheckBox>
+                    <CheckBox x:Name="arc10" Content="Alabasta" Grid.Row="10"></CheckBox>
+                    <CheckBox x:Name="arc11" Content="Jaya" Grid.Column="1"></CheckBox>
+                    <CheckBox x:Name="arc12" Content="Skypiea" Grid.Column="1" Grid.Row="1"></CheckBox>
+                    <CheckBox x:Name="arc13" Content="Davy Back Fight" Grid.Column="1" Grid.Row="2"></CheckBox>
+                    <CheckBox x:Name="arc14" Content="Water Seven" Grid.Column="1" Grid.Row="3"></CheckBox>
+                    <CheckBox x:Name="arc15" Content="Enies Lobby" Grid.Column="1" Grid.Row="4"></CheckBox>
+                    <CheckBox x:Name="arc16" Content="Post Enies Lobby" Grid.Column="1" Grid.Row="5"></CheckBox>
+                    <CheckBox x:Name="arc17" Content="Thriller Bark" Grid.Column="1" Grid.Row="6"></CheckBox>
+                    <CheckBox x:Name="arc18" Content="Archipel Sabaody" Grid.Column="1" Grid.Row="7"></CheckBox>
+                    <CheckBox x:Name="arc19" Content="Amazon Lily" Grid.Column="1" Grid.Row="8"></CheckBox>
+                    <CheckBox x:Name="arc20" Content="Impel Down" Grid.Column="1" Grid.Row="9"></CheckBox>
+                    <CheckBox x:Name="arc21" Content="Marine Ford" Grid.Column="1" Grid.Row="10"></CheckBox>
+                    <CheckBox x:Name="arc22" Content="Post Marine Ford" Grid.Column="2"></CheckBox>
+                    <CheckBox x:Name="arc23" Content="Retour a Sabaody" Grid.Column="2" Grid.Row="1"></CheckBox>
+                    <CheckBox x:Name="arc24" Content="Hommes-poissons" Grid.Column="2" Grid.Row="2"></CheckBox>
+                    <CheckBox x:Name="arc25" Content="Punk Hazard" Grid.Column="2" Grid.Row="3"></CheckBox>
+                    <CheckBox x:Name="arc26" Content="Dressrosa" Grid.Column="2" Grid.Row="4"></CheckBox>
+                    <CheckBox x:Name="arc27" Content="Mine Argentée" Grid.Column="2" Grid.Row="5"></CheckBox>
+                    <CheckBox x:Name="arc28" Content="Zou" Grid.Column="2" Grid.Row="6"></CheckBox>
+                    <CheckBox x:Name="arc29" Content="Whole Cake" Grid.Column="2" Grid.Row="7"></CheckBox>
+                    <CheckBox x:Name="arc30" Content="Reverie" Grid.Column="2" Grid.Row="8"></CheckBox>
+                    <CheckBox x:Name="arc31" Content="Wano Kuni" Grid.Column="2" Grid.Row="9"></CheckBox>
                 </Grid>
             </Grid>
             <TextBox Grid.Row="1" BorderBrush="Black" BorderThickness="1" Text="{Binding Info}" Margin="10"></TextBox>

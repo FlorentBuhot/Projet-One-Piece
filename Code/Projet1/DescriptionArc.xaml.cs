@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ClassLibrary1;
 
 namespace Projet1
 {
@@ -50,6 +51,13 @@ namespace Projet1
                 (App.Current as App).MonManager.ArcAAfficher((App.Current as App).MonManager.NumArc + 1);
                 (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.ARC;
             }
+        }
+
+        private void Liste_Perso(object sender, SelectionChangedEventArgs e)
+        {
+            Personnage perso = ((sender as ListBox).SelectedItem as Personnage);
+            (App.Current as App).MonManager.PersoAfficher = perso;
+            (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.PERSONNAGE;
         }
     }
 }

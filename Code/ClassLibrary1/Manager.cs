@@ -196,7 +196,17 @@ namespace ClassLibrary1
             }
             return null;
         }
-
+        public Haki RechercherHaki(NomHaki nomHaki)
+        {
+            foreach (Haki test in Hakis)
+            {
+                if (test.Nom.Equals(nomHaki))
+                {
+                    return test;
+                }
+            }
+            return null;
+        }
         public int ArcSuivant()
         {
             return NumArc + 1;
