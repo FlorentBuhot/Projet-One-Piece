@@ -50,7 +50,7 @@
                 <RowDefinition Height="90*"/>
             </Grid.RowDefinitions>
             <TextBlock Grid.Row="0" Text="Listes des Personnages" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-            <ListBox Grid.Row="1" BorderBrush="#FF304A53" BorderThickness="2" Background="#FFFFD4A1" ItemsSource="{Binding ArcAfficher.ListePerso}">
+            <ListBox SelectionChanged="Liste_Perso" Grid.Row="1" BorderBrush="#FF304A53" BorderThickness="2" Background="#FFFFD4A1" ItemsSource="{Binding ArcAfficher.ListePerso}">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <WrapPanel>

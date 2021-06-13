@@ -55,12 +55,150 @@ namespace Projet1
             {
                 return;
             }
-            else
+            if(haki_rois.IsChecked == true)
             {
-                MonManager.PersoAfficher = NouveauPerso;
-                MonManager.AjouterPerso(NouveauPerso);
-                (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.PERSONNAGE;
+                NouveauPerso.ListHaki.Add(MonManager.RechercherHaki(NomHaki.Haki_des_rois));
             }
+            if (haki_obs.IsChecked == true)
+            {
+                NouveauPerso.ListHaki.Add(MonManager.RechercherHaki(NomHaki.Haki_de_perception));
+            }
+            if (haki_att.IsChecked == true)
+            {
+                NouveauPerso.ListHaki.Add(MonManager.RechercherHaki(NomHaki.Haki_du_renforcement));
+            }
+            if (arc0.IsChecked == true)
+            {
+                NouveauPerso.ListeArc.Add(MonManager.RechercherArc("Colonel Morgan"));
+            }
+            if (arc1.IsChecked == true)
+            {
+                NouveauPerso.ListeArc.Add(MonManager.RechercherArc("Baggy le clown"));
+            }
+            if (arc2.IsChecked == true)
+            {
+                NouveauPerso.ListeArc.Add(MonManager.RechercherArc("Capitaine Kuro"));
+            }
+            if (arc3.IsChecked == true)
+            {
+                NouveauPerso.ListeArc.Add(MonManager.RechercherArc("Baratie"));
+            }
+            if (arc4.IsChecked == true)
+            {
+                NouveauPerso.ListeArc.Add(MonManager.RechercherArc("Arlong"));
+            }
+            if (arc5.IsChecked == true)
+            {
+                NouveauPerso.ListeArc.Add(MonManager.RechercherArc("LogueTown"));
+            }
+            if (arc6.IsChecked == true)
+            {
+                NouveauPerso.ListeArc.Add(MonManager.RechercherArc("Laboon"));
+            }
+            if (arc7.IsChecked == true)
+            {
+                NouveauPerso.ListeArc.Add(MonManager.RechercherArc("Whiskey Peak"));
+            }
+            if (arc8.IsChecked == true)
+            {
+                NouveauPerso.ListeArc.Add(MonManager.RechercherArc("Little Garden"));
+            }
+            if (arc9.IsChecked == true)
+            {
+                NouveauPerso.ListeArc.Add(MonManager.RechercherArc("Royaume de Drum"));
+            }
+            if (arc10.IsChecked == true)
+            {
+                NouveauPerso.ListeArc.Add(MonManager.RechercherArc("Alabasta"));
+            }
+            if (arc11.IsChecked == true)
+            {
+                NouveauPerso.ListeArc.Add(MonManager.RechercherArc("Jaya"));
+            }
+            if (arc12.IsChecked == true)
+            {
+                NouveauPerso.ListeArc.Add(MonManager.RechercherArc("Skypiea"));
+            }
+            if (arc13.IsChecked == true)
+            {
+                NouveauPerso.ListeArc.Add(MonManager.RechercherArc("Davy Back Fight"));
+            }
+            if (arc14.IsChecked == true)
+            {
+                NouveauPerso.ListeArc.Add(MonManager.RechercherArc("Water Seven"));
+            }
+            if (arc15.IsChecked == true)
+            {
+                NouveauPerso.ListeArc.Add(MonManager.RechercherArc("Enies Lobby"));
+            }
+            if (arc16.IsChecked == true)
+            {
+                NouveauPerso.ListeArc.Add(MonManager.RechercherArc("Post Enies Lobby"));
+            }
+            if (arc17.IsChecked == true)
+            {
+                NouveauPerso.ListeArc.Add(MonManager.RechercherArc("Thriller Bark"));
+            }
+            if (arc18.IsChecked == true)
+            {
+                NouveauPerso.ListeArc.Add(MonManager.RechercherArc("Archipel Sabaody"));
+            }
+            if (arc19.IsChecked == true)
+            {
+                NouveauPerso.ListeArc.Add(MonManager.RechercherArc("Amazon Lily"));
+            }
+            if (arc20.IsChecked == true)
+            {
+                NouveauPerso.ListeArc.Add(MonManager.RechercherArc("Impel Down"));
+            }
+            if (arc21.IsChecked == true)
+            {
+                NouveauPerso.ListeArc.Add(MonManager.RechercherArc("Marineford"));
+            }
+            if (arc22.IsChecked == true)
+            {
+                NouveauPerso.ListeArc.Add(MonManager.RechercherArc("Post Marineford"));
+            }
+            if (arc23.IsChecked == true)
+            {
+                NouveauPerso.ListeArc.Add(MonManager.RechercherArc("Retour a Sabaody"));
+            }
+            if (arc24.IsChecked == true)
+            {
+                NouveauPerso.ListeArc.Add(MonManager.RechercherArc("Hommes Poissons"));
+            }
+            if (arc25.IsChecked == true)
+            {
+                NouveauPerso.ListeArc.Add(MonManager.RechercherArc("Punk Hazard"));
+            }
+            if (arc26.IsChecked == true)
+            {
+                NouveauPerso.ListeArc.Add(MonManager.RechercherArc("Dressrosa"));
+            }
+            if (arc27.IsChecked == true)
+            {
+                NouveauPerso.ListeArc.Add(MonManager.RechercherArc("Mine Argentée"));
+            }
+            if (arc28.IsChecked == true)
+            {
+                NouveauPerso.ListeArc.Add(MonManager.RechercherArc("Zou"));
+            }
+            if (arc29.IsChecked == true)
+            {
+                NouveauPerso.ListeArc.Add(MonManager.RechercherArc("Whole Cake"));
+            }
+            if (arc30.IsChecked == true)
+            {
+                NouveauPerso.ListeArc.Add(MonManager.RechercherArc("Reverie"));
+            }
+            if (arc31.IsChecked == true)
+            {
+                NouveauPerso.ListeArc.Add(MonManager.RechercherArc("Wano Kuni"));
+            }
+            MonManager.PersoAfficher = NouveauPerso;
+            MonManager.AjouterPerso(NouveauPerso);
+            (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.PERSONNAGE;
+            
         }
     }
 }

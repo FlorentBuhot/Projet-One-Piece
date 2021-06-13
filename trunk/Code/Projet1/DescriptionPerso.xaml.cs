@@ -33,5 +33,12 @@ namespace Projet1
         {
             (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.INFO_PERSO;
         }
+
+        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Arc arc = ((sender as ListBox).SelectedItem as Arc);
+            (App.Current as App).MonManager.ArcAfficher = arc;
+            (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.ARC;
+        }
     }
 }

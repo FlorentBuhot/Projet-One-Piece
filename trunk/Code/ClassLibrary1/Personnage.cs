@@ -75,6 +75,7 @@ namespace ClassLibrary1
             ListeArc = new List<Arc>();
             SourceImgPerso = new List<Image>();
             ListHaki = new List<Haki>();
+            Appart = null;
         }
 
 
@@ -167,3 +168,4 @@ namespace ClassLibrary1
         }
     }
 }
+                                                                                                                                                                                                                  
