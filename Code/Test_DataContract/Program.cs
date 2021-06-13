@@ -12,9 +12,6 @@ namespace Test_DataContract
             manager.ChargeDonnees();
             manager.Persistance = new DataContractPersistance.DataContractPers();
             manager.SauvegardeDonnees();
-
-            Manager manager1 = new Manager(new DataContractPersistance.DataContractPers());
-            manager1.ChargeDonnees();
         }
     }
 }
