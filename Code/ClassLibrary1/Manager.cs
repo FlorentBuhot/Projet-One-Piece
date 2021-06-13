@@ -97,27 +97,37 @@ namespace ClassLibrary1
             NumArc = numArc;
         }
 
-        public void AjouterPerso(Personnage perso)
+        public Personnage AjouterPerso(Personnage perso)
         {
             if (ListePerso.Contains(perso))
             {
-                return;
+                return null;
             }
             else
             {
                 ListePerso.Add(perso);
+                foreach(Arc test in ListeArc)
+                {
+                    if (perso.ListeArc.Contains(test))
+                    {
+                        test.ListePerso.Add(perso);
+                    }
+                }
+                return perso;
             }
         }
 
         public void AjouterImgPerso(Image img, Personnage perso)
         {
-            foreach(Personnage test in ListePerso)
+            foreach(Image test in perso.SourceImgPerso)
             {
-                if (test.Equals(perso))
+                if (test.Equals(img))
                 {
-                    test.SourceImgPerso.Add(img);
+                    return;
                 }
             }
+            persoAfficher.SourceImgPerso.Add(img);
+            return;
         }
         public Personnage AjouterInfoPerso(Personnage ancien, Personnage nouveau)
         {
@@ -149,13 +159,15 @@ namespace ClassLibrary1
 
         public void AjouterImgArc(Image img, Arc arc)
         {
-            foreach (Arc test in ListeArc)
+            foreach (Image test in arc.SourceImgArc)
             {
-                if (test.Equals(arc))
+                if (test.Equals(img))
                 {
-                    test.SourceImgArc.AddLast(img);
+                    return;
                 }
             }
+            arc.SourceImgArc.AddLast(img);
+            return;
         }
 
         public Arc AjouterInfoArc(Arc ancien, Arc nouveau)

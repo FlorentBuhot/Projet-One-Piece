@@ -46,7 +46,11 @@
                             <RowDefinition/>
                             <RowDefinition/>
                             <RowDefinition/>
-                        </Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            </Grid.RowDefinitions>
                         <Image Source="{Binding PersoAfficher.ImgBase.Source}" MaxHeight="100" MaxWidth="100" HorizontalAlignment="Right" Margin="20" Grid.Column="0" Grid.Row="0"></Image>
                         <TextBlock FontWeight="Bold" TextDecorations="Underline" FontFamily="Arial Black" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10" Grid.Column="1" Grid.Row="0">
                             <Run Text="{Binding PersoAfficher.Nom}"></Run>
@@ -60,8 +64,12 @@
                             <Run Text="Appartenance :" TextDecorations="Underline"></Run>
                             <Run Text="{Binding PersoAfficher.Appart.Nom}"></Run>
                         </TextBlock>
-                        <TextBlock Margin="0,5,0,5" Text="Haki :" TextDecorations="Underline" HorizontalAlignment="Center" Grid.Row="3" Grid.ColumnSpan="2"></TextBlock>
-                        <TextBlock Margin="0,5,0,5" HorizontalAlignment="Center" Grid.Row="4" Grid.ColumnSpan="2">                     
+                        <TextBlock Margin="0,5,0,5" HorizontalAlignment="Center" Grid.Row="4" Grid.ColumnSpan="2">
+                            <Run Text="Descritpion appartenance :" TextDecorations="Underline"></Run>
+                            <Run Text="{Binding PersoAfficher.Appart.Description}"></Run>
+                        </TextBlock>
+                            <TextBlock Margin="0,5,0,5" Text="Haki :" TextDecorations="Underline" HorizontalAlignment="Center" Grid.Row="7" Grid.ColumnSpan="2"></TextBlock>
+                        <TextBlock Margin="0,5,0,5" HorizontalAlignment="Center" Grid.Row="8" Grid.ColumnSpan="2">                     
                             <Border BorderBrush="#FF304A53" BorderThickness="2">
                                 <ListBox Background="#FFFFD4A1" ItemsSource="{Binding PersoAfficher.ListHaki}">
                                     <ListBox.ItemTemplate>

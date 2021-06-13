@@ -21,6 +21,12 @@ namespace ClassLibrary1
             Description = description;
         }
 
+        public Appartennance(string nom)
+        {
+            Nom = nom;
+            Description = null;
+        }
+
         public override string ToString()
         {
             return Nom + " " + Description;

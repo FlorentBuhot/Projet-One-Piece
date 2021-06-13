@@ -13,11 +13,11 @@
             <Setter Property="Margin" Value="10,10,10,3"/>
         </Style>
         <Style TargetType="TextBox" x:Key="petitChamps">
+            <Setter Property="VerticalAlignment" Value="Top"/>
             <Setter Property="TextAlignment" Value="Center"/>
             <Setter Property="TextWrapping" Value="Wrap"/>
             <Setter Property="MaxWidth" Value="150"/>
-            <Setter Property="MinHeight" Value="50"/>
-            <Setter Property="Padding" Value="8"/>
+            <Setter Property="MaxHeight" Value="25"/>
         </Style>
     </UserControl.Resources>
     
@@ -37,19 +37,22 @@
 
                 <Grid Grid.Column="0">
                     <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
                         <RowDefinition/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="40"/>
                         <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition/>
+                        <RowDefinition Height="25"/>
                         <RowDefinition/>
                     </Grid.RowDefinitions>
-                    <Border Grid.RowSpan="3" BorderBrush="Black" BorderThickness="1" Margin="20">
-                        <Image x:Name="image_perso" Source="Images/icone_one_piece.png"></Image>
+                    <Border Grid.RowSpan="2" BorderBrush="Black" BorderThickness="1" Width="50" Height="50" Margin="5">
+                        <Image x:Name="image_perso" Source="{Binding ImgBase.Source}"></Image>
                     </Border>
-                    <Button Grid.Row="3" Content="Parcourir" Click="Bouton_Parcourir" Width="150" Height="25"></Button>
-                    <TextBlock Grid.Row="4" Text="Nom du personnage" Style="{StaticResource textPreci}"/>
-                    <TextBox Grid.Row="5" Style="{StaticResource petitChamps}" Text="{Binding Nom}"></TextBox>
+                    <Button Grid.Row="2" Content="Parcourir" Click="Bouton_Parcourir" Width="150" Height="25"></Button>
+                    <TextBlock Grid.Row="3" Text="Nom du personnage" Style="{StaticResource textPreci}"/>
+                    <TextBox Grid.Row="4" Style="{StaticResource petitChamps}" Text="{Binding Nom}"></TextBox>
+                    <TextBlock Grid.Row="5" Text="Prénom du personnage" Style="{StaticResource textPreci}"/>
+                    <TextBox Grid.Row="6" Style="{StaticResource petitChamps}" Text="{Binding Prénom}"></TextBox>
                 </Grid>
                 <Grid Grid.Column="1">
                     <Grid.RowDefinitions>
@@ -64,7 +67,7 @@
                     </Grid.RowDefinitions>
                     <TextBlock Text="Appartennance" Style="{StaticResource textPreci}"></TextBlock>
                     <TextBox Grid.Row="1" Style="{StaticResource petitChamps}" Text="{Binding Appart.Nom}"></TextBox>
-                    <TextBlock Grid.Row="2" Text="Description ppartennance" Style="{StaticResource textPreci}"></TextBlock>
+                    <TextBlock Grid.Row="2" Text="Description appartennance" Style="{StaticResource textPreci}"></TextBlock>
                     <TextBox Grid.Row="3" Style="{StaticResource petitChamps}" Text="{Binding Appart.Descritpion}"></TextBox>
                     <TextBlock Grid.Row="4" Text="Age" Style="{StaticResource textPreci}"></TextBlock>
                     <TextBox Grid.Row="5" Style="{StaticResource petitChamps}" Text="{Binding Age}"></TextBox>
