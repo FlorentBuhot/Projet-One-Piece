@@ -22,6 +22,10 @@ namespace Projet1
     {
         Manager MonManager => (App.Current as App).MonManager;
         ClassLibrary1.Image NouvelleImage { get; set; }
+
+        private string filename;
+        private string filesource;
+        private string destinationsource = @"../Image/";
         public ajoutImageArc()
         {
             InitializeComponent();
@@ -33,16 +37,25 @@ namespace Projet1
         {
             Microsoft.Win32.OpenFileDialog dialog = new Microsoft.Win32.OpenFileDialog();
             dialog.InitialDirectory = @"C:\Utilisateurs";
-            dialog.FileName = "Image_Arc";
+            dialog.FileName = "Image";
             dialog.DefaultExt = ".jpg | .png | .gif";
 
             bool? result = dialog.ShowDialog();
 
             if (result == true)
             {
-                string filename = dialog.FileName;
-                image_Arc.Source = new BitmapImage(new Uri(filename, UriKind.Absolute));
-                File.Copy(filename, @"C:Users/flore/Desktop/ProjetOP/trunk/Code/Projet1/Images/");
+                filesource = dialog.FileName;
+                image_Arc.Source = new BitmapImage(new Uri(filesource, UriKind.Absolute));
+            }
+            try
+            {
+                filename = "ImageArc/" + new FileInfo(filesource).Name;
+                destinationsource += filename;
+                File.Copy(filesource, destinationsource, true);
+            }
+            catch (IOException exc)
+            {
+                System.Diagnostics.Debug.WriteLine(exc.Message);
             }
         }
 
@@ -53,6 +66,7 @@ namespace Projet1
 
         private void ClickAjouter(object sender, RoutedEventArgs e)
         {
+            NouvelleImage.Source = filename;
             MonManager.AjouterImgArc(NouvelleImage, MonManager.ArcAfficher);
             (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.ARC;
         }

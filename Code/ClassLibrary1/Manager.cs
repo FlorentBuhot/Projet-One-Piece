@@ -125,6 +125,10 @@ namespace ClassLibrary1
                 {
                     return;
                 }
+                if (test.Source.Equals(img.Source))
+                {
+                    return;
+                }
             }
             persoAfficher.SourceImgPerso.Add(img);
             return;
@@ -162,6 +166,10 @@ namespace ClassLibrary1
             foreach (Image test in arc.SourceImgArc)
             {
                 if (test.Equals(img))
+                {
+                    return;
+                }
+                if (test.Source.Equals(img.Source))
                 {
                     return;
                 }
