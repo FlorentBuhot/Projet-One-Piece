@@ -22,5 +22,10 @@ namespace Projet1
         {
             MonManager.ChargeDonnees();
         }
+
+        private void Application_Exit(object sender, ExitEventArgs e)
+        {
+            MonManager.SauvegardeDonnees();
+        }
     }
 }

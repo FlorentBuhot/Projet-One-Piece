@@ -159,6 +159,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_937E685318844F29B92A14B68D0635A4"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_94CC2B075071471EB36273F76FB9F79E"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -916,6 +922,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_937E685318844F29B92A14B68D0635A4"
+            {
+            "SourcePath" = "8:..\\Projet1\\icone_one_piece.ico"
+            "TargetName" = "8:icone_one_piece.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_7E76F7F52EE047E98B1AC8829D1D92A2"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_94CC2B075071471EB36273F76FB9F79E"
             {
             "SourcePath" = "8:..\\Projetbin\\netcoreapp3.1\\publish\\Image\\ImagePerso\\amazon.png"
@@ -1559,7 +1585,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:OnePeiceForever"
         "ProductCode" = "8:{397F2C26-C267-4731-BD82-D7F75B3C2A3E}"
-        "PackageCode" = "8:{68BF2B91-315D-44E7-89F4-F3078E8BCFED}"
+        "PackageCode" = "8:{86AB31C8-B8A9-459C-8067-7806F535AD5E}"
         "UpgradeCode" = "8:{491F12A3-8BE9-4E2F-A0E6-D02BA98C4384}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
@@ -1679,6 +1705,34 @@
         }
         "Shortcut"
         {
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_AD6A3B9BC5CB4EA6811A023F0A84241E"
+            {
+            "Name" = "8:OnePieceForever"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_CB4B226C4BDB4B11B39C7A575EBD855B"
+            "Folder" = "8:_8A1E968385F145C5BEB02E02DD483C21"
+            "WorkingFolder" = "8:_7E76F7F52EE047E98B1AC8829D1D92A2"
+            "Icon" = "8:_937E685318844F29B92A14B68D0635A4"
+            "Feature" = "8:"
+            }
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_EB5BC797DB6A40568653BD14E8810925"
+            {
+            "Name" = "8:OnePieceForever"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_CB4B226C4BDB4B11B39C7A575EBD855B"
+            "Folder" = "8:_4CCD49EA0871467FBC56ABA8E58C519F"
+            "WorkingFolder" = "8:_7E76F7F52EE047E98B1AC8829D1D92A2"
+            "Icon" = "8:_937E685318844F29B92A14B68D0635A4"
+            "Feature" = "8:"
+            }
         }
         "UserInterface"
         {
