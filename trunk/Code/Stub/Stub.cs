@@ -30,11 +30,11 @@ namespace Stub
             Doflamingo.ImgBase = new ClassLibrary1.Image("ImagePerso/doflamingo_content.jpeg", "Doflamingo content");
 
             List<Arc> ListeArc = new List<Arc>();
-            Arc Arc1 = new Arc("Colonel Morgan", "Première arc de One Piece", new ClassLibrary1.Image("/ImageArc/morgan.png", "Le colonel Morgan"), new List<Personnage> {Luffy, Zoro, Sanji });
+            Arc Arc1 = new Arc("Colonel Morgan", "Première arc de One Piece", new ClassLibrary1.Image("/ImageArc/morgan.png", "Le colonel Morgan"), new List<Personnage> {Luffy, Zoro });
             ListeArc.Add(Arc1);
-            Arc Arc2 = new Arc("Baggy le clown", "Deuxième arc de One Piece", new ClassLibrary1.Image("/ImageArc/baggy.png", "Le colonel Morgan"), new List<Personnage> {Luffy, Zoro, Sanji });
+            Arc Arc2 = new Arc("Baggy le clown", "Deuxième arc de One Piece", new ClassLibrary1.Image("/ImageArc/baggy.png", "Baggy le clown"), new List<Personnage> {Luffy, Zoro });
             ListeArc.Add(Arc2);
-            Arc Arc3 = new Arc("Capitaine Kuro", "Troisième arc de One Piece", new ClassLibrary1.Image("ImageArc/kuro.png", "Luffy au début"), new List<Personnage> { Luffy, Zoro, Sanji });
+            Arc Arc3 = new Arc("Capitaine Kuro", "Troisième arc de One Piece", new ClassLibrary1.Image("ImageArc/kuro.png", "Capitain Kuro"), new List<Personnage> { Luffy, Zoro });
             ListeArc.Add(Arc3);     
             Arc Arc4 = new Arc("Baratie", "Quatrième arc de One Piece", new ClassLibrary1.Image("ImageArc/baratie.png", "Luffy au début"), new List<Personnage> { Luffy, Zoro, Sanji });
             ListeArc.Add(Arc4);

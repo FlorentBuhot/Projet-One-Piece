@@ -24,7 +24,7 @@ namespace Projet1
         ClassLibrary1.Image NouvelleImage { get; set; }
         private string filename;
         private string filesource;
-        private string destinationsource = @"../Image/";
+        private string destinationsource = "Image/";
         
         public ajouterImagePerso()
         {
