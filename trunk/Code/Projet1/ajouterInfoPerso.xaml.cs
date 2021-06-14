@@ -21,11 +21,12 @@ namespace Projet1
     {
         public Manager MonManager => (App.Current as App).MonManager;
         public Personnage LePerso { get; set; }
+        string info;
         public ajouterInfoPerso()
         {
             InitializeComponent();
             LePerso = new Personnage();
-            LePerso = MonManager.PersoAfficher;
+            LePerso.Info = MonManager.PersoAfficher.Info;
             DataContext = LePerso;
         }
         private void ClickAnnuler(object sender, RoutedEventArgs e)
@@ -35,7 +36,8 @@ namespace Projet1
 
         private void ClickAjouter(object sender, RoutedEventArgs e)
         {
-            MonManager.AjouterInfoPerso(MonManager.PersoAfficher, LePerso);
+            info = Info.Text;
+            MonManager.PersoAfficher.Info = info;
             (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.PERSONNAGE;
         }
     }

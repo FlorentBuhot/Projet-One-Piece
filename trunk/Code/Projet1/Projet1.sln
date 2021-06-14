@@ -17,9 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitsTests", "..\UnitsTests
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stub", "..\Stub\Stub.csproj", "{8CF03336-4CAA-47B5-B9ED-83BC7FF357FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataContractPersistance", "..\DataContractPersistance\DataContractPersistance.csproj", "{E8C84451-2189-4B2C-9324-4866EC4C3D9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataContractPersistance", "..\DataContractPersistance\DataContractPersistance.csproj", "{E8C84451-2189-4B2C-9324-4866EC4C3D9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_DataContract", "..\Test_DataContract\Test_DataContract.csproj", "{134B45CE-8A9D-408D-8954-D0D075E1F31A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test_DataContract", "..\Test_DataContract\Test_DataContract.csproj", "{134B45CE-8A9D-408D-8954-D0D075E1F31A}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "OnePeiceForever_Setup", "..\OnePeiceForever_Setup\OnePeiceForever_Setup.vdproj", "{9E18C67B-B884-4601-A4B2-BFAE3E374656}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +61,8 @@ Global
 		{134B45CE-8A9D-408D-8954-D0D075E1F31A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{134B45CE-8A9D-408D-8954-D0D075E1F31A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{134B45CE-8A9D-408D-8954-D0D075E1F31A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E18C67B-B884-4601-A4B2-BFAE3E374656}.Debug|Any CPU.ActiveCfg = Debug
+		{9E18C67B-B884-4601-A4B2-BFAE3E374656}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

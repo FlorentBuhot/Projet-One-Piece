@@ -45,7 +45,16 @@ namespace ClassLibrary1
         }
         private int age;
         [DataMember(EmitDefaultValue = false)]
-        public Image ImgBase { get; set; }
+        public Image ImgBase 
+        { 
+            get => imgBase;
+            set
+            {
+                if (imgBase == value) return;
+                imgBase = value;
+            } 
+        }
+        private Image imgBase;
         [DataMember(EmitDefaultValue = false)]
         public List<Haki> ListHaki { get; set; }
         [DataMember(EmitDefaultValue = false)]
@@ -62,8 +71,9 @@ namespace ClassLibrary1
             Info = null;
             Age = 0;
             ListHaki = new List<Haki>();
-            Appart = null;
+            Appartennance Appart = new Appartennance();
             SourceImgPerso = new List<Image>();
+            Image ImgBase = new Image();
             ListeArc = new List<Arc>();
         }
 
@@ -75,7 +85,7 @@ namespace ClassLibrary1
             ListeArc = new List<Arc>();
             SourceImgPerso = new List<Image>();
             ListHaki = new List<Haki>();
-            Appart = null;
+            Appartennance Appart = new Appartennance();
         }
 
 
@@ -90,8 +100,9 @@ namespace ClassLibrary1
             Info = info;
             Age = 0;
             ListHaki = new List<Haki>();
-            Appart = null;
+            Appartennance Appart = new Appartennance();
             SourceImgPerso = new List<Image>();
+            Image ImgBase = new Image();
             ListeArc = new List<Arc>();
         }
 

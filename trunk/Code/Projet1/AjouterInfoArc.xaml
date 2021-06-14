@@ -17,8 +17,8 @@
             <RowDefinition Height="8*"></RowDefinition>
         </Grid.RowDefinitions>
         <TextBlock Grid.Row="0" HorizontalAlignment="Center" Text="Information sur l'arc" Margin="20"/>
-        <TextBox TextWrapping="Wrap" Grid.Row="1" Text="{Binding Info}"  Margin="50,30"/>
-        <DockPanel Grid.Row="2" Background="#FF304A53">
+        <TextBox Grid.Row="1" TextWrapping="Wrap" x:Name="Info" Text="{Binding Info}"  Margin="50,30"/>
+            <DockPanel Grid.Row="2" Background="#FF304A53">
             <ContentControl>
                 <Menu VerticalAlignment="Center" HorizontalAlignment="Center" Background="#FF304A53">
                     <Button Content="Annuler" Click="ClickAnnuler" Style="{StaticResource menuBas}"/>

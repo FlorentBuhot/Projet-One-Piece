@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:Projet1"
+             xmlns:local="clr-namespace:Projet1" xmlns:classlibrary1="clr-namespace:ClassLibrary1;assembly=ClassLibrary1" d:DataContext="{d:DesignInstance Type=classlibrary1:Personnage}"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <UserControl.Resources>
@@ -46,7 +46,7 @@
                         <RowDefinition/>
                     </Grid.RowDefinitions>
                     <Border Grid.RowSpan="2" BorderBrush="Black" BorderThickness="1" Width="50" Height="50" Margin="5">
-                        <Image x:Name="image_perso" Source="{Binding ImgBase.Source}"></Image>
+                        <Image x:Name="image_perso" Source="{Binding ImgBase.Source, Converter={StaticResource StringToImageConverter}}"></Image>
                     </Border>
                     <Button Grid.Row="2" Content="Parcourir" Click="Bouton_Parcourir" Width="150" Height="25"></Button>
                     <TextBlock Grid.Row="3" Text="Nom du personnage" Style="{StaticResource textPreci}"/>
@@ -66,9 +66,9 @@
                         <RowDefinition Height="1*"></RowDefinition>
                     </Grid.RowDefinitions>
                     <TextBlock Text="Appartennance" Style="{StaticResource textPreci}"></TextBlock>
-                    <TextBox Grid.Row="1" Style="{StaticResource petitChamps}" Text="{Binding Appart.Nom}"></TextBox>
-                    <TextBlock Grid.Row="2" Text="Description appartennance" Style="{StaticResource textPreci}"></TextBlock>
-                    <TextBox Grid.Row="3" Style="{StaticResource petitChamps}" Text="{Binding Appart.Descritpion}"></TextBox>
+                    <TextBox Grid.Row="1" x:Name="appart" Style="{StaticResource petitChamps}" Text="{Binding Appart.Nom}"></TextBox>
+                    <TextBlock Grid.Row="2" x:Name="appartDesc" Text="Description appartennance" Style="{StaticResource textPreci}"></TextBlock>
+                    <TextBox Grid.Row="3" Style="{StaticResource petitChamps}" Text="{Binding Appart.Description}"></TextBox>
                     <TextBlock Grid.Row="4" Text="Age" Style="{StaticResource textPreci}"></TextBlock>
                     <TextBox Grid.Row="5" Style="{StaticResource petitChamps}" Text="{Binding Age}"></TextBox>
                     <TextBlock Grid.Row="6" Text="Type de haki" Style="{StaticResource textPreci}"></TextBlock>
