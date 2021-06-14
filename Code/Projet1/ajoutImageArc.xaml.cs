@@ -25,7 +25,7 @@ namespace Projet1
 
         private string filename;
         private string filesource;
-        private string destinationsource = "../Image/";
+        private string destinationsource = "Image/";
         public ajoutImageArc()
         {
             InitializeComponent();
