@@ -9,9 +9,9 @@ namespace UnitsTests
         [Fact]
         public void Test1()
         {
-            Arc alabasta = new Arc(NomArc.Alabasta, "Dans le désert", new Image("sgd", "gsgs"));
+            Arc alabasta = new Arc("Alabasta", "Dans le désert", new Image("sgd", "gsgs"));
 
-            Assert.Equal(alabasta.Nom, NomArc.Alabasta);
+            Assert.Equal(alabasta.Nom, "Alabasta");
 
         }
     }
