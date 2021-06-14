@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataPersist xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/DataContractPersistance">
+  <Arcs xmlns:d2p1="http://schemas.datacontract.org/2004/07/ClassLibrary1" z:Id="2" z:Size="32">
+    <d2p1:Arc z:Id="3">
+      <d2p1:ImgDeBase z:Id="4">
+        <d2p1:Description z:Id="5">Le colonel Morgan</d2p1:Description>
+        <d2p1:Source z:Id="6">/ImageArc/morgan.png</d2p1:Source>
+      </d2p1:ImgDeBase>
+      <d2p1:Info z:Id="7">Première arc de One Piece</d2p1:Info>
+      <d2p1:ListePerso z:Id="8" z:Size="2">
+        <d2p1:Personnage z:Id="9">
+          <d2p1:Age>18</d2p1:Age>
+          <d2p1:Appart z:Id="10">
+            <d2p1:Description z:Id="11">Equipage trop fort</d2p1:Description>
+            <d2p1:Nom z:Id="12">Pirate au Chapeau de Paille</d2p1:Nom>
+          </d2p1:Appart>
+          <d2p1:ImgBase z:Id="13">
+            <d2p1:Description z:Id="14">Luffy heureux</d2p1:Description>
+            <d2p1:Source z:Id="15">ImagePerso/luffy_sourire.png</d2p1:Source>
+          </d2p1:ImgBase>
+          <d2p1:Info z:Id="16">Monkey D. Luffy (モンキー・Ｄディー・ルフィ, Monkī Dī Rufi) est un pirate et le principal protagoniste du manga et anime One Piece. Luffy est le fils du chef de l'Armée Révolutionnaire, Monkey D. Dragon, le petit-fils du célèbre Vice-Amiral de la Marine, Monkey D. Garp, le fils adoptif d'une bandit des montagnes, Curly Dadan ainsi que le frère adoptif du défunt Portgas D. Ace et de Sabo. Son rêve le plus cher est de devenir le Seigneur des Pirates en trouvant le trésor légendaire One Piece, caché quelque part dans le monde par Gol D. Roger. Selon lui, être le Seigneur des Pirates signifie être celui qui jouit d'une liberté sans pareille dans le monde. Il a mangé un Fruit du Démon : le Gomu Gomu no Mi, qui a été rapporté lors d'un voyage par L'Équipage du Roux au Village de Fuchsia, à ce moment là. En tant que fondateur et Capitaine de l'Équipage du Chapeau de Paille, il est le premier membre à en faire partie, ainsi que l'un des trois combattants les plus forts de ce dernier, s'il n'est le plus fort. C'est également le fondateur involontaire de La Grande Flotte du Chapeau de Paille, il refuse cependant d'en être le Capitaine, ne désirant pas priver les autres de leur liberté. Luffy a une réputation mondiale pour avoir causé des troubles et des catastrophes, même parmi les 7 Capitaines Corsaires et la Marine, en étant allé jusqu'à défier deux des Quatre Empereurs (Big Mom et Kaidô), ainsi qu'en commettant des crimes et actions considérées comme dangereuses par le Gouvernement Mondial. Il a reçu la réputation d'être "téméraire" et "fou", dans certains cas. Il est, en effet, célèbre pour avoir fait brûler le drapeau du Gouvernement Mondial à Enies Lobby (il s'agissait d'un ordre donné à Sogeking), avant d'y vaincre le CP9 avec son équipage; avoir frappé un Dragon Céleste à Sabaody; vaincu plusieurs des 7 Grands Corsaires (Crocodile, Gecko Moria ou Doflamingo); s'être infiltré et échappé d'Impel Down en y causant une gigantesque évasion (la plus grande de l'histoire de la prison); et s'être joint à la Bataille de Marine Ford, du côté de l'Équipage de Barbe Blanche. De plus, il est connu pour être le seul pirate à s'être non seulement infiltré dans les trois installations capitales du Gouvernement, mais aussi pour s'être échappé vivant de toutes les trois. Ce passé de fauteur de troubles valut rapidement à Luffy le qualificatif "d'élément dangereux dans le futur", notamment pour l'Amiral Commandant en Chef Sakazuki, faisant de la Marine l'un de ses plus grands ennemis. Luffy est réputé pour porter son Chapeau de Paille (d'où son épithète "Luffy au Chapeau de Paille") que le légendaire capitaine pirate Shanks "le Roux" lui a confié lorsqu'il était jeune, ce dernier le tenant lui-même de Roger. Luffy a également une cicatrice avec deux points de suture sous son œil gauche (blessure qu'il s'est lui-même infligée avec un couteau sous l’œil pour prouver son courage à Shanks), et des cheveux noirs assez courts. Similaire à la plupart des hommes de son équipage, Luffy porte la plupart du temps les mêmes vêtements, à l'opposé du reste de l'équipage (spécialement Nami et Nico Robin), qui quant à elles, changent fréquemment de tenues. Quel que soit l'endroit où il se trouve, Luffy porte en toutes circonstances son Chapeau de Paille, même si au début, le chapeau pouvait facilement tomber de sa tête, car instable, ce qui forçait Luffy à le mettre de côté, ou à demander à quelqu'un de le tenir pour lui (le plus souvent à Nami). Il porte des pantalons courts ainsi que des sandales et une veste rouge sans manches. Ayant l'air un peu maigre sous sa chemise, il a pourtant un physique étonnamment bien bâti. Il est assez petit, éclipsé par beaucoup de personnages de la série plus grands.</d2p1:Info>
+          <d2p1:ListHaki z:Id="17" z:Size="3">
+            <d2p1:Haki z:Id="18">
+              <d2p1:Description z:Id="19">Pété de ouf</d2p1:Description>
+            </d2p1:Haki>
+            <d2p1:Haki z:Id="20">
+              <d2p1:Description z:Id="21">Bonne perception</d2p1:Description>
+              <d2p1:Nom>Haki_de_perception</d2p1:Nom>
+            </d2p1:Haki>
+            <d2p1:Haki z:Id="22">
+              <d2p1:Description z:Id="23">Permet de se renforcé</d2p1:Description>
+              <d2p1:Nom>Haki_du_renforcement</d2p1:Nom>
+            </d2p1:Haki>
+          </d2p1:ListHaki>
+          <d2p1:ListeArc z:Id="24" z:Size="32">
+            <d2p1:Arc z:Ref="3" i:nil="true" />
+            <d2p1:Arc z:Id="25">
+              <d2p1:ImgDeBase z:Id="26">
+                <d2p1:Description z:Id="27">Baggy le clown</d2p1:Description>
+                <d2p1:Source z:Id="28">/ImageArc/baggy.png</d2p1:Source>
+              </d2p1:ImgDeBase>
+              <d2p1:Info z:Id="29">Deuxième arc de One Piece</d2p1:Info>
+              <d2p1:ListePerso z:Id="30" z:Size="2">
+                <d2p1:Personnage z:Ref="9" i:nil="true" />
+                <d2p1:Personnage z:Id="31">
+                  <d2p1:Age>20</d2p1:Age>
+                  <d2p1:Appart z:Id="32">
+                    <d2p1:Description z:Ref="11" i:nil="true" />
+                    <d2p1:Nom z:Ref="12" i:nil="true" />
+                  </d2p1:Appart>
+                  <d2p1:ImgBase z:Id="33">
+                    <d2p1:Description z:Id="34">Zoro heureux</d2p1:Description>
+                    <d2p1:Source z:Id="35">ImagePerso/zoro_sourire.jpg</d2p1:Source>
+                  </d2p1:ImgBase>
+                  <d2p1:Info z:Id="36">Sabreur a 3 sabres</d2p1:Info>
+                  <d2p1:ListHaki z:Id="37" z:Size="3">
+                    <d2p1:Haki z:Ref="18" i:nil="true" />
+                    <d2p1:Haki z:Ref="20" i:nil="true" />
+                    <d2p1:Haki z:Ref="22" i:nil="true" />
+                  </d2p1:ListHaki>
+                  <d2p1:ListeArc z:Id="38" z:Size="32">
+                    <d2p1:Arc z:Ref="3" i:nil="true" />
+                    <d2p1:Arc z:Ref="25" i:nil="true" />
+                    <d2p1:Arc z:Id="39">
+                      <d2p1:ImgDeBase z:Id="40">
+                        <d2p1:Description z:Id="41">Capitain Kuro</d2p1:Description>
+                        <d2p1:Source z:Id="42">ImageArc/kuro.png</d2p1:Source>
+                      </d2p1:ImgDeBase>
+                      <d2p1:Info z:Id="43">Troisième arc de One Piece</d2p1:Info>
+                      <d2p1:ListePerso z:Id="44" z:Size="2">
+                        <d2p1:Personnage z:Ref="9" i:nil="true" />
+                        <d2p1:Personnage z:Ref="31" i:nil="true" />
+                      </d2p1:ListePerso>
+                      <d2p1:Nom z:Id="45">Capitaine Kuro</d2p1:Nom>
+                      <d2p1:SourceImgArc z:Id="46" z:Size="1">
+                        <d2p1:Image z:Ref="40" i:nil="true" />
+                      </d2p1:SourceImgArc>
+                    </d2p1:Arc>
+                    <d2p1:Arc z:Id="47">
+                      <d2p1:ImgDeBase z:Id="48">
+                        <d2p1:Description z:Id="49">Luffy au début</d2p1:Description>
+                        <d2p1:Source z:Id="50">ImageArc/baratie.png</d2p1:Source>
+                      </d2p1:ImgDeBase>
+                      <d2p1:Info z:Id="51">Quatrième arc de One Piece</d2p1:Info>
+                      <d2p1:ListePerso z:Id="52" z:Size="3">
+                        <d2p1:Personnage z:Ref="9" i:nil="true" />
+                        <d2p1:Personnage z:Ref="31" i:nil="true" />
+                        <d2p1:Personnage z:Id="53">
+                          <d2p1:Age>20</d2p1:Age>
+                          <d2p1:Appart z:Id="54">
+                            <d2p1:Description z:Ref="11" i:nil="true" />
+                            <d2p1:Nom z:Ref="12" i:nil="true" />
+                          </d2p1:Appart>
+                          <d2p1:ImgBase z:Id="55">
+                            <d2p1:Description z:Id="56">Sanji heureux</d2p1:Description>
+                            <d2p1:Source z:Id="57">ImagePerso/sanji_sourire.jpg</d2p1:Source>
+                          </d2p1:ImgBase>
+                          <d2p1:Info z:Id="58">Cuisinier du chapeau de paille</d2p1:Info>
+                          <d2p1:ListHaki z:Id="59" z:Size="2">
+                            <d2p1:Haki z:Ref="20" i:nil="true" />
+                            <d2p1:Haki z:Ref="22" i:nil="true" />
+                          </d2p1:ListHaki>
+                          <d2p1:ListeArc z:Id="60" z:Size="29">
+                            <d2p1:Arc z:Ref="47" i:nil="true" />
+                            <d2p1:Arc z:Id="61">
+                              <d2p1:ImgDeBase z:Id="62">
+                                <d2p1:Description z:Ref="49" i:nil="true" />
+                                <d2p1:Source z:Id="63">ImageArc/arlong.png</d2p1:Source>
+                              </d2p1:ImgDeBase>
+                              <d2p1:Info z:Id="64">Cinquième arc de One Piece</d2p1:Info>
+                              <d2p1:ListePerso z:Id="65" z:Size="3">
+                                <d2p1:Personnage z:Ref="9" i:nil="true" />
+                                <d2p1:Personnage z:Ref="31" i:nil="true" />
+                                <d2p1:Personnage z:Ref="53" i:nil="true" />
+                              </d2p1:ListePerso>
+                              <d2p1:Nom z:Id="66">Arlong</d2p1:Nom>
+                              <d2p1:SourceImgArc z:Id="67" z:Size="1">
+                                <d2p1:Image z:Ref="62" i:nil="true" />
+                              </d2p1:SourceImgArc>
+                            </d2p1:Arc>
+                            <d2p1:Arc z:Id="68">
+                              <d2p1:ImgDeBase z:Id="69">
+                                <d2p1:Description z:Ref="49" i:nil="true" />
+                                <d2p1:Source z:Id="70">ImageArc/loguetown.png</d2p1:Source>
+                              </d2p1:ImgDeBase>
+                              <d2p1:Info z:Id="71">Sixième arc de One Piece</d2p1:Info>
+                              <d2p1:ListePerso z:Id="72" z:Size="3">
+                                <d2p1:Personnage z:Ref="9" i:nil="true" />
+                                <d2p1:Personnage z:Ref="31" i:nil="true" />
+                                <d2p1:Personnage z:Ref="53" i:nil="true" />
+                              </d2p1:ListePerso>
+                              <d2p1:Nom z:Id="73">LogueTown</d2p1:Nom>
+                              <d2p1:SourceImgArc z:Id="74" z:Size="1">
+                                <d2p1:Image z:Ref="69" i:nil="true" />
+                              </d2p1:SourceImgArc>
+                            </d2p1:Arc>
+                            <d2p1:Arc z:Id="75">
+                              <d2p1:ImgDeBase z:Id="76">
+                                <d2p1:Description z:Ref="49" i:nil="true" />
+                                <d2p1:Source z:Id="77">ImageArc/laboon.png</d2p1:Source>
+                              </d2p1:ImgDeBase>
+                              <d2p1:Info z:Id="78">Septième arc de One Piece</d2p1:Info>
+                              <d2p1:ListePerso z:Id="79" z:Size="3">
+                                <d2p1:Personnage z:Ref="9" i:nil="true" />
+                                <d2p1:Personnage z:Ref="31" i:nil="true" />
+                                <d2p1:Personnage z:Ref="53" i:nil="true" />
+                              </d2p1:ListePerso>
+                              <d2p1:Nom z:Id="80">Laboon</d2p1:Nom>
+                              <d2p1:SourceImgArc z:Id="81" z:Size="1">
+                                <d2p1:Image z:Ref="76" i:nil="true" />
+                              </d2p1:SourceImgArc>
+                            </d2p1:Arc>
+                            <d2p1:Arc z:Id="82">
+                              <d2p1:ImgDeBase z:Id="83">
+                                <d2p1:Description z:Ref="49" i:nil="true" />
+                                <d2p1:Source z:Id="84">ImageArc/whiskey.png</d2p1:Source>
+                              </d2p1:ImgDeBase>
+                              <d2p1:Info z:Id="85">Huitième arc de One Piece</d2p1:Info>
+                              <d2p1:ListePerso z:Id="86" z:Size="3">
+                                <d2p1:Personnage z:Ref="9" i:nil="true" />
+                                <d2p1:Personnage z:Ref="31" i:nil="true" />
+                                <d2p1:Personnage z:Ref="53" i:nil="true" />
+                              </d2p1:ListePerso>
+                              <d2p1:Nom z:Id="87">Whiskey Peak</d2p1:Nom>
+                              <d2p1:SourceImgArc z:Id="88" z:Size="1">
+                                <d2p1:Image z:Ref="83" i:nil="true" />
+                              </d2p1:SourceImgArc>
+                            </d2p1:Arc>
+                            <d2p1:Arc z:Id="89">
+                              <d2p1:ImgDeBase z:Id="90">
+                                <d2p1:Description z:Ref="49" i:nil="true" />
+                                <d2p1:Source z:Id="91">ImageArc/garden.png</d2p1:Source>
+                              </d2p1:ImgDeBase>
+                              <d2p1:Info z:Id="92">Neuvième arc de One Piece</d2p1:Info>
+                              <d2p1:ListePerso z:Id="93" z:Size="3">
+                                <d2p1:Personnage z:Ref="9" i:nil="true" />
+                                <d2p1:Personnage z:Ref="31" i:nil="true" />
+                                <d2p1:Personnage z:Ref="53" i:nil="true" />
+                              </d2p1:ListePerso>
+                              <d2p1:Nom z:Id="94">Little Garden</d2p1:Nom>
+                              <d2p1:SourceImgArc z:Id="95" z:Size="1">
+                                <d2p1:Image z:Ref="90" i:nil="true" />
+                              </d2p1:SourceImgArc>
+                            </d2p1:Arc>
+                            <d2p1:Arc z:Id="96">
+                              <d2p1:ImgDeBase z:Id="97">
+                                <d2p1:Description z:Ref="49" i:nil="true" />
+                                <d2p1:Source z:Id="98">ImageArc/drum.png</d2p1:Source>
+                              </d2p1:ImgDeBase>
+                              <d2p1:Info z:Id="99">Dixième arc de One Piece</d2p1:Info>
+                              <d2p1:ListePerso z:Id="100" z:Size="3">
+                                <d2p1:Personnage z:Ref="9" i:nil="true" />
+                                <d2p1:Personnage z:Ref="31" i:nil="true" />
+                                <d2p1:Personnage z:Ref="53" i:nil="true" />
+                              </d2p1:ListePerso>
+                              <d2p1:Nom z:Id="101">Royaume de Drum</d2p1:Nom>
+                              <d2p1:SourceImgArc z:Id="102" z:Size="1">
+                                <d2p1:Image z:Ref="97" i:nil="true" />
+                              </d2p1:SourceImgArc>
+                            </d2p1:Arc>
+                            <d2p1:Arc z:Id="103">
+                              <d2p1:ImgDeBase z:Id="104">
+                                <d2p1:Description z:Ref="49" i:nil="true" />
+                                <d2p1:Source z:Id="105">ImageArc/alabasta.png</d2p1:Source>
+                              </d2p1:ImgDeBase>
+                              <d2p1:Info z:Id="106">Onzième arc de One Piece</d2p1:Info>
+                              <d2p1:ListePerso z:Id="107" z:Size="3">
+                                <d2p1:Personnage z:Ref="9" i:nil="true" />
+                                <d2p1:Personnage z:Ref="31" i:nil="true" />
+                                <d2p1:Personnage z:Ref="53" i:nil="true" />
+                              </d2p1:ListePerso>
+                              <d2p1:Nom z:Id="108">Alabasta</d2p1:Nom>
+                              <d2p1:SourceImgArc z:Id="109" z:Size="1">
+                                <d2p1:Image z:Ref="104" i:nil="true" />
+                              </d2p1:SourceImgArc>
+                            </d2p1:Arc>
+                            <d2p1:Arc z:Id="110">
+                              <d2p1:ImgDeBase z:Id="111">
+                                <d2p1:Description z:Ref="49" i:nil="true" />
+                                <d2p1:Source z:Id="112">ImageArc/jaya.png</d2p1:Source>
+                              </d2p1:ImgDeBase>
+                              <d2p1:Info z:Id="113">Douzième arc de One Piece</d2p1:Info>
+                              <d2p1:ListePerso z:Id="114" z:Size="4">
+                                <d2p1:Personnage z:Ref="9" i:nil="true" />
+                                <d2p1:Personnage z:Ref="31" i:nil="true" />
+                                <d2p1:Personnage z:Ref="53" i:nil="true" />
+                                <d2p1:Personnage z:Id="115">
+                                  <d2p1:Age>41</d2p1:Age>
+                                  <d2p1:Appart z:Id="116">
+                                    <d2p1:Description z:Id="117">Ancien équipage de grand corsaire</d2p1:Description>
+                                    <d2p1:Nom z:Id="118">Don Quichotte Family</d2p1:Nom>
+                                  </d2p1:Appart>
+                                  <d2p1:ImgBase z:Id="119">
+                                    <d2p1:Description z:Id="120">Doflamingo content</d2p1:Description>
+                                    <d2p1:Source z:Id="121">ImagePerso/doflamingo_content.jpeg</d2p1:Source>
+                                  </d2p1:ImgBase>
+                                  <d2p1:Info z:Id="122">Ancien grand corsaire</d2p1:Info>
+                                  <d2p1:ListHaki z:Id="123" z:Size="3">
+                                    <d2p1:Haki z:Ref="18" i:nil="true" />
+                                    <d2p1:Haki z:Ref="20" i:nil="true" />
+                                    <d2p1:Haki z:Ref="22" i:nil="true" />
+                                  </d2p1:ListHaki>
+                                  <d2p1:ListeArc z:Id="124" z:Size="6">
+                                    <d2p1:Arc z:Ref="110" i:nil="true" />
+                                    <d2p1:Arc z:Id="125">
+                                      <d2p1:ImgDeBase z:Id="126">
+                                        <d2p1:Description z:Ref="49" i:nil="true" />
+                                        <d2p1:Source z:Id="127">ImageArc/impel.png</d2p1:Source>
+                                      </d2p1:ImgDeBase>
+                                      <d2p1:Info z:Id="128">Vingt et unième arc de One Piece</d2p1:Info>
+                                      <d2p1:ListePerso z:Id="129" z:Size="4">
+                                        <d2p1:Personnage z:Ref="9" i:nil="true" />
+                                        <d2p1:Personnage z:Ref="31" i:nil="true" />
+                                        <d2p1:Personnage z:Ref="53" i:nil="true" />
+                                        <d2p1:Personnage z:Ref="115" i:nil="true" />
+                                      </d2p1:ListePerso>
+                                      <d2p1:Nom z:Id="130">Impel Down</d2p1:Nom>
+                                      <d2p1:SourceImgArc z:Id="131" z:Size="1">
+                                        <d2p1:Image z:Ref="126" i:nil="true" />
+                                      </d2p1:SourceImgArc>
+                                    </d2p1:Arc>
+                                    <d2p1:Arc z:Id="132">
+                                      <d2p1:ImgDeBase z:Id="133">
+                                        <d2p1:Description z:Ref="49" i:nil="true" />
+                                        <d2p1:Source z:Id="134">ImageArc/marineford.png</d2p1:Source>
+                                      </d2p1:ImgDeBase>
+                                      <d2p1:Info z:Id="135">Vingt Deuxième arc de One Piece</d2p1:Info>
+                                      <d2p1:ListePerso z:Id="136" z:Size="4">
+                                        <d2p1:Personnage z:Ref="9" i:nil="true" />
+                                        <d2p1:Personnage z:Ref="31" i:nil="true" />
+                                        <d2p1:Personnage z:Ref="53" i:nil="true" />
+                                        <d2p1:Personnage z:Ref="115" i:nil="true" />
+                                      </d2p1:ListePerso>
+                                      <d2p1:Nom z:Id="137">Marineford</d2p1:Nom>
+                                      <d2p1:SourceImgArc z:Id="138" z:Size="1">
+                                        <d2p1:Image z:Ref="133" i:nil="true" />
+                                      </d2p1:SourceImgArc>
+                                    </d2p1:Arc>
+                                    <d2p1:Arc z:Id="139">
+                                      <d2p1:ImgDeBase z:Id="140">
+                                        <d2p1:Description z:Ref="49" i:nil="true" />
+                                        <d2p1:Source z:Id="141">ImageArc/punk.png</d2p1:Source>
+                                      </d2p1:ImgDeBase>
+                                      <d2p1:Info z:Id="142">Vingt Sizième arc de One Piece</d2p1:Info>
+                                      <d2p1:ListePerso z:Id="143" z:Size="4">
+                                        <d2p1:Personnage z:Ref="9" i:nil="true" />
+                                        <d2p1:Personnage z:Ref="31" i:nil="true" />
+                                        <d2p1:Personnage z:Ref="53" i:nil="true" />
+                                        <d2p1:Personnage z:Ref="115" i:nil="true" />
+                                      </d2p1:ListePerso>
+                                      <d2p1:Nom z:Id="144">Punk Hazard</d2p1:Nom>
+                                      <d2p1:SourceImgArc z:Id="145" z:Size="1">
+                                        <d2p1:Image z:Ref="140" i:nil="true" />
+                                      </d2p1:SourceImgArc>
+                                    </d2p1:Arc>
+                                    <d2p1:Arc z:Id="146">
+                                      <d2p1:ImgDeBase z:Id="147">
+                                        <d2p1:Description z:Ref="49" i:nil="true" />
+                                        <d2p1:Source z:Id="148">ImageArc/dressrosa.png</d2p1:Source>
+                                      </d2p1:ImgDeBase>
+                                      <d2p1:Info z:Id="149">Vingt Septième arc de One Piece</d2p1:Info>
+                                      <d2p1:ListePerso z:Id="150" z:Size="4">
+                                        <d2p1:Personnage z:Ref="9" i:nil="true" />
+                                        <d2p1:Personnage z:Ref="31" i:nil="true" />
+                                        <d2p1:Personnage z:Ref="53" i:nil="true" />
+                                        <d2p1:Personnage z:Ref="115" i:nil="true" />
+                                      </d2p1:ListePerso>
+                                      <d2p1:Nom z:Id="151">Dressrosa</d2p1:Nom>
+                                      <d2p1:SourceImgArc z:Id="152" z:Size="1">
+                                        <d2p1:Image z:Ref="147" i:nil="true" />
+                                      </d2p1:SourceImgArc>
+                                    </d2p1:Arc>
+                                    <d2p1:Arc z:Id="153">
+                                      <d2p1:ImgDeBase z:Id="154">
+                                        <d2p1:Description z:Ref="49" i:nil="true" />
+                                        <d2p1:Source z:Id="155">ImageArc/reverie.png</d2p1:Source>
+                                      </d2p1:ImgDeBase>
+                                      <d2p1:Info z:Id="156">Trente et unième arc de One Piece</d2p1:Info>
+                                      <d2p1:ListePerso z:Id="157" z:Size="4">
+                                        <d2p1:Personnage z:Ref="9" i:nil="true" />
+                                        <d2p1:Personnage z:Ref="31" i:nil="true" />
+                                        <d2p1:Personnage z:Ref="53" i:nil="true" />
+                                        <d2p1:Personnage z:Ref="115" i:nil="true" />
+                                      </d2p1:ListePerso>
+                                      <d2p1:Nom z:Id="158">Reverie</d2p1:Nom>
+                                      <d2p1:SourceImgArc z:Id="159" z:Size="1">
+                                        <d2p1:Image z:Ref="154" i:nil="true" />
+                                      </d2p1:SourceImgArc>
+                                    </d2p1:Arc>
+                                  </d2p1:ListeArc>
+                                  <d2p1:Nom z:Id="160">Don Quijotte</d2p1:Nom>
+                                  <d2p1:Prénom z:Id="161">Doflamingo</d2p1:Prénom>
+                                  <d2p1:SourceImgPerso z:Id="162" z:Size="3">
+                                    <d2p1:Image z:Id="163">
+                                      <d2p1:Description z:Ref="120" i:nil="true" />
+                                      <d2p1:Source z:Ref="121" i:nil="true" />
+                                    </d2p1:Image>
+                                    <d2p1:Image z:Id="164">
+                                      <d2p1:Description z:Id="165">Doflamingo jeune</d2p1:Description>
+                                      <d2p1:Source z:Id="166">ImagePerso/doflamingo_jeune.jpg</d2p1:Source>
+                                    </d2p1:Image>
+                                    <d2p1:Image z:Id="167">
+                                      <d2p1:Description z:Id="168">Doflamingo enervé</d2p1:Description>
+                                      <d2p1:Source z:Id="169">ImagePerso/doflamingo_enerve.png</d2p1:Source>
+                                    </d2p1:Image>
+                                  </d2p1:SourceImgPerso>
+                                </d2p1:Personnage>
+                              </d2p1:ListePerso>
+                              <d2p1:Nom z:Id="170">Jaya</d2p1:Nom>
+                              <d2p1:SourceImgArc z:Id="171" z:Size="1">
+                                <d2p1:Image z:Ref="111" i:nil="true" />
+                              </d2p1:SourceImgArc>
+                            </d2p1:Arc>
+                            <d2p1:Arc z:Id="172">
+                              <d2p1:ImgDeBase z:Id="173">
+                                <d2p1:Description z:Ref="49" i:nil="true" />
+                                <d2p1:Source z:Id="174">ImageArc/skypiea.png</d2p1:Source>
+                              </d2p1:ImgDeBase>
+                              <d2p1:Info z:Id="175">Treizième arc de One Piece</d2p1:Info>
+                              <d2p1:ListePerso z:Id="176" z:Size="3">
+                                <d2p1:Personnage z:Ref="9" i:nil="true" />
+                                <d2p1:Personnage z:Ref="31" i:nil="true" />
+                                <d2p1:Personnage z:Ref="53" i:nil="true" />
+                              </d2p1:ListePerso>
+                              <d2p1:Nom z:Id="177">Skypiea</d2p1:Nom>
+                              <d2p1:SourceImgArc z:Id="178" z:Size="1">
+                                <d2p1:Image z:Ref="173" i:nil="true" />
+                              </d2p1:SourceImgArc>
+                            </d2p1:Arc>
+                            <d2p1:Arc z:Id="179">
+                              <d2p1:ImgDeBase z:Id="180">
+                                <d2p1:Description z:Ref="49" i:nil="true" />
+                                <d2p1:Source z:Id="181">ImageArc/davy.png</d2p1:Source>
+                              </d2p1:ImgDeBase>
+                              <d2p1:Info z:Id="182">Quatorzième arc de One Piece</d2p1:Info>
+                              <d2p1:ListePerso z:Id="183" z:Size="3">
+                                <d2p1:Personnage z:Ref="9" i:nil="true" />
+                                <d2p1:Personnage z:Ref="31" i:nil="true" />
+                                <d2p1:Personnage z:Ref="53" i:nil="true" />
+                              </d2p1:ListePerso>
+                              <d2p1:Nom z:Id="184">Davy Back Fight</d2p1:Nom>
+                              <d2p1:SourceImgArc z:Id="185" z:Size="1">
+                                <d2p1:Image z:Ref="180" i:nil="true" />
+                              </d2p1:SourceImgArc>
+                            </d2p1:Arc>
+                            <d2p1:Arc z:Id="186">
+                              <d2p1:ImgDeBase z:Id="187">
+                                <d2p1:Description z:Ref="49" i:nil="true" />
+                                <d2p1:Source z:Id="188">ImageArc/water.png</d2p1:Source>
+                              </d2p1:ImgDeBase>
+                              <d2p1:Info z:Id="189">Quinzième arc de One Piece</d2p1:Info>
+                              <d2p1:ListePerso z:Id="190" z:Size="3">
+                                <d2p1:Personnage z:Ref="9" i:nil="true" />
+                                <d2p1:Personnage z:Ref="31" i:nil="true" />
+                                <d2p1:Personnage z:Ref="53" i:nil="true" />
+                              </d2p1:ListePerso>
+                              <d2p1:Nom z:Id="191">Water Seven</d2p1:Nom>
+                              <d2p1:SourceImgArc z:Id="192" z:Size="1">
+                                <d2p1:Image z:Ref="187" i:nil="true" />
+                              </d2p1:SourceImgArc>
+                            </d2p1:Arc>
+                            <d2p1:Arc z:Id="193">
+                              <d2p1:ImgDeBase z:Id="194">
+                                <d2p1:Description z:Ref="49" i:nil="true" />
+                                <d2p1:Source z:Id="195">ImageArc/enies.png</d2p1:Source>
+                              </d2p1:ImgDeBase>
+                              <d2p1:Info z:Id="196">Seizième arc de One Piece</d2p1:Info>
+                              <d2p1:ListePerso z:Id="197" z:Size="3">
+                                <d2p1:Personnage z:Ref="9" i:nil="true" />
+                                <d2p1:Personnage z:Ref="31" i:nil="true" />
+                                <d2p1:Personnage z:Ref="53" i:nil="true" />
+                              </d2p1:ListePerso>
+                              <d2p1:Nom z:Id="198">Enies Lobby</d2p1:Nom>
+                              <d2p1:SourceImgArc z:Id="199" z:Size="1">
+                                <d2p1:Image z:Ref="194" i:nil="true" />
+                              </d2p1:SourceImgArc>
+                            </d2p1:Arc>
+                            <d2p1:Arc z:Id="200">
+                              <d2p1:ImgDeBase z:Id="201">
+                                <d2p1:Description z:Ref="49" i:nil="true" />
+                                <d2p1:Source z:Id="202">ImageArc/post_enies.png</d2p1:Source>
+                              </d2p1:ImgDeBase>
+                              <d2p1:Info z:Id="203">Dix Septième arc de One Piece</d2p1:Info>
+                              <d2p1:ListePerso z:Id="204" z:Size="3">
+                                <d2p1:Personnage z:Ref="9" i:nil="true" />
+                                <d2p1:Personnage z:Ref="31" i:nil="true" />
+                                <d2p1:Personnage z:Ref="53" i:nil="true" />
+                              </d2p1:ListePerso>
+                              <d2p1:Nom z:Id="205">Post Enies Lobby</d2p1:Nom>
+                              <d2p1:SourceImgArc z:Id="206" z:Size="1">
+                                <d2p1:Image z:Ref="201" i:nil="true" />
+                              </d2p1:SourceImgArc>
+                            </d2p1:Arc>
+                            <d2p1:Arc z:Id="207">
+                              <d2p1:ImgDeBase z:Id="208">
+                                <d2p1:Description z:Ref="49" i:nil="true" />
+                                <d2p1:Source z:Id="209">ImageArc/thriller.png</d2p1:Source>
+                              </d2p1:ImgDeBase>
+                              <d2p1:Info z:Id="210">Dix Huitième arc de One Piece</d2p1:Info>
+                              <d2p1:ListePerso z:Id="211" z:Size="3">
+                                <d2p1:Personnage z:Ref="9" i:nil="true" />
+                                <d2p1:Personnage z:Ref="31" i:nil="true" />
+                                <d2p1:Personnage z:Ref="53" i:nil="true" />
+                              </d2p1:ListePerso>
+                              <d2p1:Nom z:Id="212">Thriller Bark</d2p1:Nom>
+                              <d2p1:SourceImgArc z:Id="213" z:Size="1">
+                                <d2p1:Image z:Ref="208" i:nil="true" />
+                              </d2p1:SourceImgArc>
+                            </d2p1:Arc>
+                            <d2p1:Arc z:Id="214">
+                              <d2p1:ImgDeBase z:Id="215">
+                                <d2p1:Description z:Ref="49" i:nil="true" />
+                                <d2p1:Source z:Id="216">ImageArc/sabaody.png</d2p1:Source>
+                              </d2p1:ImgDeBase>
+                              <d2p1:Info z:Id="217">Dix Neuvième arc de One Piece</d2p1:Info>
+                              <d2p1:ListePerso z:Id="218" z:Size="3">
+                                <d2p1:Personnage z:Ref="9" i:nil="true" />
+                                <d2p1:Personnage z:Ref="31" i:nil="true" />
+                                <d2p1:Personnage z:Ref="53" i:nil="true" />
+                              </d2p1:ListePerso>
+                              <d2p1:Nom z:Id="219">Archipel Sabaody</d2p1:Nom>
+                              <d2p1:SourceImgArc z:Id="220" z:Size="1">
+                                <d2p1:Image z:Ref="215" i:nil="true" />
+                              </d2p1:SourceImgArc>
+                            </d2p1:Arc>
+                            <d2p1:Arc z:Id="221">
+                              <d2p1:ImgDeBase z:Id="222">
+                                <d2p1:Description z:Ref="49" i:nil="true" />
+                                <d2p1:Source z:Id="223">ImageArc/amazon.png</d2p1:Source>
+                              </d2p1:ImgDeBase>
+                              <d2p1:Info z:Id="224">Vingtième arc de One Piece</d2p1:Info>
+                              <d2p1:ListePerso z:Id="225" z:Size="3">
+                                <d2p1:Personnage z:Ref="9" i:nil="true" />
+                                <d2p1:Personnage z:Ref="31" i:nil="true" />
+                                <d2p1:Personnage z:Ref="53" i:nil="true" />
+                              </d2p1:ListePerso>
+                              <d2p1:Nom z:Id="226">Amazon Lily</d2p1:Nom>
+                              <d2p1:SourceImgArc z:Id="227" z:Size="1">
+                                <d2p1:Image z:Ref="222" i:nil="true" />
+                              </d2p1:SourceImgArc>
+                            </d2p1:Arc>
+                            <d2p1:Arc z:Ref="125" i:nil="true" />
+                            <d2p1:Arc z:Ref="132" i:nil="true" />
+                            <d2p1:Arc z:Id="228">
+                              <d2p1:ImgDeBase z:Id="229">
+                                <d2p1:Description z:Ref="49" i:nil="true" />
+                                <d2p1:Source z:Id="230">ImageArc/post_marineford.png</d2p1:Source>
+                              </d2p1:ImgDeBase>
+                              <d2p1:Info z:Id="231">Vingt Troisième arc de One Piece</d2p1:Info>
+                              <d2p1:ListePerso z:Id="232" z:Size="3">
+                                <d2p1:Personnage z:Ref="9" i:nil="true" />
+                                <d2p1:Personnage z:Ref="31" i:nil="true" />
+                                <d2p1:Personnage z:Ref="53" i:nil="true" />
+                              </d2p1:ListePerso>
+                              <d2p1:Nom z:Id="233">Post Marineford</d2p1:Nom>
+                              <d2p1:SourceImgArc z:Id="234" z:Size="1">
+                                <d2p1:Image z:Ref="229" i:nil="true" />
+                              </d2p1:SourceImgArc>
+                            </d2p1:Arc>
+                            <d2p1:Arc z:Id="235">
+                              <d2p1:ImgDeBase z:Id="236">
+                                <d2p1:Description z:Ref="49" i:nil="true" />
+                                <d2p1:Source z:Id="237">ImageArc/retour.png</d2p1:Source>
+                              </d2p1:ImgDeBase>
+                              <d2p1:Info z:Id="238">Vingt Quatrième arc de One Piece</d2p1:Info>
+                              <d2p1:ListePerso z:Id="239" z:Size="3">
+                                <d2p1:Personnage z:Ref="9" i:nil="true" />
+                                <d2p1:Personnage z:Ref="31" i:nil="true" />
+                                <d2p1:Personnage z:Ref="53" i:nil="true" />
+                              </d2p1:ListePerso>
+                              <d2p1:Nom z:Id="240">Retour a Sabaody</d2p1:Nom>
+                              <d2p1:SourceImgArc z:Id="241" z:Size="1">
+                                <d2p1:Image z:Ref="236" i:nil="true" />
+                              </d2p1:SourceImgArc>
+                            </d2p1:Arc>
+                            <d2p1:Arc z:Id="242">
+                              <d2p1:ImgDeBase z:Id="243">
+                                <d2p1:Description z:Ref="49" i:nil="true" />
+                                <d2p1:Source z:Id="244">ImageArc/hommes.png</d2p1:Source>
+                              </d2p1:ImgDeBase>
+                              <d2p1:Info z:Id="245">Vingt Cinquième arc de One Piece</d2p1:Info>
+                              <d2p1:ListePerso z:Id="246" z:Size="3">
+                                <d2p1:Personnage z:Ref="9" i:nil="true" />
+                                <d2p1:Personnage z:Ref="31" i:nil="true" />
+                                <d2p1:Personnage z:Ref="53" i:nil="true" />
+                              </d2p1:ListePerso>
+                              <d2p1:Nom z:Id="247">Hommes Poissons</d2p1:Nom>
+                              <d2p1:SourceImgArc z:Id="248" z:Size="1">
+                                <d2p1:Image z:Ref="243" i:nil="true" />
+                              </d2p1:SourceImgArc>
+                            </d2p1:Arc>
+                            <d2p1:Arc z:Ref="139" i:nil="true" />
+                            <d2p1:Arc z:Ref="146" i:nil="true" />
+                            <d2p1:Arc z:Id="249">
+                              <d2p1:ImgDeBase z:Id="250">
+                                <d2p1:Description z:Ref="49" i:nil="true" />
+                                <d2p1:Source z:Id="251">ImageArc/mine.png</d2p1:Source>
+                              </d2p1:ImgDeBase>
+                              <d2p1:Info z:Id="252">Vingt Huitième arc de One Piece</d2p1:Info>
+                              <d2p1:ListePerso z:Id="253" z:Size="3">
+                                <d2p1:Personnage z:Ref="9" i:nil="true" />
+                                <d2p1:Personnage z:Ref="31" i:nil="true" />
+                                <d2p1:Personnage z:Ref="53" i:nil="true" />
+                              </d2p1:ListePerso>
+                              <d2p1:Nom z:Id="254">Mine Argentée</d2p1:Nom>
+                              <d2p1:SourceImgArc z:Id="255" z:Size="1">
+                                <d2p1:Image z:Ref="250" i:nil="true" />
+                              </d2p1:SourceImgArc>
+                            </d2p1:Arc>
+                            <d2p1:Arc z:Id="256">
+                              <d2p1:ImgDeBase z:Id="257">
+                                <d2p1:Description z:Ref="49" i:nil="true" />
+                                <d2p1:Source z:Id="258">ImageArc/zou.png</d2p1:Source>
+                              </d2p1:ImgDeBase>
+                              <d2p1:Info z:Id="259">Vingt Neuvième arc de One Piece</d2p1:Info>
+                              <d2p1:ListePerso z:Id="260" z:Size="3">
+                                <d2p1:Personnage z:Ref="9" i:nil="true" />
+                                <d2p1:Personnage z:Ref="31" i:nil="true" />
+                                <d2p1:Personnage z:Ref="53" i:nil="true" />
+                              </d2p1:ListePerso>
+                              <d2p1:Nom z:Id="261">Zou</d2p1:Nom>
+                              <d2p1:SourceImgArc z:Id="262" z:Size="1">
+                                <d2p1:Image z:Ref="257" i:nil="true" />
+                              </d2p1:SourceImgArc>
+                            </d2p1:Arc>
+                            <d2p1:Arc z:Id="263">
+                              <d2p1:ImgDeBase z:Id="264">
+                                <d2p1:Description z:Ref="49" i:nil="true" />
+                                <d2p1:Source z:Id="265">ImageArc/whole.png</d2p1:Source>
+                              </d2p1:ImgDeBase>
+                              <d2p1:Info z:Id="266">Trentième arc de One Piece</d2p1:Info>
+                              <d2p1:ListePerso z:Id="267" z:Size="3">
+                                <d2p1:Personnage z:Ref="9" i:nil="true" />
+                                <d2p1:Personnage z:Ref="31" i:nil="true" />
+                                <d2p1:Personnage z:Ref="53" i:nil="true" />
+                              </d2p1:ListePerso>
+                              <d2p1:Nom z:Id="268">Whole Cake</d2p1:Nom>
+                              <d2p1:SourceImgArc z:Id="269" z:Size="1">
+                                <d2p1:Image z:Ref="264" i:nil="true" />
+                              </d2p1:SourceImgArc>
+                            </d2p1:Arc>
+                            <d2p1:Arc z:Ref="153" i:nil="true" />
+                            <d2p1:Arc z:Id="270">
+                              <d2p1:ImgDeBase z:Id="271">
+                                <d2p1:Description z:Ref="49" i:nil="true" />
+                                <d2p1:Source z:Id="272">ImageArc/wano.png</d2p1:Source>
+                              </d2p1:ImgDeBase>
+                              <d2p1:Info z:Id="273">Trente Deuxième arc de One Piece</d2p1:Info>
+                              <d2p1:ListePerso z:Id="274" z:Size="3">
+                                <d2p1:Personnage z:Ref="9" i:nil="true" />
+                                <d2p1:Personnage z:Ref="31" i:nil="true" />
+                                <d2p1:Personnage z:Ref="53" i:nil="true" />
+                              </d2p1:ListePerso>
+                              <d2p1:Nom z:Id="275">Wano Kuni</d2p1:Nom>
+                              <d2p1:SourceImgArc z:Id="276" z:Size="1">
+                                <d2p1:Image z:Ref="271" i:nil="true" />
+                              </d2p1:SourceImgArc>
+                            </d2p1:Arc>
+                          </d2p1:ListeArc>
+                          <d2p1:Nom z:Id="277">Vinsmoke</d2p1:Nom>
+                          <d2p1:Prénom z:Id="278">Sanji</d2p1:Prénom>
+                          <d2p1:SourceImgPerso z:Id="279" z:Size="4">
+                            <d2p1:Image z:Id="280">
+                              <d2p1:Description z:Id="281">Sanji content</d2p1:Description>
+                              <d2p1:Source z:Ref="57" i:nil="true" />
+                            </d2p1:Image>
+                            <d2p1:Image z:Id="282">
+                              <d2p1:Description z:Id="283">Sanji jeune</d2p1:Description>
+                              <d2p1:Source z:Id="284">ImagePerso/sanji_jeune.jpg</d2p1:Source>
+                            </d2p1:Image>
+                            <d2p1:Image z:Id="285">
+                              <d2p1:Description z:Id="286">Sanji enervé</d2p1:Description>
+                              <d2p1:Source z:Id="287">ImagePerso/sanji_enerve.jpg</d2p1:Source>
+                            </d2p1:Image>
+                            <d2p1:Image z:Id="288">
+                              <d2p1:Description z:Id="289">Sanji héroique</d2p1:Description>
+                              <d2p1:Source z:Id="290">ImagePerso/sanji_heros.jpg</d2p1:Source>
+                            </d2p1:Image>
+                          </d2p1:SourceImgPerso>
+                        </d2p1:Personnage>
+                      </d2p1:ListePerso>
+                      <d2p1:Nom z:Id="291">Baratie</d2p1:Nom>
+                      <d2p1:SourceImgArc z:Id="292" z:Size="1">
+                        <d2p1:Image z:Ref="48" i:nil="true" />
+                      </d2p1:SourceImgArc>
+                    </d2p1:Arc>
+                    <d2p1:Arc z:Ref="61" i:nil="true" />
+                    <d2p1:Arc z:Ref="68" i:nil="true" />
+                    <d2p1:Arc z:Ref="75" i:nil="true" />
+                    <d2p1:Arc z:Ref="82" i:nil="true" />
+                    <d2p1:Arc z:Ref="89" i:nil="true" />
+                    <d2p1:Arc z:Ref="96" i:nil="true" />
+                    <d2p1:Arc z:Ref="103" i:nil="true" />
+                    <d2p1:Arc z:Ref="110" i:nil="true" />
+                    <d2p1:Arc z:Ref="172" i:nil="true" />
+                    <d2p1:Arc z:Ref="179" i:nil="true" />
+                    <d2p1:Arc z:Ref="186" i:nil="true" />
+                    <d2p1:Arc z:Ref="193" i:nil="true" />
+                    <d2p1:Arc z:Ref="200" i:nil="true" />
+                    <d2p1:Arc z:Ref="207" i:nil="true" />
+                    <d2p1:Arc z:Ref="214" i:nil="true" />
+                    <d2p1:Arc z:Ref="221" i:nil="true" />
+                    <d2p1:Arc z:Ref="125" i:nil="true" />
+                    <d2p1:Arc z:Ref="132" i:nil="true" />
+                    <d2p1:Arc z:Ref="228" i:nil="true" />
+                    <d2p1:Arc z:Ref="235" i:nil="true" />
+                    <d2p1:Arc z:Ref="242" i:nil="true" />
+                    <d2p1:Arc z:Ref="139" i:nil="true" />
+                    <d2p1:Arc z:Ref="146" i:nil="true" />
+                    <d2p1:Arc z:Ref="249" i:nil="true" />
+                    <d2p1:Arc z:Ref="256" i:nil="true" />
+                    <d2p1:Arc z:Ref="263" i:nil="true" />
+                    <d2p1:Arc z:Ref="153" i:nil="true" />
+                    <d2p1:Arc z:Ref="270" i:nil="true" />
+                  </d2p1:ListeArc>
+                  <d2p1:Nom z:Id="293">Roronoa</d2p1:Nom>
+                  <d2p1:Prénom z:Id="294">Zoro</d2p1:Prénom>
+                  <d2p1:SourceImgPerso z:Id="295" z:Size="4">
+                    <d2p1:Image z:Id="296">
+                      <d2p1:Description z:Id="297">Zoro content</d2p1:Description>
+                      <d2p1:Source z:Ref="35" i:nil="true" />
+                    </d2p1:Image>
+                    <d2p1:Image z:Id="298">
+                      <d2p1:Description z:Id="299">Zoro jeune</d2p1:Description>
+                      <d2p1:Source z:Id="300">ImagePerso/zoro_jeune.jpg</d2p1:Source>
+                    </d2p1:Image>
+                    <d2p1:Image z:Id="301">
+                      <d2p1:Description z:Id="302">Zoro et son bandana</d2p1:Description>
+                      <d2p1:Source z:Id="303">ImagePerso/zoro_bandana.jpeg</d2p1:Source>
+                    </d2p1:Image>
+                    <d2p1:Image z:Id="304">
+                      <d2p1:Description z:Id="305">Zoro énervé</d2p1:Description>
+                      <d2p1:Source z:Id="306">ImagePerso/zoro_sabre_bouche.jpg</d2p1:Source>
+                    </d2p1:Image>
+                  </d2p1:SourceImgPerso>
+                </d2p1:Personnage>
+              </d2p1:ListePerso>
+              <d2p1:Nom z:Ref="27" i:nil="true" />
+              <d2p1:SourceImgArc z:Id="307" z:Size="1">
+                <d2p1:Image z:Ref="26" i:nil="true" />
+              </d2p1:SourceImgArc>
+            </d2p1:Arc>
+            <d2p1:Arc z:Ref="39" i:nil="true" />
+            <d2p1:Arc z:Ref="47" i:nil="true" />
+            <d2p1:Arc z:Ref="61" i:nil="true" />
+            <d2p1:Arc z:Ref="68" i:nil="true" />
+            <d2p1:Arc z:Ref="75" i:nil="true" />
+            <d2p1:Arc z:Ref="82" i:nil="true" />
+            <d2p1:Arc z:Ref="89" i:nil="true" />
+            <d2p1:Arc z:Ref="96" i:nil="true" />
+            <d2p1:Arc z:Ref="103" i:nil="true" />
+            <d2p1:Arc z:Ref="110" i:nil="true" />
+            <d2p1:Arc z:Ref="172" i:nil="true" />
+            <d2p1:Arc z:Ref="179" i:nil="true" />
+            <d2p1:Arc z:Ref="186" i:nil="true" />
+            <d2p1:Arc z:Ref="193" i:nil="true" />
+            <d2p1:Arc z:Ref="200" i:nil="true" />
+            <d2p1:Arc z:Ref="207" i:nil="true" />
+            <d2p1:Arc z:Ref="214" i:nil="true" />
+            <d2p1:Arc z:Ref="221" i:nil="true" />
+            <d2p1:Arc z:Ref="125" i:nil="true" />
+            <d2p1:Arc z:Ref="132" i:nil="true" />
+            <d2p1:Arc z:Ref="228" i:nil="true" />
+            <d2p1:Arc z:Ref="235" i:nil="true" />
+            <d2p1:Arc z:Ref="242" i:nil="true" />
+            <d2p1:Arc z:Ref="139" i:nil="true" />
+            <d2p1:Arc z:Ref="146" i:nil="true" />
+            <d2p1:Arc z:Ref="249" i:nil="true" />
+            <d2p1:Arc z:Ref="256" i:nil="true" />
+            <d2p1:Arc z:Ref="263" i:nil="true" />
+            <d2p1:Arc z:Ref="153" i:nil="true" />
+            <d2p1:Arc z:Ref="270" i:nil="true" />
+          </d2p1:ListeArc>
+          <d2p1:Nom z:Id="308">Monkey D.</d2p1:Nom>
+          <d2p1:Prénom z:Id="309">Luffy</d2p1:Prénom>
+          <d2p1:SourceImgPerso z:Id="310" z:Size="7">
+            <d2p1:Image z:Id="311">
+              <d2p1:Description z:Id="312">Luffy a Sabaody</d2p1:Description>
+              <d2p1:Source z:Id="313">ImagePerso/ancien_luffy.png</d2p1:Source>
+            </d2p1:Image>
+            <d2p1:Image z:Id="314">
+              <d2p1:Description z:Id="315">Le fameux Gear 4</d2p1:Description>
+              <d2p1:Source z:Id="316">ImagePerso/gear4_luffy.png</d2p1:Source>
+            </d2p1:Image>
+            <d2p1:Image z:Id="317">
+              <d2p1:Description z:Id="318">Luffy enfant</d2p1:Description>
+              <d2p1:Source z:Id="319">ImagePerso/luffy_petit.png</d2p1:Source>
+            </d2p1:Image>
+            <d2p1:Image z:Id="320">
+              <d2p1:Description z:Id="321">Luffy énervé</d2p1:Description>
+              <d2p1:Source z:Id="322">ImagePerso/luffy_po_content.png</d2p1:Source>
+            </d2p1:Image>
+            <d2p1:Image z:Id="323">
+              <d2p1:Description z:Id="324">Luffy avant la tempete</d2p1:Description>
+              <d2p1:Source z:Id="325">ImagePerso/luffy_drame.png</d2p1:Source>
+            </d2p1:Image>
+            <d2p1:Image z:Id="326">
+              <d2p1:Description z:Id="327">Luffy le capitaine</d2p1:Description>
+              <d2p1:Source z:Id="328">ImagePerso/luffy_capitaine.jpg</d2p1:Source>
+            </d2p1:Image>
+            <d2p1:Image z:Id="329">
+              <d2p1:Description z:Ref="14" i:nil="true" />
+              <d2p1:Source z:Ref="15" i:nil="true" />
+            </d2p1:Image>
+          </d2p1:SourceImgPerso>
+        </d2p1:Personnage>
+        <d2p1:Personnage z:Ref="31" i:nil="true" />
+      </d2p1:ListePerso>
+      <d2p1:Nom z:Id="330">Colonel Morgan</d2p1:Nom>
+      <d2p1:SourceImgArc z:Id="331" z:Size="1">
+        <d2p1:Image z:Ref="4" i:nil="true" />
+      </d2p1:SourceImgArc>
+    </d2p1:Arc>
+    <d2p1:Arc z:Ref="25" i:nil="true" />
+    <d2p1:Arc z:Ref="39" i:nil="true" />
+    <d2p1:Arc z:Ref="47" i:nil="true" />
+    <d2p1:Arc z:Ref="61" i:nil="true" />
+    <d2p1:Arc z:Ref="68" i:nil="true" />
+    <d2p1:Arc z:Ref="75" i:nil="true" />
+    <d2p1:Arc z:Ref="82" i:nil="true" />
+    <d2p1:Arc z:Ref="89" i:nil="true" />
+    <d2p1:Arc z:Ref="96" i:nil="true" />
+    <d2p1:Arc z:Ref="103" i:nil="true" />
+    <d2p1:Arc z:Ref="110" i:nil="true" />
+    <d2p1:Arc z:Ref="172" i:nil="true" />
+    <d2p1:Arc z:Ref="179" i:nil="true" />
+    <d2p1:Arc z:Ref="186" i:nil="true" />
+    <d2p1:Arc z:Ref="193" i:nil="true" />
+    <d2p1:Arc z:Ref="200" i:nil="true" />
+    <d2p1:Arc z:Ref="207" i:nil="true" />
+    <d2p1:Arc z:Ref="214" i:nil="true" />
+    <d2p1:Arc z:Ref="221" i:nil="true" />
+    <d2p1:Arc z:Ref="125" i:nil="true" />
+    <d2p1:Arc z:Ref="132" i:nil="true" />
+    <d2p1:Arc z:Ref="228" i:nil="true" />
+    <d2p1:Arc z:Ref="235" i:nil="true" />
+    <d2p1:Arc z:Ref="242" i:nil="true" />
+    <d2p1:Arc z:Ref="139" i:nil="true" />
+    <d2p1:Arc z:Ref="146" i:nil="true" />
+    <d2p1:Arc z:Ref="249" i:nil="true" />
+    <d2p1:Arc z:Ref="256" i:nil="true" />
+    <d2p1:Arc z:Ref="263" i:nil="true" />
+    <d2p1:Arc z:Ref="153" i:nil="true" />
+    <d2p1:Arc z:Ref="270" i:nil="true" />
+  </Arcs>
+  <Hakis xmlns:d2p1="http://schemas.datacontract.org/2004/07/ClassLibrary1" z:Id="332" z:Size="3">
+    <d2p1:Haki z:Ref="18" i:nil="true" />
+    <d2p1:Haki z:Ref="20" i:nil="true" />
+    <d2p1:Haki z:Ref="22" i:nil="true" />
+  </Hakis>
+  <Personnages xmlns:d2p1="http://schemas.datacontract.org/2004/07/ClassLibrary1" z:Id="333" z:Size="4">
+    <d2p1:Personnage z:Ref="9" i:nil="true" />
+    <d2p1:Personnage z:Ref="31" i:nil="true" />
+    <d2p1:Personnage z:Ref="53" i:nil="true" />
+    <d2p1:Personnage z:Ref="115" i:nil="true" />
+  </Personnages>
+</DataPersist>
