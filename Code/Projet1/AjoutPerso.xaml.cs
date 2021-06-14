@@ -251,14 +251,13 @@ namespace Projet1
                 return;
             }
 
-            if(string.IsNullOrEmpty(NouveauPerso.Nom) ||
-               string.IsNullOrEmpty(NouveauPerso.Prénom) ||
+            if(string.IsNullOrEmpty(NouveauPerso.Prénom) ||
                string.IsNullOrEmpty(appart.Text) ||
                string.IsNullOrEmpty(appartDesc.Text) ||
                NouveauPerso.Age <= 0)
             {
                 MessageBox.Show("Les valeurs suivantes sont obligatoir : \n" +
-                                "Nom du personnage, Prénom du personnage , Nom de l'appartenance, Description de l'appartenance et l'age doit être supérieur à 0",
+                                "Prénom du personnage , Nom de l'appartenance, Description de l'appartenance et l'age doit être supérieur à 0",
                                 "Erreur de saisie");
                 return;
             }
