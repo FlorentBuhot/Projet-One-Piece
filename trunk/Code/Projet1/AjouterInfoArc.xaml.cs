@@ -36,6 +36,11 @@ namespace Projet1
 
         private void ClickAjouter(object sender, RoutedEventArgs e)
         {
+            if (string.IsNullOrEmpty(Info.Text))
+            {
+                MessageBox.Show("Pas d'image à ajouter", "Erreur de saisie");
+                return;
+            }
             info = Info.Text;
             MonManager.ArcAfficher.Info = info;
             (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.ARC;

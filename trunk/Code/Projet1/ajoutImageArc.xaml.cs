@@ -25,7 +25,7 @@ namespace Projet1
 
         private string filename;
         private string filesource;
-        private string destinationsource = @"../Image/";
+        private string destinationsource = "../Image/";
         public ajoutImageArc()
         {
             InitializeComponent();
@@ -66,6 +66,11 @@ namespace Projet1
 
         private void ClickAjouter(object sender, RoutedEventArgs e)
         {
+            if (string.IsNullOrEmpty(filename))
+            {
+                MessageBox.Show("Pas d'image sélectionnée", "Erreur de saisie");
+                return;
+            }
             NouvelleImage.Source = filename;
             MonManager.AjouterImgArc(NouvelleImage, MonManager.ArcAfficher);
             (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.ARC;

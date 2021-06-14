@@ -65,6 +65,11 @@ namespace Projet1
 
         private void ClickAjouter(object sender, RoutedEventArgs e)
         {
+            if (string.IsNullOrEmpty(filename))
+            {
+                MessageBox.Show("Pas d'image sélectionnée", "Erreur de saisie");
+                return;
+            }
             NouvelleImage.Source = filename;
             MonManger.AjouterImgPerso(NouvelleImage, MonManger.PersoAfficher);
             (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.PERSONNAGE;

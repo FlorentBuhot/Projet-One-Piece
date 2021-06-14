@@ -16,7 +16,7 @@ namespace Projet1
             string nomImage = (value as string);
             if (string.IsNullOrWhiteSpace(nomImage)) return null;
             Debug.WriteLine(Directory.GetCurrentDirectory());
-            string dossierImage = Path.Combine(Directory.GetCurrentDirectory(), "Image");
+            string dossierImage = Path.Combine(Directory.GetCurrentDirectory(), "Image/");
             string cheminImage = Path.Combine(dossierImage, nomImage);
             return new Uri(cheminImage, UriKind.RelativeOrAbsolute);
         }
