@@ -11,6 +11,10 @@
     <OutputPath>..\Projetbin</OutputPath>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>..\Projetbin\</OutputPath>
+  </PropertyGroup>
+
   <ItemGroup>
     <None Remove="Icones\rechBouttun.png" />
     <None Remove="icone_one_piece.png" />
