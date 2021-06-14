@@ -219,6 +219,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_CB4B226C4BDB4B11B39C7A575EBD855B"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_CBDE9A49B6C147148F12E14F06A099B3"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -390,6 +396,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
     }
@@ -2064,9 +2078,9 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_7F3584457F784011BDE5700F4F31799C"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_CB4B226C4BDB4B11B39C7A575EBD855B"
             {
-            "SourcePath" = "8:"
+            "SourcePath" = "8:..\\Projet1\\obj\\Debug\\netcoreapp3.1\\apphost.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_7E76F7F52EE047E98B1AC8829D1D92A2"
@@ -2086,9 +2100,9 @@
             "ProjectOutputGroupRegister" = "3:1"
             "OutputConfiguration" = "8:"
             "OutputGroupCanonicalName" = "8:PublishItems"
-            "OutputProjectGuid" = "8:{68030169-8365-432A-8293-3BD29EC8C8A9}"
+            "OutputProjectGuid" = "8:{03817406-B514-4CF1-A322-7A5E4D3D7608}"
             "ShowKeyOutput" = "11:TRUE"
-            "PublishProfilePath" = "8:Properties\\PublishProfiles\\FolderProfile.pubxml\\"
+            "PublishProfilePath" = "8:Properties\\PublishProfiles\\FolderProfile.pubxml"
                 "ExcludeFilters"
                 {
                 }
