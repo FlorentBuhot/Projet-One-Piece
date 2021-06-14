@@ -75,15 +75,23 @@ namespace Projet1
         {
             if(haki_rois.IsChecked == true)
             {
-                NouveauPerso.ListHaki.Add(MonManager.RechercherHaki(NomHaki.Haki_des_rois));
+                if (!NouveauPerso.ListHaki.Contains(MonManager.RechercherHaki(NomHaki.Haki_des_rois)))
+                {
+                    NouveauPerso.ListHaki.Add(MonManager.RechercherHaki(NomHaki.Haki_des_rois));
+                }
             }
             if (haki_obs.IsChecked == true)
             {
-                NouveauPerso.ListHaki.Add(MonManager.RechercherHaki(NomHaki.Haki_de_perception));
+                if (NouveauPerso.ListHaki.Contains(MonManager.RechercherHaki(NomHaki.Haki_de_perception))) { 
+                    NouveauPerso.ListHaki.Add(MonManager.RechercherHaki(NomHaki.Haki_de_perception));
+                }
             }
             if (haki_att.IsChecked == true)
             {
-                NouveauPerso.ListHaki.Add(MonManager.RechercherHaki(NomHaki.Haki_du_renforcement));
+                if (!NouveauPerso.ListHaki.Contains(MonManager.RechercherHaki(NomHaki.Haki_du_renforcement)))
+                {
+                    NouveauPerso.ListHaki.Add(MonManager.RechercherHaki(NomHaki.Haki_du_renforcement));
+                }
             }
             if (arc0.IsChecked == true)
             {
@@ -245,13 +253,8 @@ namespace Projet1
                 NouveauPerso.ListeArc.Add(MonManager.RechercherArc("Wano Kuni"));
                 nbArc++;
             }
-            if(nbArc == 0)
-            {
-                MessageBox.Show("Vous n'avez pas séléctionné d'arc", "Erreur de saisie");
-                return;
-            }
 
-            if(string.IsNullOrEmpty(NouveauPerso.Prénom) ||
+            if (string.IsNullOrEmpty(NouveauPerso.Prénom) ||
                string.IsNullOrEmpty(appart.Text) ||
                string.IsNullOrEmpty(appartDesc.Text) ||
                NouveauPerso.Age <= 0)
@@ -259,6 +262,12 @@ namespace Projet1
                 MessageBox.Show("Les valeurs suivantes sont obligatoir : \n" +
                                 "Prénom du personnage , Nom de l'appartenance, Description de l'appartenance et l'age doit être supérieur à 0",
                                 "Erreur de saisie");
+                return;
+            }
+
+            if (nbArc == 0)
+            {
+                MessageBox.Show("Vous n'avez pas séléctionné d'arc", "Erreur de saisie");
                 return;
             }
 
