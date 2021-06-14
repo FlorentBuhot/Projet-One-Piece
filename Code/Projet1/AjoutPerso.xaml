@@ -51,7 +51,7 @@
                     </Border>
                     <Button Grid.Row="2" Content="Parcourir" Click="Bouton_Parcourir" Width="150" Height="25"></Button>
                     <TextBlock Grid.Row="3" Text="Nom du personnage" Style="{StaticResource textPreci}"/>
-                    <TextBox Grid.Row="4" Style="{StaticResource petitChamps}" Text="{Binding Nom}"></TextBox>
+                    <TextBox Grid.Row="4" x:Name="nomPerso" Style="{StaticResource petitChamps}" Text="{Binding Nom}"></TextBox>
                     <TextBlock Grid.Row="5" Text="Prénom du personnage" Style="{StaticResource textPreci}"/>
                     <TextBox Grid.Row="6" Style="{StaticResource petitChamps}" Text="{Binding Prénom}"></TextBox>
                 </Grid>

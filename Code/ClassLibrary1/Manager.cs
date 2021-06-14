@@ -65,6 +65,7 @@ namespace ClassLibrary1
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+        public event PropertyChangedEventHandler PropertyChanged;
 
         public void ChargeDonnees()
         {
@@ -88,8 +89,6 @@ namespace ClassLibrary1
             Persistance.SauvegardeDonnees(ListePerso, ListeArc, Hakis); // <=== dépendance
         }
 
-
-        public event PropertyChangedEventHandler PropertyChanged;
 
         public void ArcAAfficher(int numArc)
         {
@@ -174,7 +173,7 @@ namespace ClassLibrary1
                     return;
                 }
             }
-            arc.SourceImgArc.AddLast(img);
+            ArcAfficher.SourceImgArc.AddLast(img);
             return;
         }
 
