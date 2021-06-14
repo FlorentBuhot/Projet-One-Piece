@@ -21,11 +21,12 @@ namespace Projet1
     {
         Manager MonManager => (App.Current as App).MonManager;
         public Arc larc { get; set; }
+        string info;
         public AjouterInfoArc()
         {
             InitializeComponent();
             larc = new Arc();
-            larc = MonManager.ArcAfficher;
+            larc.Info = MonManager.ArcAfficher.Info;
             DataContext = larc;
         }
         private void ClickAnnuler(object sender, RoutedEventArgs e)
@@ -35,7 +36,8 @@ namespace Projet1
 
         private void ClickAjouter(object sender, RoutedEventArgs e)
         {
-            MonManager.AjouterInfoArc(MonManager.ArcAfficher, larc);
+            info = Info.Text;
+            MonManager.ArcAfficher.Info = info;
             (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.ARC;
         }
     }

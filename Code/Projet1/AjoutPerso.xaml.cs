@@ -1,5 +1,6 @@
 ﻿    using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -20,12 +21,21 @@ namespace Projet1
     public partial class AjoutPerso : UserControl
     {
         public Manager MonManager => (App.Current as App).MonManager;
-        Personnage NouveauPerso { get; set; }
+        //Personnage NouveauPerso { get; set; }
+        //ClassLibrary1.Image ImgBase { get; set; }
         public Navigator Navigator => (App.Current as App).Navigator;
+
+        Personnage NouveauPerso = new Personnage();
+        ClassLibrary1.Image ImgBase = new ClassLibrary1.Image();
+        Appartennance appartenance = new Appartennance();
+
+        private string filename;
+        private string filesource;
+        private string destinationsource = @"../Image/";
         public AjoutPerso()
         {
             InitializeComponent();
-            NouveauPerso = new Personnage();
+            
             DataContext = NouveauPerso;
         }
 
@@ -33,15 +43,25 @@ namespace Projet1
         {
             Microsoft.Win32.OpenFileDialog dialog = new Microsoft.Win32.OpenFileDialog();
             dialog.InitialDirectory = @"C:\Utilisateurs";
-            dialog.FileName = "Image_Perso";
+            dialog.FileName = "Image";
             dialog.DefaultExt = ".jpg | .png | .gif";
 
             bool? result = dialog.ShowDialog();
 
-            if(result == true)
+            if (result == true)
             {
-                string filename = dialog.FileName;
-                image_perso.Source = new BitmapImage(new Uri(filename, UriKind.Absolute));
+                filesource = dialog.FileName;
+                image_perso.Source = new BitmapImage(new Uri(filesource, UriKind.Absolute));
+            }
+            try
+            {
+                filename = "ImagePerso/" + new FileInfo(filesource).Name;
+                destinationsource += filename;
+                File.Copy(filesource, destinationsource, true);
+            }
+            catch (IOException exc)
+            {
+                System.Diagnostics.Debug.WriteLine(exc.Message);
             }
         }
         private void ClickAnnuler(object sender, RoutedEventArgs e)
@@ -195,6 +215,12 @@ namespace Projet1
             {
                 NouveauPerso.ListeArc.Add(MonManager.RechercherArc("Wano Kuni"));
             }
+
+            appartenance.Nom = appart.Text;
+            appartenance.Description = appartDesc.Text;
+            ImgBase.Source = filename;
+            NouveauPerso.ImgBase = ImgBase;
+            NouveauPerso.Appart = appartenance;
             MonManager.PersoAfficher = NouveauPerso;
             MonManager.AjouterPerso(NouveauPerso);
             (App.Current as App).Navigator.EtatEnCours = Navigator.EtatUC.PERSONNAGE;
